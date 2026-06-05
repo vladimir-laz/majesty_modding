@@ -18,6 +18,7 @@
 - [[texture-units-xml]] — `interface/enGUIne/texture_units.xml`: реестр текстур UI (имя → файл `.dds` + смещение `i_tuv`)
 
 ## Данные и тексты
+- [[rpg-params-xml]] — `gameData/units/rpg_params.xml`: **базовые характеристики** (сила/ловкость/ум/выносливость, 0–20) и статы ВСЕХ юнитов; секции `<Heroes>`/`<Citizens>`/`<Monsters>`/`<Buildings>`
 - [[unit-decour-xml]] — `gameData/units/unit_decour.xml`: **статы оружия/брони** (DPS `f_dps_*`, защита `f_defence_*`, бонусы характеристик) + визуальная экипировка
 - [[inventions-graphml]] — `gameData/inventions/inventions.graphml`: дерево изобретений в формате yEd (узлы-изобретения, рёбра-зависимости)
 - [[loctable-xml]] — `localization/M2_mod.loctable.xml`: локализация в формате Excel XML (ключи `#KEY` → текст)

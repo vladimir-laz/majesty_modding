@@ -13,7 +13,8 @@
 | Стоимость **найма героя** | [[shops-set\|shops.set]] | `"<гильдия>" → units → "<hero>" → Cost → "count money"` |
 | **Добавить героя** в здание | [[shops-set\|shops.set]] + меню + [[loctable-xml\|loctable]] | `units` гильдии + кнопка в `*_menu.xml` |
 | Урон оружия / защита брони | [[unit-decour-xml\|unit_decour.xml]] | `Weapon → Params → f_dps_*` / `f_defence_*` |
-| Базовые HP/урон героя по уровням | `gameData/units/rpg_params.xml` † | RPG-класс (доставать из `resource.pak`) |
+| **Характеристики героя (сила/ловкость/ум/выносливость)** | [[rpg-params-xml\|rpg_params.xml]] | секция `<Heroes>`: `f_strength/f_agility/f_intellect/f_stamina` (0–20) |
+| Базовые HP/урон героя по уровням | [[rpg-params-xml\|rpg_params.xml]] | `f_maxHealth`, `f_dps_*` в `<Heroes>` |
 | Стоимость/кулдаун/мощь заклинаний | `gameData/magic/spells.xml` † | по [[карта-игровых-файлов]] |
 | Бонусы характеристик от предмета | [[unit-decour-xml\|unit_decour.xml]] | `Weapon → Params → f_strength` и др. |
 | Доступный уровень снаряжения | [[inventions-graphml\|inventions.graphml]] + [[shops-set\|shops.set]] | узел изобретения + `weapon`/`armour` |
@@ -32,6 +33,7 @@
 - [[добавить-героя-в-здание]] — добавить нанимаемого героя в гильдию (как мод «Рыцарь»)
 - [[изменить-статы-героя]] — что из статов реально моддится и где (+ оговорка про RPG-класс)
 - [[изменить-урон-и-броню]] — DPS оружия и защиту брони в `unit_decour.xml`
+- [[максимальные-характеристики-героев]] — всем героям сила/ловкость/ум/выносливость = 20 (`rpg_params.xml`)
 
 ## Общий принцип
 Любая правка = положить **полную копию** нужного файла в зеркальный путь
