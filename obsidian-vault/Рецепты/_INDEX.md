@@ -13,7 +13,7 @@
 | Стоимость **найма героя** | [[shops-set\|shops.set]] | `"<гильдия>" → units → "<hero>" → Cost → "count money"` |
 | **Добавить героя** в здание | [[shops-set\|shops.set]] + меню + [[loctable-xml\|loctable]] | `units` гильдии + кнопка в `*_menu.xml` |
 | Урон оружия / защита брони | [[unit-decour-xml\|unit_decour.xml]] | `Weapon → Params → f_dps_*` / `f_defence_*` |
-| Базовые HP/урон героя по уровням | `gameData/unit/rpg_params.xml` † | RPG-класс (доставать из `resource.pak`) |
+| Базовые HP/урон героя по уровням | `gameData/units/rpg_params.xml` † | RPG-класс (доставать из `resource.pak`) |
 | Стоимость/кулдаун/мощь заклинаний | `gameData/magic/spells.xml` † | по [[карта-игровых-файлов]] |
 | Бонусы характеристик от предмета | [[unit-decour-xml\|unit_decour.xml]] | `Weapon → Params → f_strength` и др. |
 | Доступный уровень снаряжения | [[inventions-graphml\|inventions.graphml]] + [[shops-set\|shops.set]] | узел изобретения + `weapon`/`armour` |
