@@ -40,6 +40,18 @@ updated: 2026-06-05
 </RPGParams>
 ```
 
+## ⚠️ ГЛАВНАЯ ГРАБЛЯ: файл должен быть ПОЛНЫМ
+`resource.mod` подменяет `rpg_params.xml` **целиком, без слияния** с
+базой/дополнениями. Если в нём не хватает хоть одной сущности, которую игра
+инстанцирует — **краш**: `Application aborted! Cannot find rpg parameters for
+entity "<X>". Check file "/gamedata/units/rpg_params.xml"`.
+Наша распакованная база (`resource/gameData/units/rpg_params.xml`) — **неполная**:
+в ней 248 сущностей, но НЕТ ~44 из дополнений (`und_*`, `hero_und_*`,
+`guild_hunter_freedom`, `hero_knight`, `hero_fatherfrost`, доп. `logovo_*`).
+Поэтому положить её в мод = краш. Чтобы править статы/HP, нужен ПОЛНЫЙ файл:
+слить базу + `rpg_params.xml` из `resource.expansion_1/2/3` (или доклепать
+недостающие 44 вручную). Это блокирует и характеристики героев, и HP крестьян.
+
 ## Секции (важно!)
 - `<Heroes>` — **классы героев** (31 шт): базовые (`hero_warrior`,
   `hero_cleric`, `hero_hunter`, `hero_rogue`, `hero_mage`, `hero_blademaster`,

@@ -12,6 +12,9 @@
 - [[shops-set]] — `set/trading/shops.set`: меню постройки в замке (здания, цена, лимиты, апгрейды, изобретения, наём героев, оружие/броня)
 - [[global-spawn-settings]] — `gameData/spawn/global_spawn_settings.set`: программы спавна существ (raw, count, spawn time, max count, Prerequsities)
 
+## Миссии
+- [[mission-mi]] — формат файла миссии `.mi`: спавн логов (`helper/spawn_program_collection`, типы `task`, флаг First wave), стартовые деньги (`{"kingdoms"}`), доступность построек. Спавн/деньги кампании задаются ЗДЕСЬ (per-mission), а не глобально.
+
 ## Интерфейс
 - [[интерфейс-меню-xml]] — `interface/dynamic/menu/*.xml`: меню зданий, кнопки действий (Build/Recruit/Invent/Upgrade), `userdata`, `texture`
 - [[game-window-xml]] — `interface/enGUIne/Skins/.../game_window.xml`: окно игры; здесь живёт панель скорости (`COUNTER_game_speed`)
