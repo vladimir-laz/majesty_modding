@@ -20,3 +20,6 @@ debug_*.zip
 /werewolfs_more_gold_for_monsters/
 /more_monsters_and_start_money/
 *.zip
+
+# игровые файлы units (полный rpg_params и др.) — референс, не в репо
+/majesty_rpg/
