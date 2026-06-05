@@ -1,4 +1,0 @@
-{simple "goblin_spear_items"
-	{diffuse "$/items/monsters/goblinspear_items_diffuse"}
-	{blend none}
-}

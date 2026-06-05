@@ -14,3 +14,9 @@ debug_*.zip
 
 # распакованные ресурсы игры (огромные, не часть репо)
 /resource/
+
+# собранные моды (большие) — держим локально, в репо не пушим
+/all_mods/
+/werewolfs_more_gold_for_monsters/
+/more_monsters_and_start_money/
+*.zip

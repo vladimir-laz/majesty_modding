@@ -1,4 +1,0 @@
-{simple "02_-_default"
-	{diffuse "$/items/hero/goblinshaman_items_diffuse"}
-	{blend test}
-}
