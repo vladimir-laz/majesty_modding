@@ -13,6 +13,8 @@
 | Стоимость **найма героя** | [[shops-set\|shops.set]] | `"<гильдия>" → units → "<hero>" → Cost → "count money"` |
 | **Добавить героя** в здание | [[shops-set\|shops.set]] + меню + [[loctable-xml\|loctable]] | `units` гильдии + кнопка в `*_menu.xml` |
 | Урон оружия / защита брони | [[unit-decour-xml\|unit_decour.xml]] | `Weapon → Params → f_dps_*` / `f_defence_*` |
+| Базовые HP/урон героя по уровням | `gameData/unit/rpg_params.xml` † | RPG-класс (доставать из `resource.pak`) |
+| Стоимость/кулдаун/мощь заклинаний | `gameData/magic/spells.xml` † | по [[карта-игровых-файлов]] |
 | Бонусы характеристик от предмета | [[unit-decour-xml\|unit_decour.xml]] | `Weapon → Params → f_strength` и др. |
 | Доступный уровень снаряжения | [[inventions-graphml\|inventions.graphml]] + [[shops-set\|shops.set]] | узел изобретения + `weapon`/`armour` |
 | Скорость/обзор/способности героя | `<hero>.def` | `extenders/mover.inc`, `sensor.inc`, `actions.inc` |
@@ -20,6 +22,9 @@
 | Видимые тексты (имена/описания) | [[loctable-xml\|loctable]] | ключи `#KEY` |
 | Иконки кнопок | [[texture-units-xml\|texture_units.xml]] + `.dds` | `<Texture>` |
 | Скорость игры | [[game-window-xml\|game_window.xml]] | `COUNTER_game_speed → s_counter_values` |
+
+Полная карта расположения ВСЕХ игровых конфигов (не только из наших модов) —
+[[карта-игровых-файлов]]. Внешние источники/инструменты — [[ссылки-и-источники]].
 
 ## Рецепты
 - [[изменить-стоимость-здания]] — цена постройки, лимиты, условия апгрейда
