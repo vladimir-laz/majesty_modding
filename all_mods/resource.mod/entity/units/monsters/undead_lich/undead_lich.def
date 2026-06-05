@@ -720,8 +720,8 @@
 ;#line 42: 	(include "extenders/level.inc")
 ;#line 42: entity/units/monsters/undead_lich/extenders/level.inc BEGIN
 {"Level"
-	{MaxLevel 10}
-	{CurrentLevel 10}
+	{MaxLevel 15}
+	{CurrentLevel 15}
 	{CurrentExperiens 0.0}
 }
 

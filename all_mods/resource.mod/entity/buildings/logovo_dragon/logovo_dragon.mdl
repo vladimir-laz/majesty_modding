@@ -70,6 +70,36 @@
 		{bone "door_p_l1_"
 			{Position 0.0531 	 -6.513 	 1.5104}
 		}
+		{bone "attack_p_l2_01"
+			{Position -2.8527 	 1.971 	 0.6417}
+		}
+		{bone "attack_p_l2_02"
+			{Position 0.4224 	 3.9561 	 0.8878}
+		}
+		{bone "attack_p_l2_03"
+			{Position 2.9272 	 1.4716 	 0.8878}
+		}
+		{bone "attack_p_l2_04"
+			{Position 2.3843 	 -3.0659 	 0.6286}
+		}
+		{bone "attack_p_l2_05"
+			{Position -1.6128 	 -3.79 	 1.4355}
+		}
+		{bone "attack_p_l2_06"
+			{Position -3.0699 	 -0.5898 	 0.6112}
+		}
+		{bone "attack_p_l2_07"
+			{Position 1.9253 	 3.4233 	 0.7992}
+		}
+		{bone "attack_p_l2_08"
+			{Position 1.0797 	 -4.4436 	 1.1838}
+		}
+		{bone "attack_p_l2_09"
+			{Position 3.0133 	 -0.3142 	 1.3249}
+		}
+		{bone "door_p_l2_"
+			{Position 0.0531 	 -6.513 	 1.5104}
+		}
 		{bone "fire_25_smoke_01"
 			{Position -2.4221 	 1.8637 	 1.3808}
 		}

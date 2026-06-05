@@ -872,7 +872,12 @@
 
 
 ;#line 30: entity/units/monsters/snow_maiden/extenders/health.inc END
-
+{"RPGModule"
+	{perks
+		{perkinstance "state_shaman_regeneration_1"}
+		{perkinstance "state_regen_man_1"}
+	}
+}
 
 ;#line 31: 	(include "extenders/mana.inc")
 ;#line 31: entity/units/monsters/snow_maiden/extenders/mana.inc BEGIN

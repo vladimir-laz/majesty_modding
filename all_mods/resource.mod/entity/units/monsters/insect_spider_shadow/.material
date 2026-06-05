@@ -1,4 +1,0 @@
-{simple "spider"
-	{diffuse "insect_greater_spider_diffuse"}
-	{blend add}
-}

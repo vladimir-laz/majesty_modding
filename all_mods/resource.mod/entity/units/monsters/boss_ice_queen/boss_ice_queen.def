@@ -785,7 +785,7 @@
 			{name "ice_mage_ice_block"}
 		}
 		{action
-			{name "mage_freeze_attack "}
+			{name "mage_freeze_attack"}
 		}
 		{action
 			{name "ice_age"}
@@ -1001,6 +1001,12 @@
 	{footfx {name "unit_water_splash"} {dist 0.4}}
 }
 
+{"RPGModule"
+	{perks
+		{perkinstance "state_shaman_regeneration_1"}
+		{perkinstance "state_regen_man_1"}
+	}
+}
 ;#line 42: properties/units/extenders/step_fx_1.inc END
 
 	{"simulator" {able 0} {mass 50}}

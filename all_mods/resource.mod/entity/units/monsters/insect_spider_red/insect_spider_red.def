@@ -652,7 +652,11 @@
 
 ;#line 38: entity/units/monsters/insect_spider_red/extenders/mover.inc END
 
-
+{"RPGModule"
+	{perks
+		{perkinstance "ogre_regeneration"}
+	}
+}
 ;#line 39: 	(include "extenders/ai.inc")
 ;#line 39: entity/units/monsters/insect_spider_red/extenders/ai.inc BEGIN
 {"Behaviour.HeroMonsterBehaviour"

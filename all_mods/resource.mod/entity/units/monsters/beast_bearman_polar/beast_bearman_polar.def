@@ -828,13 +828,9 @@
 		{action
 			{name "bearman_basic_attack"}
 		}
-	}
-	{actions
 		{action
 			{name "bearman_knock_attack"}
 		}
-	}
-	{actions
 		{action
 			{name "ice_mage_frostbolt_attack"}
 		}
@@ -902,6 +898,7 @@
 	{perks
 		{perkinstance "perk_imunity2specials"}
 		{perkinstance "perk_regeneration"}
+		{perkinstance "state_regen_man_1"}
 	}
 }
 ;#line 47: /entity/units/monsters/beast_bearman_polar/extenders/default_perks.inc END

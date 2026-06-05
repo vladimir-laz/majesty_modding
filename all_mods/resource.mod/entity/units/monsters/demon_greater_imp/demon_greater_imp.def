@@ -687,7 +687,6 @@
 	"monster"
 	"blood_splash"
 	"magical"
-	"imps"
 }
 
 ;#line 33: /entity/units/monsters/demon_greater_imp/extenders/entity_classes.inc END
@@ -714,8 +713,8 @@
 ;#line 36: 	(include "extenders/level.inc")
 ;#line 36: /entity/units/monsters/demon_greater_imp/extenders/level.inc BEGIN
 {"Level"
-	{MaxLevel 8}
-	{CurrentLevel 8}
+	{MaxLevel 10}
+	{CurrentLevel 10}
 	{CurrentExperiens 0.0}
 }
 

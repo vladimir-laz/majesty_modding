@@ -20,7 +20,7 @@
 				{"count money" 550}
 			}
 			{Entity guild_warrior}
-			{"Max count" 3}
+			{"Max count" 30}
 			{"Max upgrade" 3}
 			{Prerequesities
 				{gold 0}
@@ -399,7 +399,7 @@
 			}
 			{Entity logovo_dragon}
 			{"Max count" 1}
-			{"Max upgrade" 2}
+			{"Max upgrade" 3}
 			{Prerequesities
 				{buildings castle_3}
 				{gold 0}
@@ -510,7 +510,7 @@
 				{"count money" 450}
 			}
 			{Entity guild_hunter}
-			{"Max count" 3}
+			{"Max count" 30}
 			{"Max upgrade" 3}
 			{Prerequesities
 				{gold 0}
@@ -596,7 +596,7 @@
 				{"count money" 1000}
 			}
 			{Entity guild_mage}
-			{"Max count" 3}
+			{"Max count" 30}
 			{"Max upgrade" 3}
 			{Prerequesities
 				{gold 0}
@@ -625,7 +625,7 @@
 				{"count money" 450}
 			}
 			{Entity guild_rogue}
-			{"Max count" 3}
+			{"Max count" 30}
 			{"Max upgrade" 3}
 			{Prerequesities
 				{gold 0}
@@ -639,7 +639,7 @@
 				{"count money" 700}
 			}
 			{Entity guild_cleric}
-			{"Max count" 3}
+			{"Max count" 30}
 			{"Max upgrade" 3}
 			{Prerequesities
 				{gold 0}
@@ -653,7 +653,7 @@
 				{"count money" 3000}
 			}
 			{Entity guild_blademaster}
-			{"Max count" 3}
+			{"Max count" 30}
 			{"Max upgrade" 1}
 			{Prerequesities
 				{buildings "castle_3 guild_warrior_1"}
@@ -668,7 +668,7 @@
 				{"count money" 3000}
 			}
 			{Entity guild_paladin}
-			{"Max count" 3}
+			{"Max count" 30}
 			{"Max upgrade" 1}
 			{Prerequesities
 				{buildings "castle_3 guild_warrior_1"}
@@ -683,7 +683,7 @@
 				{"count money" 3000}
 			}
 			{Entity guild_marksman}
-			{"Max count" 3}
+			{"Max count" 30}
 			{"Max upgrade" 1}
 			{Prerequesities
 				{buildings "castle_3 guild_hunter_1"}
@@ -698,7 +698,7 @@
 				{"count money" 2500}
 			}
 			{Entity guild_elf}
-			{"Max count" 3}
+			{"Max count" 30}
 			{"Max upgrade" 2}
 			{Prerequesities
 				{buildings "castle_2 market_2"}
@@ -713,7 +713,7 @@
 				{"count money" 2000}
 			}
 			{Entity guild_dwarf}
-			{"Max count" 3}
+			{"Max count" 30}
 			{"Max upgrade" 2}
 			{Prerequesities
 				{buildings "castle_2 smithy_2"}
@@ -728,7 +728,7 @@
 				{"count money" 3000}
 			}
 			{Entity guild_beastmaster}
-			{"Max count" 3}
+			{"Max count" 30}
 			{"Max upgrade" 1}
 			{Prerequesities
 				{buildings "castle_3 guild_hunter_1"}
@@ -743,7 +743,7 @@
 				{"count money" 3000}
 			}
 			{Entity guild_priest}
-			{"Max count" 3}
+			{"Max count" 30}
 			{"Max upgrade" 1}
 			{Prerequesities
 				{buildings "castle_3 guild_cleric_1"}
@@ -773,7 +773,7 @@
 				{"count money" 3000}
 			}
 			{Entity guild_darkpriest}
-			{"Max count" 3}
+			{"Max count" 30}
 			{"Max upgrade" 1}
 			{Prerequesities
 				{buildings "castle_3 guild_cleric_1"}
@@ -807,21 +807,6 @@
 			{"Max upgrade" 1}
 		    {Prerequesities
 				{buildings castle_3}
-				{gold 0}
-				{"heroes count" 0}
-			}
-		}
-		{"unique_tower_goblin"
-			{version original}
-			{Cost
-				{money}
-				{"count money" 15000}
-			}
-			{Entity unique_tower_goblin}
-			{"Max count" 123234535}
-			{"Max upgrade" 1}
-		    {Prerequesities
-				{buildings mks_castle_3}
 				{gold 0}
 				{"heroes count" 0}
 			}
@@ -891,7 +876,7 @@
 				{"count money" 3000}
 			}
 			{Entity guild_ice_magea}
-			{"Max count" 3}
+			{"Max count" 30}
 			{"Max upgrade" 1}
 			{Prerequesities
 				{buildings "castle_3 guild_mage_1"}
@@ -906,7 +891,7 @@
 				{"count money" 3000}
 			}
 			{Entity guild_death_knight}
-			{"Max count" 3}
+			{"Max count" 30}
 			{"Max upgrade" 1}
 			{Prerequesities
 				{buildings "castle_3 guild_rogue_1"}
@@ -1473,7 +1458,7 @@
 				{money}
 				{"count money" 250}
 			}
-			{"Work time" 75}
+			{"Work time" 0.5}
 			{"Pets cast count" 4}
 		}
 	}
@@ -1749,2585 +1734,19 @@
 		}
 	}
 }
-{"ai_market"
-	{entity_id ai_market}
-	{version original}
-	{inventions
-		{"mana potion"
-			{version original}
-			{invention "mana potion"}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"health potion"
-			{version original}
-			{invention "health potion"}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"sell_artefact_of_protection"
-			{version original}
-			{invention sell_artefact_of_protection}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"sell_artefact_of_imp_protection"
-			{version original}
-			{invention sell_artefact_of_imp_protection}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"sell_artefact_of_regeneration"
-			{version original}
-			{invention sell_artefact_of_regeneration}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-	}
-	{potions
-		{"h_potion"
-			{version original}
-			{Bottle healthpotion_0}
-			{"Production time" 0.4}
-			{Cost
-				{money}
-				{"count money" 20}
-			}
-			{Prerequesities
-				{invention "health potion"}
-			}
-		}
-		{"mana_potion"
-			{version original}
-			{Bottle manapotion_1}
-			{"Production time" 0.3}
-			{Cost
-				{money}
-				{"count money" 20}
-			}
-			{Prerequesities
-				{invention "mana potion"}
-			}
-		}
-	}
-	{artefact
-		{"sell_artefact_of_protection"
-			{version original}
-			{Artefact artefact_of_protection}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 100}
-			}
-			{Prerequesities
-				{invention sell_artefact_of_protection}
-			}
-		}
-		{"sell_artefact_of_imp_protection"
-			{version original}
-			{Artefact artefact_of_imp_protection}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 300}
-			}
-			{Prerequesities
-				{invention sell_artefact_of_imp_protection}
-			}
-		}
-		{"sell_artefact_of_regeneration"
-			{version original}
-			{Artefact artefact_of_regeneration}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 50}
-			}
-			{Prerequesities
-				{invention sell_artefact_of_regeneration}
-			}
-		}
-	}
-}
-{"ai_magic_bazaar"
-	{entity_id ai_magic_bazaar}
-	{version original}
-	{inventions
-		{"sell_elixir_accuracy"
-			{version original}
-			{invention sell_elixir_accuracy}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"sell_elixir_strength"
-			{version original}
-			{invention sell_elixir_strength}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"sell_elixir_wisdom"
-			{version original}
-			{invention sell_elixir_wisdom}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"sell_elixir_magic_prot"
-			{version original}
-			{invention sell_elixir_magic_prot}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"sell_elixir_melee_prot"
-			{version original}
-			{invention sell_elixir_melee_prot}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"sell_elixir_range_prot"
-			{version original}
-			{invention sell_elixir_range_prot}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"sell_elixir_speed"
-			{version original}
-			{invention sell_elixir_speed}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"sell_elixir_antipoison"
-			{version original}
-			{invention sell_elixir_antipoison}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-	}
-	{elixir
-		{"sell_elixir_magic_prot"
-			{version original}
-			{Elixir elixir_magic_prot}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 50}
-			}
-			{Prerequesities
-				{invention sell_elixir_magic_prot}
-			}
-		}
-		{"sell_elixir_melee_prot"
-			{version original}
-			{Elixir elixir_melee_prot}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 50}
-			}
-			{Prerequesities
-				{invention sell_elixir_melee_prot}
-			}
-		}
-		{"sell_elixir_range_prot"
-			{version original}
-			{Elixir elixir_missile_prot}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 50}
-			}
-			{Prerequesities
-				{invention sell_elixir_range_prot}
-			}
-		}
-		{"sell_elixir_accuracy"
-			{version original}
-			{Elixir elixir_missile_dps}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 50}
-			}
-			{Prerequesities
-				{invention sell_elixir_accuracy}
-			}
-		}
-		{"sell_elixir_strength"
-			{version original}
-			{Elixir elixir_melee_dps}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 50}
-			}
-			{Prerequesities
-				{invention sell_elixir_strength}
-			}
-		}
-		{"sell_elixir_wisdom"
-			{version original}
-			{Elixir elixir_magic_dps}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 50}
-			}
-			{Prerequesities
-				{invention sell_elixir_wisdom}
-			}
-		}
-		{"sell_elixir_speed"
-			{version original}
-			{Elixir elixir_speed}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 50}
-			}
-			{Prerequesities
-				{invention sell_elixir_speed}
-			}
-		}
-		{"sell_elixir_antipoison"
-			{version original}
-			{Elixir elixir_antipoison}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 3}
-			}
-			{Prerequesities
-				{invention sell_elixir_antipoison}
-			}
-		}
-	}
-}
-{"ai_mks_smithy"
-	{entity_id ai_mks_smithy}
-	{version original}
-	{inventions
-		{"mks_swords_1"
-			{version original}
-			{invention mks_swords_1}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"mks_swords_2"
-			{version original}
-			{invention mks_swords_2}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"mks_swords_3"
-			{version original}
-			{invention mks_swords_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"mks_bows_1"
-			{version original}
-			{invention mks_bows_1}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"mks_bows_2"
-			{version original}
-			{invention mks_bows_2}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"mks_bows_3"
-			{version original}
-			{invention mks_bows_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"mks_staffs_1"
-			{version original}
-			{invention mks_staffs_1}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"mks_staffs_2"
-			{version original}
-			{invention mks_staffs_2}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"mks_staffs_3"
-			{version original}
-			{invention mks_staffs_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"mks_plate_1"
-			{version original}
-			{invention mks_plate_1}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"mks_plate_2"
-			{version original}
-			{invention mks_plate_2}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"mks_plate_3"
-			{version original}
-			{invention mks_plate_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"mks_leather_1"
-			{version original}
-			{invention mks_leather_1}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"mks_leather_2"
-			{version original}
-			{invention mks_leather_2}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"mks_leather_3"
-			{version original}
-			{invention mks_leather_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"mks_cloth_1"
-			{version original}
-			{invention mks_cloth_1}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"mks_cloth_2"
-			{version original}
-			{invention mks_cloth_2}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"mks_cloth_3"
-			{version original}
-			{invention mks_cloth_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-	}
-	{weapon
-		{"mks_spear_sword_1"
-			{version original}
-			{Weapon "mks_goblin_spear_weapon/mks_goblin_spear_weapon02"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_swords_1}
-			}
-		}
-		{"mks_spear_sword_2"
-			{version original}
-			{Weapon "mks_goblin_spear_weapon/mks_goblin_spear_weapon03"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_swords_2}
-			}
-		}
-		{"mks_spear_sword_3"
-			{version original}
-			{Weapon "mks_goblin_spear_weapon/mks_goblin_spear_weapon04"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_swords_3}
-			}
-		}
-		{"mks_archer_bow_1"
-			{version original}
-			{Weapon "mks_goblin_archer_bow/mks_goblin_archer_bow02"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_bows_1}
-			}
-		}
-		{"mks_archer_bow_2"
-			{version original}
-			{Weapon "mks_goblin_archer_bow/mks_goblin_archer_bow03"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_bows_2}
-			}
-		}
-		{"mks_archer_bow_3"
-			{version original}
-			{Weapon "mks_goblin_archer_bow/mks_goblin_archer_bow04"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_bows_3}
-			}
-		}
-		{"mks_ratman_sword_1"
-			{version original}
-			{Weapon "mks_hero_ratman_weapons/mks_hero_ratman_weapon02"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_swords_1}
-			}
-		}
-		{"mks_ratman_sword_2"
-			{version original}
-			{Weapon "mks_hero_ratman_weapons/mks_hero_ratman_weapon03"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_swords_2}
-			}
-		}
-		{"mks_ratman_sword_3"
-			{version original}
-			{Weapon "mks_hero_ratman_weapons/mks_hero_ratman_weapon04"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_swords_3}
-			}
-		}
-		{"mks_lich_staff_1"
-			{version original}
-			{Weapon "mks_hero_lich_weapons/mks_hero_lich_weapon02"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_staffs_1}
-			}
-		}
-		{"mks_lich_staff_2"
-			{version original}
-			{Weapon "mks_hero_lich_weapons/mks_hero_lich_weapon03"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_staffs_2}
-			}
-		}
-		{"mks_lich_staff_3"
-			{version original}
-			{Weapon "mks_hero_lich_weapons/mks_hero_lich_weapon04"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_staffs_3}
-			}
-		}
-		{"mks_werewolf_sword_1"
-			{version original}
-			{Weapon "mks_hero_werewolf_weapon/mks_hero_werewolf_weapon02"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_swords_1}
-			}
-		}
-		{"mks_werewolf_sword_2"
-			{version original}
-			{Weapon "mks_hero_werewolf_weapon/mks_hero_werewolf_weapon03"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_swords_2}
-			}
-		}
-		{"mks_werewolf_sword_3"
-			{version original}
-			{Weapon "mks_hero_werewolf_weapon/mks_hero_werewolf_weapon04"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_swords_3}
-			}
-		}
-		{"mks_lizardman_bow_1"
-			{version original}
-			{Weapon "mks_lizardman_bow/mks_hero_lizardman_bow02"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_bows_1}
-			}
-		}
-		{"mks_lizardman_bow_2"
-			{version original}
-			{Weapon "mks_lizardman_bow/mks_hero_lizardman_bow03"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_bows_2}
-			}
-		}
-		{"mks_lizardman_bow_3"
-			{version original}
-			{Weapon "mks_lizardman_bow/mks_hero_lizardman_bow04"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_bows_3}
-			}
-		}
-		{"mks_minotaur_sword_1"
-			{version original}
-			{Weapon "mks_ancient_minotaur_weapon/mks_ancient_minotaur_weapon02"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_swords_1}
-			}
-		}
-		{"mks_minotaur_sword_2"
-			{version original}
-			{Weapon "mks_ancient_minotaur_weapon/mks_ancient_minotaur_weapon03"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_swords_2}
-			}
-		}
-		{"mks_minoraur_sword_3"
-			{version original}
-			{Weapon "mks_ancient_minotaur_weapon/mks_ancient_minotaur_weapon04"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_swords_3}
-			}
-		}
-		{"mks_shaman_staff_1"
-			{version original}
-			{Weapon "mks_hero_goblin_shaman_staff/mks_goblin_shaman_weapon02"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_staffs_1}
-			}
-		}
-		{"mks_shaman_staff_2"
-			{version original}
-			{Weapon "mks_hero_goblin_shaman_staff/mks_goblin_shaman_weapon03"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_staffs_2}
-			}
-		}
-		{"mks_shaman_staff_3"
-			{version original}
-			{Weapon "mks_hero_goblin_shaman_staff/mks_goblin_shaman_weapon04"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_staffs_3}
-			}
-		}
-		{"mks_ratman_paladin_sword_1"
-			{version original}
-			{Weapon "mks_ratman_paladin_weapons/mks_ratman_paladin_weapon02"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_swords_1}
-			}
-		}
-		{"mks_ratman_paladin_sword_2"
-			{version original}
-			{Weapon "mks_ratman_paladin_weapons/mks_ratman_paladin_weapon03"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_swords_2}
-			}
-		}
-		{"mks_ratman_paladin_sword_3"
-			{version original}
-			{Weapon "mks_ratman_paladin_weapons/mks_ratman_paladin_weapon04"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_swords_3}
-			}
-		}
-		{"mks_champion_bow_1"
-			{version original}
-			{Weapon "mks_goblin_champion_bow/mks_goblin_champion_bow02"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_bows_1}
-			}
-		}
-		{"mks_champion_bow_2"
-			{version original}
-			{Weapon "mks_goblin_champion_bow/mks_goblin_champion_bow03"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_bows_2}
-			}
-		}
-		{"mks_champion_bow_3"
-			{version original}
-			{Weapon "mks_goblin_champion_bow/mks_goblin_champion_bow04"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_bows_3}
-			}
-		}
-	}
-	{armour
-		{"mks_spear_plate_1"
-			{version original}
-			{Armour "mks_hero_goblin_spear/1"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_plate_1}
-			}
-		}
-		{"mks_spear_plate_2"
-			{version original}
-			{Armour "mks_hero_goblin_spear/2"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_plate_2}
-			}
-		}
-		{"mks_spear_plate_3"
-			{version original}
-			{Armour "mks_hero_goblin_spear/3"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_plate_3}
-			}
-		}
-		{"mks_archer_leather_1"
-			{version original}
-			{Armour "mks_hero_goblin_archer/1"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_leather_1}
-			}
-		}
-		{"mks_archer_leather_2"
-			{version original}
-			{Armour "mks_hero_goblin_archer/2"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_leather_2}
-			}
-		}
-		{"mks_archer_leather_3"
-			{version original}
-			{Armour "mks_hero_goblin_archer/3"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_leather_3}
-			}
-		}
-		{"mks_ratman_leather_1"
-			{version original}
-			{Armour "mks_hero_ratman/1"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_leather_1}
-			}
-		}
-		{"mks_ratman_leather_2"
-			{version original}
-			{Armour "mks_hero_ratman/2"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_leather_2}
-			}
-		}
-		{"mks_ratman_leather_3"
-			{version original}
-			{Armour "mks_hero_ratman/3"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_leather_3}
-			}
-		}
-		{"mks_lich_cloth_1"
-			{version original}
-			{Armour "mks_hero_lich/1"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_cloth_1}
-			}
-		}
-		{"mks_lich_cloth_2"
-			{version original}
-			{Armour "mks_hero_lich/2"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_cloth_2}
-			}
-		}
-		{"mks_lich_cloth_3"
-			{version original}
-			{Armour "mks_hero_lich/3"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_cloth_3}
-			}
-		}
-		{"mks_werewolf_leather_1"
-			{version original}
-			{Armour "mks_hero_werewolf/1"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_leather_1}
-			}
-		}
-		{"mks_werewolf_leather_2"
-			{version original}
-			{Armour "mks_hero_werewolf/2"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_leather_2}
-			}
-		}
-		{"mks_werewolf_leather_3"
-			{version original}
-			{Armour "mks_hero_werewolf/3"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_leather_3}
-			}
-		}
-		{"mks_lizardman_leather_1"
-			{version original}
-			{Armour "mks_hero_lizardman/1"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_leather_1}
-			}
-		}
-		{"mks_lizardman_leather_2"
-			{version original}
-			{Armour "mks_hero_lizardman/2"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_leather_2}
-			}
-		}
-		{"mks_lizardman_leather_3"
-			{version original}
-			{Armour "mks_hero_lizardman/3"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_leather_3}
-			}
-		}
-		{"mks_minotaur_plate_1"
-			{version original}
-			{Armour "mks_hero_minotaur/1"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_plate_1}
-			}
-		}
-		{"mks_minotaur_plate_2"
-			{version original}
-			{Armour "mks_hero_minotaur/2"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_plate_2}
-			}
-		}
-		{"mks_minotaur_plate_3"
-			{version original}
-			{Armour "mks_hero_minotaur/3"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_plate_3}
-			}
-		}
-		{"mks_shaman_cloth_1"
-			{version original}
-			{Armour "mks_hero_goblin_shaman/1"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_cloth_1}
-			}
-		}
-		{"mks_shaman_cloth_2"
-			{version original}
-			{Armour "mks_hero_goblin_shaman/2"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_cloth_2}
-			}
-		}
-		{"mks_shaman_cloth_3"
-			{version original}
-			{Armour "mks_hero_goblin_shaman/3"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_cloth_3}
-			}
-		}
-		{"mks_paladin_plate_1"
-			{version original}
-			{Armour "mks_hero_ratman_paladin/1"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_plate_1}
-			}
-		}
-		{"mks_paladin_plate_2"
-			{version original}
-			{Armour "mks_hero_ratman_paladin/2"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_plate_2}
-			}
-		}
-		{"mks_paladin_plate_3"
-			{version original}
-			{Armour "mks_hero_ratman_paladin/3"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_plate_3}
-			}
-		}
-		{"mks_champion_plate_1"
-			{version original}
-			{Armour "mks_hero_goblin_champion/1"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_plate_1}
-			}
-		}
-		{"mks_champion_plate_2"
-			{version original}
-			{Armour "mks_hero_goblin_champion/2"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_plate_2}
-			}
-		}
-		{"mks_champion_plate_3"
-			{version original}
-			{Armour "mks_hero_goblin_champion/3"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_plate_3}
-			}
-		}
-	}
-}
-{"ai_mks_magic_bazaar"
-	{entity_id ai_mks_magic_bazaar}
-	{version original}
-	{inventions
-		{"sell_elixir_accuracy"
-			{version original}
-			{invention sell_elixir_accuracy}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"sell_elixir_strength"
-			{version original}
-			{invention sell_elixir_strength}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"sell_elixir_wisdom"
-			{version original}
-			{invention sell_elixir_wisdom}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"sell_elixir_magic_prot"
-			{version original}
-			{invention sell_elixir_magic_prot}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"sell_elixir_melee_prot"
-			{version original}
-			{invention sell_elixir_melee_prot}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"sell_elixir_range_prot"
-			{version original}
-			{invention sell_elixir_range_prot}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"sell_elixir_speed"
-			{version original}
-			{invention sell_elixir_speed}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-	}
-	{elixir
-		{"sell_elixir_magic_prot"
-			{version original}
-			{Elixir elixir_magic_prot}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 50}
-			}
-			{Prerequesities
-				{invention sell_elixir_magic_prot}
-			}
-		}
-		{"sell_elixir_melee_prot"
-			{version original}
-			{Elixir elixir_melee_prot}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 50}
-			}
-			{Prerequesities
-				{invention sell_elixir_melee_prot}
-			}
-		}
-		{"sell_elixir_range_prot"
-			{version original}
-			{Elixir elixir_missile_prot}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 50}
-			}
-			{Prerequesities
-				{invention sell_elixir_range_prot}
-			}
-		}
-		{"sell_elixir_accuracy"
-			{version original}
-			{Elixir elixir_missile_dps}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 50}
-			}
-			{Prerequesities
-				{invention sell_elixir_accuracy}
-			}
-		}
-		{"sell_elixir_strength"
-			{version original}
-			{Elixir elixir_melee_dps}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 50}
-			}
-			{Prerequesities
-				{invention sell_elixir_strength}
-			}
-		}
-		{"sell_elixir_wisdom"
-			{version original}
-			{Elixir elixir_magic_dps}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 50}
-			}
-			{Prerequesities
-				{invention sell_elixir_wisdom}
-			}
-		}
-		{"sell_elixir_speed"
-			{version original}
-			{Elixir elixir_speed}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 50}
-			}
-			{Prerequesities
-				{invention sell_elixir_speed}
-			}
-		}
-	}
-}
-{"ai_mks_market"
-	{entity_id ai_mks_market}
-	{version original}
-	{inventions
-		{"mks mana potion"
-			{version original}
-			{invention "mks mana potion"}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"mks health potion"
-			{version original}
-			{invention "mks health potion"}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"sell_mks_artefact_of_regeneration"
-			{version original}
-			{invention sell_mks_artefact_of_regeneration}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"sell_mks_artefact_of_protection"
-			{version original}
-			{invention sell_mks_artefact_of_protection}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"sell_mks_artefact_of_imp_protection"
-			{version original}
-			{invention sell_mks_artefact_of_imp_protection}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-	}
-	{potions
-		{"h_potion"
-			{version original}
-			{Bottle healthpotion_0}
-			{"Production time" 0.4}
-			{Cost
-				{money}
-				{"count money" 20}
-			}
-			{Prerequesities
-				{invention "mks health potion"}
-			}
-		}
-		{"mana_potion"
-			{version original}
-			{Bottle manapotion_1}
-			{"Production time" 0.3}
-			{Cost
-				{money}
-				{"count money" 20}
-			}
-			{Prerequesities
-				{invention "mks mana potion"}
-			}
-		}
-	}
-	{artefact
-		{"sell_mks_artefact_of_regeneration"
-			{version original}
-			{Artefact artefact_of_regeneration}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 300}
-			}
-			{Prerequesities
-				{invention sell_mks_artefact_of_regeneration}
-			}
-		}
-		{"sell_mks_artefact_of_protection"
-			{version original}
-			{Artefact artefact_of_protection}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 100}
-			}
-			{Prerequesities
-				{invention sell_mks_artefact_of_protection}
-			}
-		}
-		{"sell_mks_artefact_of_imp_protection"
-			{version original}
-			{Artefact artefact_of_imp_protection}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 300}
-			}
-			{Prerequesities
-				{invention sell_mks_artefact_of_imp_protection}
-			}
-		}
-	}
-}
-{"ai_smithy"
-	{entity_id ai_smithy}
-	{version original}
-	{inventions
-		{"plate_2"
-			{version original}
-			{invention plate_2}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"plate_3"
-			{version original}
-			{invention plate_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"leather_1"
-			{version original}
-			{invention leather_1}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"leather_2"
-			{version original}
-			{invention leather_2}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"leather_3"
-			{version original}
-			{invention leather_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"cloth_1"
-			{version original}
-			{invention cloth_1}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"cloth_2"
-			{version original}
-			{invention cloth_2}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"cloth_3"
-			{version original}
-			{invention cloth_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"swords_1"
-			{version original}
-			{invention swords_1}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"swords_2"
-			{version original}
-			{invention swords_2}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"swords_3"
-			{version original}
-			{invention swords_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"staffs_1"
-			{version original}
-			{invention staffs_1}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"staffs_2"
-			{version original}
-			{invention staffs_2}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"staffs_3"
-			{version original}
-			{invention staffs_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"plate_1"
-			{version original}
-			{invention plate_1}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"bows_1"
-			{version original}
-			{invention bows_1}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"bows_2"
-			{version original}
-			{invention bows_2}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"bows_3"
-			{version original}
-			{invention bows_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"plate_4"
-			{version original}
-			{invention plate_4}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"leather_4"
-			{version original}
-			{invention leather_4}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"cloth_4"
-			{version original}
-			{invention cloth_4}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"bows_4"
-			{version original}
-			{invention bows_4}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"swords_4"
-			{version original}
-			{invention swords_4}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"staffs_4"
-			{version original}
-			{invention staffs_4}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-	}
-	{weapon
-		{"warrior_sword_02"
-			{version original}
-			{Weapon "hero_warrior_swords/hero_warrior_sword_02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention swords_1}
-			}
-		}
-		{"warrior_sword_03"
-			{version original}
-			{Weapon "hero_warrior_swords/hero_warrior_sword_03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention swords_2}
-			}
-		}
-		{"warrior_sword_04"
-			{version original}
-			{Weapon "hero_warrior_swords/hero_warrior_sword_04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention swords_3}
-			}
-		}
-		{"hero_knight_sword_02"
-			{version original}
-			{Weapon "hero_knight_swords/hero_knight_sword_02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention swords_1}
-			}
-		}
-		{"hero_knight_sword_03"
-			{version original}
-			{Weapon "hero_knight_swords/hero_knight_sword_03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention swords_2}
-			}
-		}
-		{"hero_knight_sword_04"
-			{version original}
-			{Weapon "hero_knight_swords/hero_knight_sword_04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention swords_3}
-			}	
-		}
-		{"hero_knight_sword_05"
-			{version original}
-			{Weapon "hero_knight_swords/hero_knight_sword_05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention swords_4}
-			}	
-		}
-		{"rogue_weapon_02"
-			{version original}
-			{Weapon "hero_rogue_knife/hero_rogue_knife_02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention swords_1}
-			}
-		}
-		{"rogue_weapon_03"
-			{version original}
-			{Weapon "hero_rogue_knife/hero_rogue_knife_03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention swords_2}
-			}
-		}
-		{"rogue_weapon_04"
-			{version original}
-			{Weapon "hero_rogue_knife/hero_rogue_knife_04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention swords_3}
-			}
-		}
-		{"hunter_weapon_01"
-			{version original}
-			{Weapon "hero_hunter_bow/hero_hunter_bow_02s"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention bows_1}
-			}
-		}
-		{"hunter_weapon_02"
-			{version original}
-			{Weapon "hero_hunter_bow/hero_hunter_bow_03s"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention bows_2}
-			}
-		}
-		{"hunter_weapon_03"
-			{version original}
-			{Weapon "hero_hunter_bow/hero_hunter_bow_04s"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention bows_3}
-			}
-		}
-		{"cleric_weapon_1"
-			{version original}
-			{Weapon "hero_cleric_staff/hero_cleric_staff02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention staffs_1}
-			}
-		}
-		{"cleric_weapon_2"
-			{version original}
-			{Weapon "hero_cleric_staff/hero_cleric_staff03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention staffs_2}
-			}
-		}
-		{"cleric_weapon_3"
-			{version original}
-			{Weapon "hero_cleric_staff/hero_cleric_staff04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention staffs_3}
-			}
-		}
-		{"mage_weapon_1"
-			{version original}
-			{Weapon "hero_mage_staff/hero_mage_staff02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention staffs_1}
-			}
-		}
-		{"mage_weapon_2"
-			{version original}
-			{Weapon "hero_mage_staff/hero_mage_staff03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention staffs_2}
-			}
-		}
-		{"mage_weapon_3"
-			{version original}
-			{Weapon "hero_mage_staff/hero_mage_staff04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention staffs_3}
-			}
-		}
-		{"blademaster_weapon_1"
-			{version original}
-			{Weapon "hero_blademaster_swords/hero_blademaster_sword_02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention swords_1}
-			}
-		}
-		{"blademaster_weapon_2"
-			{version original}
-			{Weapon "hero_blademaster_swords/hero_blademaster_sword_03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention swords_2}
-			}
-		}
-		{"blademaster_weapon_3"
-			{version original}
-			{Weapon "hero_blademaster_swords/hero_blademaster_sword_04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention swords_3}
-			}
-		}
-		{"elf_weapon_1"
-			{version original}
-			{Weapon "hero_elf_bow/hero_elf_bow_02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention bows_1}
-			}
-		}
-		{"elf_weapon_2"
-			{version original}
-			{Weapon "hero_elf_bow/hero_elf_bow_03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention bows_2}
-			}
-		}
-		{"elf_weapon_3"
-			{version original}
-			{Weapon "hero_elf_bow/hero_elf_bow_04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention bows_3}
-			}
-		}
-		{"dwarf_weapon_1"
-			{version original}
-			{Weapon "hero_dwarf_weapon/hero_dwarf_hammer02"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention swords_1}
-			}
-		}
-		{"dwarf_weapon_2"
-			{version original}
-			{Weapon "hero_dwarf_weapon/hero_dwarf_hammer03"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention swords_2}
-			}
-		}
-		{"dwarf_weapon_3"
-			{version original}
-			{Weapon "hero_dwarf_weapon/hero_dwarf_hammer04"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention swords_3}
-			}
-		}
-		{"paladin_weapon_1"
-			{version original}
-			{Weapon "hero_paladin_weapons/hero_paladin_weapon02"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention swords_1}
-			}
-		}
-		{"paladin_weapon_2"
-			{version original}
-			{Weapon "hero_paladin_weapons/hero_paladin_weapon03"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention swords_2}
-			}
-		}
-		{"paladin_weapon_3"
-			{version original}
-			{Weapon "hero_paladin_weapons/hero_paladin_weapon04"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention swords_3}
-			}
-		}
-		{"beastmaster_weapon_1"
-			{version original}
-			{Weapon "hero_beastmaster_weapon/hero_beastmaster_xbow02"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention bows_1}
-			}
-		}
-		{"beastmaster_weapon_2"
-			{version original}
-			{Weapon "hero_beastmaster_weapon/hero_beastmaster_xbow03"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention bows_2}
-			}
-		}
-		{"beastmaster_weapon_3"
-			{version original}
-			{Weapon "hero_beastmaster_weapon/hero_beastmaster_xbow04"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention bows_3}
-			}
-		}
-		{"marksman_weapon_1"
-			{version original}
-			{Weapon "hero_marksman_bow/hero_marksman_bow02"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention bows_1}
-			}
-		}
-		{"marksman_weapon_2"
-			{version original}
-			{Weapon "hero_marksman_bow/hero_marksman_bow03"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention bows_2}
-			}
-		}
-		{"marksman_weapon_3"
-			{version original}
-			{Weapon "hero_marksman_bow/hero_marksman_bow04"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention bows_3}
-			}
-		}
-		{"darkpriest_weapon_1"
-			{version original}
-			{Weapon "hero_darkpriest_staff/hero_darkpriest_weapon02"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention staffs_1}
-			}
-		}
-		{"darkpriest_weapon_2"
-			{version original}
-			{Weapon "hero_darkpriest_staff/hero_darkpriest_weapon03"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention staffs_2}
-			}
-		}
-		{"darkpriest_weapon_3"
-			{version original}
-			{Weapon "hero_darkpriest_staff/hero_darkpriest_weapon04"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention staffs_3}
-			}
-		}
-		{"priest_weapon_1"
-			{version original}
-			{Weapon "hero_priest_staff/hero_priest_staff02"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention staffs_1}
-			}
-		}
-		{"priest_weapon_2"
-			{version original}
-			{Weapon "hero_priest_staff/hero_priest_staff03"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention staffs_2}
-			}
-		}
-		{"priest_weapon_3"
-			{version original}
-			{Weapon "hero_priest_staff/hero_priest_staff04"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention staffs_3}
-			}
-		}
-		{"ice_mage_weapon_1"
-			{version original}
-			{Weapon "hero_ice_mage_staff/hero_ice_mage_staff02"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention staffs_1}
-			}
-		}
-		{"ice_mage_weapon_2"
-			{version original}
-			{Weapon "hero_ice_mage_staff/hero_ice_mage_staff03"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention staffs_2}
-			}
-		}
-		{"ice_mage_weapon_3"
-			{version original}
-			{Weapon "hero_ice_mage_staff/hero_ice_mage_staff04"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention staffs_3}
-			}
-		}
-		{"dk_weapon_1"
-			{version original}
-			{Weapon "hero_death_knight_swords/hero_death_knight_sword02"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention swords_1}
-			}
-		}
-		{"dk_weapon_2"
-			{version original}
-			{Weapon "hero_death_knight_swords/hero_death_knight_sword03"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention swords_2}
-			}
-		}
-		{"dk_weapon_3"
-			{version original}
-			{Weapon "hero_death_knight_swords/hero_death_knight_sword04"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention swords_3}
-			}
-		}
-		{"fatherfrost_weapon_1"
-			{version original}
-			{Weapon "hero_fatherfrost_staff/hero_fatherfrost_staff02"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention staffs_1}
-			}
-		}
-		{"fatherfrost_weapon_2"
-			{version original}
-			{Weapon "hero_fatherfrost_staff/hero_fatherfrost_staff03"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention staffs_2}
-			}
-		}
-		{"fatherfrost_weapon_3"
-			{version original}
-			{Weapon "hero_fatherfrost_staff/hero_fatherfrost_staff04"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention staffs_3}
-			}
-		}
-		{"warrior_weapon_4"
-			{version original}
-			{Weapon "hero_warrior_swords/hero_warrior_sword_05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention swords_4}
-			}
-		}
-		{"hunter_weapon_4"
-			{version original}
-			{Weapon "hero_hunter_bow/hero_hunter_bow_05s"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention bows_4}
-			}
-		}
-		{"cleric_weapon_4"
-			{version original}
-			{Weapon "hero_cleric_staff/hero_cleric_staff05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention staffs_4}
-			}
-		}
-		{"rogue_weapon_4"
-			{version original}
-			{Weapon "hero_rogue_knife/hero_rogue_knife_05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention swords_4}
-			}
-		}
-		{"mage_weapon_4"
-			{version original}
-			{Weapon "hero_mage_staff/hero_mage_staff05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention staffs_4}
-			}
-		}
-		{"elf_weapon_4"
-			{version original}
-			{Weapon "hero_elf_bow/hero_elf_bow_05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention bows_4}
-			}
-		}
-		{"dwarf_weapon_4"
-			{version original}
-			{Weapon "hero_dwarf_weapon/hero_dwarf_hammer05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention swords_4}
-			}
-		}
-		{"blademaster_weapon_4"
-			{version original}
-			{Weapon "hero_blademaster_swords/hero_blademaster_sword_05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention swords_4}
-			}
-		}
-		{"paladin_weapon_4"
-			{version original}
-			{Weapon "hero_paladin_weapons/hero_paladin_weapon05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention swords_4}
-			}
-		}
-		{"marksman_weapon_4"
-			{version original}
-			{Weapon "hero_marksman_bow/hero_marksman_bow05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention bows_4}
-			}
-		}
-		{"beastmaster_weapon_4"
-			{version original}
-			{Weapon "hero_beastmaster_weapon/hero_beastmaster_xbow05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention bows_4}
-			}
-		}
-		{"darkpriest_weapon_4"
-			{version original}
-			{Weapon "hero_darkpriest_staff/hero_darkpriest_weapon05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention staffs_4}
-			}
-		}
-		{"priest_weapon_4"
-			{version original}
-			{Weapon "hero_priest_staff/hero_priest_staff05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention staffs_4}
-			}
-		}
-		{"death_knight_weapon_4"
-			{version original}
-			{Weapon "hero_death_knight_swords/hero_death_knight_sword05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention swords_4}
-			}
-		}
-		{"ice_mage_weapon_4"
-			{version original}
-			{Weapon "hero_ice_mage_staff/hero_ice_mage_staff05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention staffs_4}
-			}
-		}
-		{"fire_mage_weapon_1"
-			{version original}
-			{Weapon "hero_fire_mage_staff/hero_fire_mage_staff02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention staffs_1}
-			}
-		}
-		{"fire_mage_weapon_2"
-			{version original}
-			{Weapon "hero_fire_mage_staff/hero_fire_mage_staff03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention staffs_2}
-			}
-		}
-		{"fire_mage_weapon_3"
-			{version original}
-			{Weapon "hero_fire_mage_staff/hero_fire_mage_staff04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention staffs_3}
-			}
-		}
-		{"fire_mage_weapon_4"
-			{version original}
-			{Weapon "hero_fire_mage_staff/hero_fire_mage_staff05"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention staffs_4}
-			}
-		}
-	}
-	{armour
-		{"warrior_armor_01"
-			{version original}
-			{Armour "hero_warrior/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention plate_1}
-			}
-		}
-		{"warrior_armor_02"
-			{version original}
-			{Armour "hero_warrior/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention plate_2}
-			}
-		}
-		{"warrior_armor_03"
-			{version original}
-			{Armour "hero_warrior/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention plate_3}
-			}
-		}
-		{"knight_armor_1"
-			{version original}
-			{Armour "hero_knight/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention plate_1}
-			}
-		}
-		{"knight_armor_2"
-			{version original}
-			{Armour "hero_knight/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention plate_2}
-			}
-		}
-		{"knight_armor_3"
-			{version original}
-			{Armour "hero_knight/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention plate_3}
-			}
-		}
-		{"knight_armor_4"
-			{version original}
-			{Armour "hero_knight/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention plate_4}
-			}
-		}
-		{"hunter_armor_01"
-			{version original}
-			{Armour "hero_hunter/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention leather_1}
-			}
-		}
-		{"hunter_armor_02"
-			{version original}
-			{Armour "hero_hunter/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention leather_2}
-			}
-		}
-		{"hunter_armor_03"
-			{version original}
-			{Armour "hero_hunter/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention leather_3}
-			}
-		}
-		{"rogue_armor_01"
-			{version original}
-			{Armour "hero_rogue/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention leather_1}
-			}
-		}
-		{"rogue_armor_02"
-			{version original}
-			{Armour "hero_rogue/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention leather_2}
-			}
-		}
-		{"rogue_armor_03"
-			{version original}
-			{Armour "hero_rogue/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention leather_3}
-			}
-		}
-		{"mage_armor_1"
-			{version original}
-			{Armour "hero_mage/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention cloth_1}
-			}
-		}
-		{"mage_armor_2"
-			{version original}
-			{Armour "hero_mage/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention cloth_2}
-			}
-		}
-		{"mage_armor_3"
-			{version original}
-			{Armour "hero_mage/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention cloth_3}
-			}
-		}
-		{"fire_mage_armor_1"
-			{version original}
-			{Armour "hero_fire_mage/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention cloth_1}
-			}
-		}
-		{"fire_mage_armor_2"
-			{version original}
-			{Armour "hero_fire_mage/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention cloth_2}
-			}
-		}
-		{"fire_mage_armor_3"
-			{version original}
-			{Armour "hero_fire_mage/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention cloth_3}
-			}
-		}
-		{"cleric_armor_1"
-			{version original}
-			{Armour "hero_cleric/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention cloth_1}
-			}
-		}
-		{"cleric_armor_2"
-			{version original}
-			{Armour "hero_cleric/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention cloth_2}
-			}
-		}
-		{"cleric_armor_3"
-			{version original}
-			{Armour "hero_cleric/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention cloth_3}
-			}
-		}
-		{"darkpriest_armor_1"
-			{version original}
-			{Armour "hero_darkpriest/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention cloth_1}
-			}
-		}
-		{"darkpriest_armor_2"
-			{version original}
-			{Armour "hero_darkpriest/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention cloth_2}
-			}
-		}
-		{"darkpriest_armor_3"
-			{version original}
-			{Armour "hero_darkpriest/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention cloth_3}
-			}
-		}
-		{"paladin_armor_1"
-			{version original}
-			{Armour "hero_paladin/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention plate_1}
-			}
-		}
-		{"paladin_armor_2"
-			{version original}
-			{Armour "hero_paladin/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention plate_2}
-			}
-		}
-		{"paladin_armor_3"
-			{version original}
-			{Armour "hero_paladin/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention plate_3}
-			}
-		}
-		{"dwarf_armor_1"
-			{version original}
-			{Armour "hero_dwarf/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention plate_1}
-			}
-		}
-		{"dwarf_armor_2"
-			{version original}
-			{Armour "hero_dwarf/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention plate_2}
-			}
-		}
-		{"dwarf_armor_3"
-			{version original}
-			{Armour "hero_dwarf/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention plate_3}
-			}
-		}
-		{"elf_armor_1"
-			{version original}
-			{Armour "hero_elf/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention leather_1}
-			}
-		}
-		{"elf_armor_2"
-			{version original}
-			{Armour "hero_elf/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention leather_2}
-			}
-		}
-		{"elf_armor_3"
-			{version original}
-			{Armour "hero_elf/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention leather_3}
-			}
-		}
-		{"beastmaster_armor_1"
-			{version original}
-			{Armour "hero_beastmaster/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention leather_1}
-			}
-		}
-		{"beastmaster_armor_2"
-			{version original}
-			{Armour "hero_beastmaster/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention leather_2}
-			}
-		}
-		{"beastmaster_armor_3"
-			{version original}
-			{Armour "hero_beastmaster/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention leather_3}
-			}
-		}
-		{"blademaster_armor_1"
-			{version original}
-			{Armour "hero_blademaster/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention plate_1}
-			}
-		}
-		{"blademaster_armor_2"
-			{version original}
-			{Armour "hero_blademaster/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention plate_2}
-			}
-		}
-		{"blademaster_armor_3"
-			{version original}
-			{Armour "hero_blademaster/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention plate_3}
-			}
-		}
-		{"marksman_armor_1"
-			{version original}
-			{Armour "hero_marksman/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention leather_1}
-			}
-		}
-		{"marksman_armor_2"
-			{version original}
-			{Armour "hero_marksman/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention leather_2}
-			}
-		}
-		{"marksman_armor_3"
-			{version original}
-			{Armour "hero_marksman/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention leather_3}
-			}
-		}
-		{"priest_armor_1"
-			{version original}
-			{Armour "hero_priest/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention cloth_1}
-			}
-		}
-		{"priest_armor_2"
-			{version original}
-			{Armour "hero_priest/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention cloth_2}
-			}
-		}
-		{"priest_armor_3"
-			{version original}
-			{Armour "hero_priest/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention cloth_3}
-			}
-		}
-		{"ice_mage_armor_1"
-			{version original}
-			{Armour "hero_ice_mage/1"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention cloth_1}
-			}
-		}
-		{"ice_mage_armor_2"
-			{version original}
-			{Armour "hero_ice_mage/2"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention cloth_2}
-			}
-		}
-		{"ice_mage_armor_3"
-			{version original}
-			{Armour "hero_ice_mage/3"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention cloth_3}
-			}
-		}
-		{"dk_armor_1"
-			{version original}
-			{Armour "hero_death_knight/1"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention leather_1}
-			}
-		}
-		{"dk_armor_2"
-			{version original}
-			{Armour "hero_death_knight/2"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention leather_2}
-			}
-		}
-		{"dk_armor_3"
-			{version original}
-			{Armour "hero_death_knight/3"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention leather_3}
-			}
-		}
-		{"fatherfrost_armor_1"
-			{version original}
-			{Armour "hero_fatherfrost/1"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention cloth_1}
-			}
-		}
-		{"fatherfrost_armor_2"
-			{version original}
-			{Armour "hero_fatherfrost/2"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention cloth_2}
-			}
-		}
-		{"fatherfrost_armor_3"
-			{version original}
-			{Armour "hero_fatherfrost/3"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention cloth_3}
-			}
-		}
-		{"warrior_armor_4"
-			{version original}
-			{Armour "hero_warrior/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention plate_4}
-			}
-		}
-		{"hunter_armor_4"
-			{version original}
-			{Armour "hero_hunter/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention leather_4}
-			}
-		}
-		{"cleric_armor_4"
-			{version original}
-			{Armour "hero_cleric/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention cloth_4}
-			}
-		}
-		{"rogue_armor_4"
-			{version original}
-			{Armour "hero_rogue/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention leather_4}
-			}
-		}
-		{"mage_armor_4"
-			{version original}
-			{Armour "hero_mage/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention cloth_4}
-			}
-		}
-		{"fire_mage_armor_4"
-			{version original}
-			{Armour "hero_fire_mage/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention cloth_4}
-			}
-		}
-		{"elf_armor_4"
-			{version original}
-			{Armour "hero_elf/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention leather_4}
-			}
-		}
-		{"dwarf_armor_4"
-			{version original}
-			{Armour "hero_dwarf/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention plate_4}
-			}
-		}
-		{"blademaster_armor_4"
-			{version original}
-			{Armour "hero_blademaster/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention plate_4}
-			}
-		}
-		{"paladin_armor_4"
-			{version original}
-			{Armour "hero_paladin/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention plate_4}
-			}
-		}
-		{"marksman_armor_4"
-			{version original}
-			{Armour "hero_marksman/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention leather_4}
-			}
-		}
-		{"beastmaster_armor_4"
-			{version original}
-			{Armour "hero_beastmaster/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention leather_4}
-			}
-		}
-		{"darkpriest_armor_4"
-			{version original}
-			{Armour "hero_darkpriest/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention cloth_4}
-			}
-		}
-		{"priest_armor_4"
-			{version original}
-			{Armour "hero_priest/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention cloth_4}
-			}
-		}
-		{"death_knight_armor_4"
-			{version original}
-			{Armour "hero_death_knight/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention leather_4}
-			}
-		}
-		{"ice_mage_armor_4"
-			{version original}
-			{Armour "hero_ice_mage/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention cloth_4}
-			}
-		}
-	}
-}
 {"smithy"
 	{entity_id smithy}
 	{version original}
 	{inventions
+		{"plate_1"
+			{version original}
+			{invention plate_1}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
 		{"plate_2"
 			{version original}
 			{invention plate_2}
@@ -4400,6 +1819,96 @@
 				}
 			}
 		}
+		{"Swords_1_rog"
+			{version original}
+			{invention Swords_1_rog}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"Swords_2_rog"
+			{version original}
+			{invention Swords_2_rog}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"Swords_3_rog"
+			{version original}
+			{invention Swords_3_rog}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"Swords_1_war"
+			{version original}
+			{invention Swords_1_war}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"Swords_2_war"
+			{version original}
+			{invention Swords_2_war}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"Swords_3_war"
+			{version original}
+			{invention Swords_3_war}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"Swords_1_kni"
+			{version original}
+			{invention Swords_1_kni}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"Swords_2_kni"
+			{version original}
+			{invention Swords_2_kni}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"Swords_3_kni"
+			{version original}
+			{invention Swords_3_kni}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"Swords_4_kni"
+			{version original}
+			{invention Swords_4_kni}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
 		{"swords_1"
 			{version original}
 			{invention swords_1}
@@ -4427,63 +1936,378 @@
 				}
 			}
 		}
-		{"staffs_1"
+		{"Swords_1_dw"
 			{version original}
-			{invention staffs_1}
+			{invention Swords_1_dw}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
 				}
 			}
 		}
-		{"staffs_2"
+		{"Swords_2_dw"
 			{version original}
-			{invention staffs_2}
+			{invention Swords_2_dw}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
 				}
 			}
 		}
-		{"staffs_3"
+		{"Swords_3_dw"
 			{version original}
-			{invention staffs_3}
+			{invention Swords_3_dw}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
 				}
 			}
 		}
-		{"plate_1"
+		{"Swords_1_kr"
 			{version original}
-			{invention plate_1}
+			{invention Swords_1_kr}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
 				}
 			}
 		}
-		{"bows_1"
+		{"Swords_2_kr"
 			{version original}
-			{invention bows_1}
+			{invention Swords_2_kr}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
 				}
 			}
 		}
-		{"bows_2"
+		{"Swords_3_kr"
 			{version original}
-			{invention bows_2}
+			{invention Swords_3_kr}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
 				}
 			}
 		}
-		{"bows_3"
+		{"Swords_1_pal"
 			{version original}
-			{invention bows_3}
+			{invention Swords_1_pal}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"Swords_2_pal"
+			{version original}
+			{invention Swords_2_pal}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"Swords_3_pal"
+			{version original}
+			{invention Swords_3_pal}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"Swords_1_dk"
+			{version original}
+			{invention Swords_1_dk}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"Swords_2_dk"
+			{version original}
+			{invention Swords_2_dk}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"Swords_3_dk"
+			{version original}
+			{invention Swords_3_dk}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_1_mage"
+			{version original}
+			{invention staffs_1_mage}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_2_mage"
+			{version original}
+			{invention staffs_2_mage}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_3_mage"
+			{version original}
+			{invention staffs_3_mage}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_1_cl"
+			{version original}
+			{invention staffs_1_cl}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_2_cl"
+			{version original}
+			{invention staffs_2_cl}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_3_cl"
+			{version original}
+			{invention staffs_3_cl}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_1_imag"
+			{version original}
+			{invention staffs_1_imag}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_2_imag"
+			{version original}
+			{invention staffs_2_imag}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_3_imag"
+			{version original}
+			{invention staffs_3_imag}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_1_fi"
+			{version original}
+			{invention staffs_1_fi}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_2_fi"
+			{version original}
+			{invention staffs_2_fi}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_3_fi"
+			{version original}
+			{invention staffs_3_fi}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_1_pr"
+			{version original}
+			{invention staffs_1_pr}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_2_pr"
+			{version original}
+			{invention staffs_2_pr}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_3_pr"
+			{version original}
+			{invention staffs_3_pr}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_1_dpr"
+			{version original}
+			{invention staffs_1_dpr}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_2_dpr"
+			{version original}
+			{invention staffs_2_dpr}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_3_dpr"
+			{version original}
+			{invention staffs_3_dpr}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"bows_1_hun"
+			{version original}
+			{invention bows_1_hun}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"bows_2_hun"
+			{version original}
+			{invention bows_2_hun}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"bows_3_hun"
+			{version original}
+			{invention bows_3_hun}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"bows_1_elf"
+			{version original}
+			{invention bows_1_elf}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"bows_2_elf"
+			{version original}
+			{invention bows_2_elf}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"bows_3_elf"
+			{version original}
+			{invention bows_3_elf}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"bows_1_mm"
+			{version original}
+			{invention bows_1_mm}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"bows_2_mm"
+			{version original}
+			{invention bows_2_mm}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"bows_3_mm"
+			{version original}
+			{invention bows_3_mm}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"bows_1_bm"
+			{version original}
+			{invention bows_1_bm}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"bows_2_bm"
+			{version original}
+			{invention bows_2_bm}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"bows_3_bm"
+			{version original}
+			{invention bows_3_bm}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
@@ -4517,9 +2341,18 @@
 				}
 			}
 		}
-		{"bows_4"
+		{"Swords_4_rog"
 			{version original}
-			{invention bows_4}
+			{invention Swords_4_rog}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"Swords_4_war"
+			{version original}
+			{invention Swords_4_war}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
@@ -4535,9 +2368,126 @@
 				}
 			}
 		}
-		{"staffs_4"
+		{"Swords_4_dw"
 			{version original}
-			{invention staffs_4}
+			{invention Swords_4_dw}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"Swords_4_kr"				 
+			{version original}
+			{invention Swords_4_kr}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"Swords_4_pal"
+			{version original}
+			{invention Swords_4_pal}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"Swords_4_dk"
+			{version original}
+			{invention Swords_4_dk}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_4_mage"
+			{version original}
+			{invention staffs_4_mage}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_4_cl"
+			{version original}
+			{invention staffs_4_cl}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_4_fi"
+			{version original}
+			{invention staffs_4_fi}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_4_imag"
+			{version original}
+			{invention staffs_4_imag}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_4_pr"
+			{version original}
+			{invention staffs_4_pr}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"staffs_4_dpr"
+			{version original}
+			{invention staffs_4_dpr}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"bows_4_hun"
+			{version original}
+			{invention bows_4_hun}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"bows_4_elf"
+			{version original}
+			{invention bows_4_elf}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"bows_4_bm"
+			{version original}
+			{invention bows_4_bm}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"bows_4_mm"
+			{version original}
+			{invention bows_4_mm}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
@@ -4551,7 +2501,7 @@
 			{Weapon "hero_warrior_swords/hero_warrior_sword_02"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention swords_1}
+				{invention swords_1_war}
 			}
 		}
 		{"warrior_sword_03"
@@ -4559,7 +2509,7 @@
 			{Weapon "hero_warrior_swords/hero_warrior_sword_03"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention swords_2}
+				{invention swords_2_war}
 			}
 		}
 		{"warrior_sword_04"
@@ -4567,7 +2517,7 @@
 			{Weapon "hero_warrior_swords/hero_warrior_sword_04"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention swords_3}
+				{invention swords_3_war}
 			}
 		}
 		{"hero_knight_sword_02"
@@ -4575,7 +2525,8 @@
 			{Weapon "hero_knight_swords/hero_knight_sword_02"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention swords_1}
+				{invention swords_1_kni}
+	
 			}
 		}
 		{"hero_knight_sword_03"
@@ -4583,7 +2534,7 @@
 			{Weapon "hero_knight_swords/hero_knight_sword_03"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention swords_2}
+				{invention swords_2_kni}
 			}
 		}
 		{"hero_knight_sword_04"
@@ -4591,7 +2542,7 @@
 			{Weapon "hero_knight_swords/hero_knight_sword_04"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention swords_3}
+				{invention swords_3_kni}
 			}	
 		}
 		{"hero_knight_sword_05"
@@ -4599,7 +2550,7 @@
 			{Weapon "hero_knight_swords/hero_knight_sword_05"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention swords_4}
+				{invention swords_4_kni}
 			}	
 		}
 		{"rogue_weapon_02"
@@ -4607,7 +2558,7 @@
 			{Weapon "hero_rogue_knife/hero_rogue_knife_02"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention swords_1}
+				{invention swords_1_rog}
 			}
 		}
 		{"rogue_weapon_03"
@@ -4615,7 +2566,7 @@
 			{Weapon "hero_rogue_knife/hero_rogue_knife_03"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention swords_2}
+				{invention swords_2_rog}
 			}
 		}
 		{"rogue_weapon_04"
@@ -4623,7 +2574,7 @@
 			{Weapon "hero_rogue_knife/hero_rogue_knife_04"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention swords_3}
+				{invention swords_3_rog}
 			}
 		}
 		{"hunter_weapon_01"
@@ -4631,7 +2582,7 @@
 			{Weapon "hero_hunter_bow/hero_hunter_bow_02s"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention bows_1}
+				{invention bows_1_hun}
 			}
 		}
 		{"hunter_weapon_02"
@@ -4639,7 +2590,7 @@
 			{Weapon "hero_hunter_bow/hero_hunter_bow_03s"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention bows_2}
+				{invention bows_2_hun}
 			}
 		}
 		{"hunter_weapon_03"
@@ -4647,7 +2598,7 @@
 			{Weapon "hero_hunter_bow/hero_hunter_bow_04s"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention bows_3}
+				{invention bows_3_hun}
 			}
 		}
 		{"cleric_weapon_1"
@@ -4655,7 +2606,7 @@
 			{Weapon "hero_cleric_staff/hero_cleric_staff02"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention staffs_1}
+				{invention staffs_1_cl}
 			}
 		}
 		{"cleric_weapon_2"
@@ -4663,7 +2614,7 @@
 			{Weapon "hero_cleric_staff/hero_cleric_staff03"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention staffs_2}
+				{invention staffs_2_cl}
 			}
 		}
 		{"cleric_weapon_3"
@@ -4671,7 +2622,7 @@
 			{Weapon "hero_cleric_staff/hero_cleric_staff04"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention staffs_3}
+				{invention staffs_3_cl}
 			}
 		}
 		{"mage_weapon_1"
@@ -4679,7 +2630,7 @@
 			{Weapon "hero_mage_staff/hero_mage_staff02"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention staffs_1}
+				{invention staffs_1_mage}
 			}
 		}
 		{"mage_weapon_2"
@@ -4687,7 +2638,7 @@
 			{Weapon "hero_mage_staff/hero_mage_staff03"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention staffs_2}
+				{invention staffs_2_mage}
 			}
 		}
 		{"mage_weapon_3"
@@ -4695,7 +2646,7 @@
 			{Weapon "hero_mage_staff/hero_mage_staff04"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention staffs_3}
+				{invention staffs_3_mage}
 			}
 		}
 		{"blademaster_weapon_1"
@@ -4703,7 +2654,7 @@
 			{Weapon "hero_blademaster_swords/hero_blademaster_sword_02"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention swords_1}
+				{invention swords_1_kr}
 			}
 		}
 		{"blademaster_weapon_2"
@@ -4711,7 +2662,7 @@
 			{Weapon "hero_blademaster_swords/hero_blademaster_sword_03"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention swords_2}
+				{invention swords_2_kr}
 			}
 		}
 		{"blademaster_weapon_3"
@@ -4719,7 +2670,7 @@
 			{Weapon "hero_blademaster_swords/hero_blademaster_sword_04"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention swords_3}
+				{invention swords_3_kr}
 			}
 		}
 		{"elf_weapon_1"
@@ -4727,7 +2678,7 @@
 			{Weapon "hero_elf_bow/hero_elf_bow_02"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention bows_1}
+				{invention bows_1_elf}
 			}
 		}
 		{"elf_weapon_2"
@@ -4735,7 +2686,7 @@
 			{Weapon "hero_elf_bow/hero_elf_bow_03"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention bows_2}
+				{invention bows_2_elf}
 			}
 		}
 		{"elf_weapon_3"
@@ -4743,7 +2694,7 @@
 			{Weapon "hero_elf_bow/hero_elf_bow_04"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention bows_3}
+				{invention bows_3_elf}
 			}
 		}
 		{"dwarf_weapon_1"
@@ -4751,7 +2702,7 @@
 			{Weapon "hero_dwarf_weapon/hero_dwarf_hammer02"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention swords_1}
+				{invention swords_1_dw}
 			}
 		}
 		{"dwarf_weapon_2"
@@ -4759,7 +2710,7 @@
 			{Weapon "hero_dwarf_weapon/hero_dwarf_hammer03"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention swords_2}
+				{invention swords_2_dw}
 			}
 		}
 		{"dwarf_weapon_3"
@@ -4767,7 +2718,7 @@
 			{Weapon "hero_dwarf_weapon/hero_dwarf_hammer04"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention swords_3}
+				{invention swords_3_dw}
 			}
 		}
 		{"paladin_weapon_1"
@@ -4775,7 +2726,7 @@
 			{Weapon "hero_paladin_weapons/hero_paladin_weapon02"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention swords_1}
+				{invention swords_1_pal}
 			}
 		}
 		{"paladin_weapon_2"
@@ -4783,7 +2734,7 @@
 			{Weapon "hero_paladin_weapons/hero_paladin_weapon03"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention swords_2}
+				{invention swords_2_pal}
 			}
 		}
 		{"paladin_weapon_3"
@@ -4791,7 +2742,7 @@
 			{Weapon "hero_paladin_weapons/hero_paladin_weapon04"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention swords_3}
+				{invention swords_3_pal}
 			}
 		}
 		{"beastmaster_weapon_1"
@@ -4799,7 +2750,7 @@
 			{Weapon "hero_beastmaster_weapon/hero_beastmaster_xbow02"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention bows_1}
+				{invention bows_1_bm}
 			}
 		}
 		{"beastmaster_weapon_2"
@@ -4807,7 +2758,7 @@
 			{Weapon "hero_beastmaster_weapon/hero_beastmaster_xbow03"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention bows_2}
+				{invention bows_2_bm}
 			}
 		}
 		{"beastmaster_weapon_3"
@@ -4815,7 +2766,7 @@
 			{Weapon "hero_beastmaster_weapon/hero_beastmaster_xbow04"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention bows_3}
+				{invention bows_3_bm}
 			}
 		}
 		{"marksman_weapon_1"
@@ -4823,7 +2774,7 @@
 			{Weapon "hero_marksman_bow/hero_marksman_bow02"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention bows_1}
+				{invention bows_1_mm}
 			}
 		}
 		{"marksman_weapon_2"
@@ -4831,7 +2782,7 @@
 			{Weapon "hero_marksman_bow/hero_marksman_bow03"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention bows_2}
+				{invention bows_2_mm}
 			}
 		}
 		{"marksman_weapon_3"
@@ -4839,7 +2790,7 @@
 			{Weapon "hero_marksman_bow/hero_marksman_bow04"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention bows_3}
+				{invention bows_3_mm}
 			}
 		}
 		{"darkpriest_weapon_1"
@@ -4847,7 +2798,7 @@
 			{Weapon "hero_darkpriest_staff/hero_darkpriest_weapon02"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention staffs_1}
+				{invention staffs_1_dpr}
 			}
 		}
 		{"darkpriest_weapon_2"
@@ -4855,7 +2806,7 @@
 			{Weapon "hero_darkpriest_staff/hero_darkpriest_weapon03"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention staffs_2}
+				{invention staffs_2_dpr}
 			}
 		}
 		{"darkpriest_weapon_3"
@@ -4863,7 +2814,7 @@
 			{Weapon "hero_darkpriest_staff/hero_darkpriest_weapon04"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention staffs_3}
+				{invention staffs_3_dpr}
 			}
 		}
 		{"priest_weapon_1"
@@ -4871,7 +2822,7 @@
 			{Weapon "hero_priest_staff/hero_priest_staff02"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention staffs_1}
+				{invention staffs_1_pr}
 			}
 		}
 		{"priest_weapon_2"
@@ -4879,7 +2830,7 @@
 			{Weapon "hero_priest_staff/hero_priest_staff03"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention staffs_2}
+				{invention staffs_2_pr}
 			}
 		}
 		{"priest_weapon_3"
@@ -4887,7 +2838,7 @@
 			{Weapon "hero_priest_staff/hero_priest_staff04"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention staffs_3}
+				{invention staffs_3_pr}
 			}
 		}
 		{"ice_mage_weapon_1"
@@ -4895,7 +2846,7 @@
 			{Weapon "hero_ice_mage_staff/hero_ice_mage_staff02"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention staffs_1}
+				{invention staffs_1_imag}
 			}
 		}
 		{"ice_mage_weapon_2"
@@ -4903,7 +2854,7 @@
 			{Weapon "hero_ice_mage_staff/hero_ice_mage_staff03"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention staffs_2}
+				{invention staffs_2_imag}
 			}
 		}
 		{"ice_mage_weapon_3"
@@ -4911,7 +2862,7 @@
 			{Weapon "hero_ice_mage_staff/hero_ice_mage_staff04"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention staffs_3}
+				{invention staffs_3_imag}
 			}
 		}
 		{"dk_weapon_1"
@@ -4919,7 +2870,7 @@
 			{Weapon "hero_death_knight_swords/hero_death_knight_sword02"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention swords_1}
+				{invention swords_1_dk}
 			}
 		}
 		{"dk_weapon_2"
@@ -4927,7 +2878,7 @@
 			{Weapon "hero_death_knight_swords/hero_death_knight_sword03"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention swords_2}
+				{invention swords_2_dk}
 			}
 		}
 		{"dk_weapon_3"
@@ -4935,7 +2886,7 @@
 			{Weapon "hero_death_knight_swords/hero_death_knight_sword04"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention swords_3}
+				{invention swords_3_dk}
 			}
 		}
 		{"fatherfrost_weapon_1"
@@ -4967,7 +2918,7 @@
 			{Weapon "hero_warrior_swords/hero_warrior_sword_05"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention swords_4}
+				{invention swords_4_war}
 			}
 		}
 		{"hunter_weapon_4"
@@ -4975,7 +2926,7 @@
 			{Weapon "hero_hunter_bow/hero_hunter_bow_05s"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention bows_4}
+				{invention bows_4_hun}
 			}
 		}
 		{"cleric_weapon_4"
@@ -4983,7 +2934,7 @@
 			{Weapon "hero_cleric_staff/hero_cleric_staff05"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention staffs_4}
+				{invention staffs_4_cl}
 			}
 		}
 		{"rogue_weapon_4"
@@ -4991,7 +2942,7 @@
 			{Weapon "hero_rogue_knife/hero_rogue_knife_05"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention swords_4}
+				{invention swords_4_rog}
 			}
 		}
 		{"mage_weapon_4"
@@ -4999,7 +2950,7 @@
 			{Weapon "hero_mage_staff/hero_mage_staff05"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention staffs_4}
+				{invention staffs_4_mage}
 			}
 		}
 		{"elf_weapon_4"
@@ -5007,7 +2958,7 @@
 			{Weapon "hero_elf_bow/hero_elf_bow_05"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention bows_4}
+				{invention bows_4_elf}
 			}
 		}
 		{"dwarf_weapon_4"
@@ -5015,7 +2966,7 @@
 			{Weapon "hero_dwarf_weapon/hero_dwarf_hammer05"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention swords_4}
+				{invention swords_4_dw}
 			}
 		}
 		{"blademaster_weapon_4"
@@ -5023,7 +2974,7 @@
 			{Weapon "hero_blademaster_swords/hero_blademaster_sword_05"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention swords_4}
+				{invention swords_4_kr}
 			}
 		}
 		{"paladin_weapon_4"
@@ -5031,7 +2982,7 @@
 			{Weapon "hero_paladin_weapons/hero_paladin_weapon05"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention swords_4}
+				{invention swords_4_pal}
 			}
 		}
 		{"marksman_weapon_4"
@@ -5039,7 +2990,7 @@
 			{Weapon "hero_marksman_bow/hero_marksman_bow05"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention bows_4}
+				{invention bows_4_mm}
 			}
 		}
 		{"beastmaster_weapon_4"
@@ -5047,7 +2998,7 @@
 			{Weapon "hero_beastmaster_weapon/hero_beastmaster_xbow05"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention bows_4}
+				{invention bows_4_bm}
 			}
 		}
 		{"darkpriest_weapon_4"
@@ -5055,7 +3006,7 @@
 			{Weapon "hero_darkpriest_staff/hero_darkpriest_weapon05"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention staffs_4}
+				{invention staffs_4_dpr}
 			}
 		}
 		{"priest_weapon_4"
@@ -5063,7 +3014,7 @@
 			{Weapon "hero_priest_staff/hero_priest_staff05"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention staffs_4}
+				{invention staffs_4_pr}
 			}
 		}
 		{"death_knight_weapon_4"
@@ -5071,7 +3022,7 @@
 			{Weapon "hero_death_knight_swords/hero_death_knight_sword05"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention swords_4}
+				{invention swords_4_dk}
 			}
 		}
 		{"ice_mage_weapon_4"
@@ -5079,7 +3030,7 @@
 			{Weapon "hero_ice_mage_staff/hero_ice_mage_staff05"}
 			{"Production time" 0}
 			{Prerequesities
-				{invention staffs_4}
+				{invention staffs_4_imag}
 			}
 		}
 		{"fire_mage_weapon_1"
@@ -5087,7 +3038,7 @@
 			{Weapon "hero_fire_mage_staff/hero_fire_mage_staff02"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention staffs_1}
+				{invention staffs_1_fi}
 			}
 		}
 		{"fire_mage_weapon_2"
@@ -5095,7 +3046,7 @@
 			{Weapon "hero_fire_mage_staff/hero_fire_mage_staff03"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention staffs_2}
+				{invention staffs_2_fi}
 			}
 		}
 		{"fire_mage_weapon_3"
@@ -5103,7 +3054,7 @@
 			{Weapon "hero_fire_mage_staff/hero_fire_mage_staff04"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention staffs_3}
+				{invention staffs_3_fi}
 			}
 		}
 		{"fire_mage_weapon_4"
@@ -5111,7 +3062,7 @@
 			{Weapon "hero_fire_mage_staff/hero_fire_mage_staff05"}
 			{"Production time" 15}
 			{Prerequesities
-				{invention staffs_4}
+				{invention staffs_4_fi}
 			}
 		}
 	}
@@ -6812,18 +4763,6 @@
 	{entity_id tower_dwarf}
 	{version original}
 }
-{"unique_tower_guard"
-	{entity_id unique_tower_guard}
-	{version original}
-}
-{"unique_mage_statue"
-	{entity_id unique_mage_statue}
-	{version original}
-}
-{"unique_tower_goblin"
-	{entity_id unique_tower_goblin}
-	{version original}
-}
 {"logovo_boss_dragon"
 	{entity_id logovo_boss_dragon}
 	{version original}
@@ -8063,7 +6002,7 @@
 			}
 			{Entity logovo_dragon}
 			{"Max count" 1}
-			{"Max upgrade" 2}
+			{"Max upgrade" 3}
 			{Prerequesities
 				{buildings mks_castle_3}
 				{gold 0}
@@ -8225,21 +6164,6 @@
 				{"heroes count" 0}
 			}
 		}
-		{"unique_tower_goblin"
-			{version original}
-			{Cost
-				{money}
-				{"count money" 15000}
-			}
-			{Entity unique_tower_goblin}
-			{"Max count" 123234535}
-			{"Max upgrade" 1}
-		    {Prerequesities
-				{buildings mks_castle_3}
-				{gold 0}
-				{"heroes count" 0}
-			}
-        }
 		{"mks_tower_lich"
 			{version original}
 			{Cost
@@ -8251,6 +6175,21 @@
 			{"Max upgrade" 1}
 			{Prerequesities
 				{buildings mks_guild_lich_1}
+				{gold 0}
+				{"heroes count" 0}
+			}
+		}
+		{"unique_tower_goblin"
+			{version original}
+			{Cost
+				{money}
+				{"count money" 15000}
+			}
+			{Entity unique_tower_goblin}
+			{"Max count" 123234535}
+			{"Max upgrade" 1}
+		    {Prerequesities
+				{buildings mks_castle_3}
 				{gold 0}
 				{"heroes count" 0}
 			}
@@ -8989,6 +6928,15 @@
 				}
 			}
 		}
+		{"mks_swords_4"
+			{version original}
+			{invention mks_swords_4}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
 		{"mks_bows_1"
 			{version original}
 			{invention mks_bows_1}
@@ -9010,6 +6958,15 @@
 		{"mks_bows_3"
 			{version original}
 			{invention mks_bows_3}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"mks_bows_4"
+			{version original}
+			{invention mks_bows_4}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
@@ -9043,6 +7000,15 @@
 				}
 			}
 		}
+		{"mks_staffs_4"
+			{version original}
+			{invention mks_staffs_4}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
 		{"mks_plate_1"
 			{version original}
 			{invention mks_plate_1}
@@ -9064,6 +7030,15 @@
 		{"mks_plate_3"
 			{version original}
 			{invention mks_plate_3}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"mks_plate_4"
+			{version original}
+			{invention mks_plate_4}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
@@ -9097,6 +7072,15 @@
 				}
 			}
 		}
+		{"mks_leather_4"
+			{version original}
+			{invention mks_leather_4}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
 		{"mks_cloth_1"
 			{version original}
 			{invention mks_cloth_1}
@@ -9118,6 +7102,15 @@
 		{"mks_cloth_3"
 			{version original}
 			{invention mks_cloth_3}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"mks_cloth_4"
+			{version original}
+			{invention mks_cloth_4}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
@@ -9150,6 +7143,14 @@
 				{invention mks_swords_3}
 			}
 		}
+		{"mks_spear_sword_4"
+			{version original}
+			{Weapon "mks_goblin_spear_weapon/mks_goblin_spear_weapon05"}
+			{"Production time" 0}
+			{Prerequesities
+				{invention mks_swords_4}
+			}
+		}
 		{"mks_archer_bow_1"
 			{version original}
 			{Weapon "mks_goblin_archer_bow/mks_goblin_archer_bow02"}
@@ -9172,6 +7173,14 @@
 			{"Production time" 0}
 			{Prerequesities
 				{invention mks_bows_3}
+			}
+		}
+		{"mks_archer_bow_4"
+			{version original}
+			{Weapon "mks_goblin_archer_bow/mks_goblin_archer_bow05"}
+			{"Production time" 0}
+			{Prerequesities
+				{invention mks_bows_4}
 			}
 		}
 		{"mks_ratman_sword_1"
@@ -9198,6 +7207,14 @@
 				{invention mks_swords_3}
 			}
 		}
+		{"mks_ratman_sword_4"
+			{version original}
+			{Weapon "mks_hero_ratman_weapons/mks_hero_ratman_weapon05"}
+			{"Production time" 0}
+			{Prerequesities
+				{invention mks_swords_4}
+			}
+		}
 		{"mks_lich_staff_1"
 			{version original}
 			{Weapon "mks_hero_lich_weapons/mks_hero_lich_weapon02"}
@@ -9220,6 +7237,14 @@
 			{"Production time" 0}
 			{Prerequesities
 				{invention mks_staffs_3}
+			}
+		}
+		{"mks_lich_staff_4"
+			{version original}
+			{Weapon "mks_hero_lich_weapons/mks_hero_lich_weapon05"}
+			{"Production time" 0}
+			{Prerequesities
+				{invention mks_staffs_4}
 			}
 		}
 		{"mks_werewolf_sword_1"
@@ -9246,6 +7271,14 @@
 				{invention mks_swords_3}
 			}
 		}
+		{"mks_werewolf_sword_4"
+			{version original}
+			{Weapon "mks_hero_werewolf_weapon/mks_hero_werewolf_weapon05"}
+			{"Production time" 0}
+			{Prerequesities
+				{invention mks_swords_4}
+			}
+		}
 		{"mks_lizardman_bow_1"
 			{version original}
 			{Weapon "mks_lizardman_bow/mks_hero_lizardman_bow02"}
@@ -9268,6 +7301,14 @@
 			{"Production time" 0}
 			{Prerequesities
 				{invention mks_bows_3}
+			}
+		}
+		{"mks_lizardman_bow_4"
+			{version original}
+			{Weapon "mks_lizardman_bow/mks_hero_lizardman_bow05"}
+			{"Production time" 0}
+			{Prerequesities
+				{invention mks_bows_4}
 			}
 		}
 		{"mks_minotaur_sword_1"
@@ -9294,6 +7335,14 @@
 				{invention mks_swords_3}
 			}
 		}
+		{"mks_minoraur_sword_4"
+			{version original}
+			{Weapon "mks_ancient_minotaur_weapon/mks_ancient_minotaur_weapon05"}
+			{"Production time" 0}
+			{Prerequesities
+				{invention mks_swords_4}
+			}
+		}
 		{"mks_shaman_staff_1"
 			{version original}
 			{Weapon "mks_hero_goblin_shaman_staff/mks_goblin_shaman_weapon02"}
@@ -9316,6 +7365,14 @@
 			{"Production time" 0}
 			{Prerequesities
 				{invention mks_staffs_3}
+			}
+		}
+		{"mks_shaman_staff_4"
+			{version original}
+			{Weapon "mks_hero_goblin_shaman_staff/mks_goblin_shaman_weapon05"}
+			{"Production time" 0}
+			{Prerequesities
+				{invention mks_staffs_4}
 			}
 		}
 		{"mks_ratman_paladin_sword_1"
@@ -9342,6 +7399,14 @@
 				{invention mks_swords_3}
 			}
 		}
+		{"mks_ratman_paladin_sword_4"
+			{version original}
+			{Weapon "mks_ratman_paladin_weapons/mks_ratman_paladin_weapon05"}
+			{"Production time" 0}
+			{Prerequesities
+				{invention mks_swords_4}
+			}
+		}
 		{"mks_champion_bow_1"
 			{version original}
 			{Weapon "mks_goblin_champion_bow/mks_goblin_champion_bow02"}
@@ -9364,6 +7429,14 @@
 			{"Production time" 0}
 			{Prerequesities
 				{invention mks_bows_3}
+			}
+		}
+		{"mks_champion_bow_4"
+			{version original}
+			{Weapon "mks_goblin_champion_bow/mks_goblin_champion_bow05"}
+			{"Production time" 0}
+			{Prerequesities
+				{invention mks_bows_4}
 			}
 		}
 	}
@@ -9392,6 +7465,14 @@
 				{invention mks_plate_3}
 			}
 		}
+		{"mks_spear_plate_4"
+			{version original}
+			{Armour "mks_hero_goblin_spear/4"}
+			{"Production time" 0}
+			{Prerequesities
+				{invention mks_plate_4}
+			}
+		}
 		{"mks_archer_leather_1"
 			{version original}
 			{Armour "mks_hero_goblin_archer/1"}
@@ -9414,6 +7495,14 @@
 			{"Production time" 0}
 			{Prerequesities
 				{invention mks_leather_3}
+			}
+		}
+		{"mks_archer_leather_4"
+			{version original}
+			{Armour "mks_hero_goblin_archer/4"}
+			{"Production time" 0}
+			{Prerequesities
+				{invention mks_leather_4}
 			}
 		}
 		{"mks_ratman_leather_1"
@@ -9440,6 +7529,14 @@
 				{invention mks_leather_3}
 			}
 		}
+		{"mks_ratman_leather_4"
+			{version original}
+			{Armour "mks_hero_ratman/4"}
+			{"Production time" 0}
+			{Prerequesities
+				{invention mks_leather_4}
+			}
+		}
 		{"mks_lich_cloth_1"
 			{version original}
 			{Armour "mks_hero_lich/1"}
@@ -9462,6 +7559,14 @@
 			{"Production time" 0}
 			{Prerequesities
 				{invention mks_cloth_3}
+			}
+		}
+		{"mks_lich_cloth_4"
+			{version original}
+			{Armour "mks_hero_lich/4"}
+			{"Production time" 0}
+			{Prerequesities
+				{invention mks_cloth_4}
 			}
 		}
 		{"mks_werewolf_leather_1"
@@ -9488,6 +7593,14 @@
 				{invention mks_leather_3}
 			}
 		}
+		{"mks_werewolf_leather_4"
+			{version original}
+			{Armour "mks_hero_werewolf/4"}
+			{"Production time" 0}
+			{Prerequesities
+				{invention mks_leather_4}
+			}
+		}
 		{"mks_lizardman_leather_1"
 			{version original}
 			{Armour "mks_hero_lizardman/1"}
@@ -9510,6 +7623,14 @@
 			{"Production time" 0}
 			{Prerequesities
 				{invention mks_leather_3}
+			}
+		}
+		{"mks_lizardman_leather_4"
+			{version original}
+			{Armour "mks_hero_lizardman/4"}
+			{"Production time" 0}
+			{Prerequesities
+				{invention mks_leather_4}
 			}
 		}
 		{"mks_minotaur_plate_1"
@@ -9536,6 +7657,14 @@
 				{invention mks_plate_3}
 			}
 		}
+		{"mks_minotaur_plate_4"
+			{version original}
+			{Armour "mks_hero_minotaur/4"}
+			{"Production time" 0}
+			{Prerequesities
+				{invention mks_plate_4}
+			}
+		}
 		{"mks_shaman_cloth_1"
 			{version original}
 			{Armour "mks_hero_goblin_shaman/1"}
@@ -9558,6 +7687,14 @@
 			{"Production time" 0}
 			{Prerequesities
 				{invention mks_cloth_3}
+			}
+		}
+		{"mks_shaman_cloth_4"
+			{version original}
+			{Armour "mks_hero_goblin_shaman/4"}
+			{"Production time" 0}
+			{Prerequesities
+				{invention mks_cloth_4}
 			}
 		}
 		{"mks_paladin_plate_1"
@@ -9584,6 +7721,14 @@
 				{invention mks_plate_3}
 			}
 		}
+		{"mks_paladin_plate_4"
+			{version original}
+			{Armour "mks_hero_ratman_paladin/4"}
+			{"Production time" 0}
+			{Prerequesities
+				{invention mks_plate_4}
+			}
+		}
 		{"mks_champion_plate_1"
 			{version original}
 			{Armour "mks_hero_goblin_champion/1"}
@@ -9606,6 +7751,14 @@
 			{"Production time" 0}
 			{Prerequesities
 				{invention mks_plate_3}
+			}
+		}
+		{"mks_champion_plate_4"
+			{version original}
+			{Armour "mks_hero_goblin_champion/4"}
+			{"Production time" 0}
+			{Prerequesities
+				{invention mks_plate_4}
 			}
 		}
 	}
@@ -10661,17 +8814,33 @@
 			{version original}
 			{Cost
 				{money}
-				{"count money" 700}
+				{"count money" 2000}
 			}
 			{Entity hero_und_dark_mage}
-			{"Max count" 2}
-			{"Production time" 15}
+			{"Max count" 1}
+			{"Production time" 20}
+		}
+	}
+	{unit_upgrade
+		{"necr_to_mage"
+			{version original}
+			{"Base entity" hero_und_necromant}
+			{"Target entity" hero_und_dark_mage}
 		}
 	}
 	{inventions
-		{"magic_mass_damage"
+		{"magic_res_und"
 			{version original}
-			{invention magic_mass_damage}
+			{invention magic_res_und}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"magic_aoe_stun"
+			{version original}
+			{invention magic_aoe_stun}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
@@ -10688,13 +8857,6 @@
 			}
 			{"Healing time" 10}
 			{"Resting time" 10}
-		}
-	}
-	{unit_upgrade
-		{"necr_to_mage"
-			{version original}
-			{"Base entity" hero_und_necromant}
-			{"Target entity" hero_und_dark_mage}
 		}
 	}
 	{actions
@@ -10742,63 +8904,63 @@
 	{entity_id und_baazar}
 	{version original}
 	{inventions
-		{"sell_elixir_und_accuracy"
+		{"sell_elixir_accuracy"
 			{version original}
-			{invention sell_elixir_und_accuracy}
+			{invention sell_elixir_accuracy}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
 				}
 			}
 		}
-		{"sell_elixir_und_strength"
+		{"sell_elixir_strength"
 			{version original}
-			{invention sell_elixir_und_strength}
+			{invention sell_elixir_strength}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
 				}
 			}
 		}
-		{"sell_elixir_und_wisdom"
+		{"sell_elixir_wisdom"
 			{version original}
-			{invention sell_elixir_und_wisdom}
+			{invention sell_elixir_wisdom}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
 				}
 			}
 		}
-		{"sell_elixir_und_magic_prot"
+		{"sell_elixir_magic_prot"
 			{version original}
-			{invention sell_elixir_und_magic_prot}
+			{invention sell_elixir_magic_prot}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
 				}
 			}
 		}
-		{"sell_elixir_und_melee_prot"
+		{"sell_elixir_melee_prot"
 			{version original}
-			{invention sell_elixir_und_melee_prot}
+			{invention sell_elixir_melee_prot}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
 				}
 			}
 		}
-		{"sell_elixir_und_range_prot"
+		{"sell_elixir_range_prot"
 			{version original}
-			{invention sell_elixir_und_range_prot}
+			{invention sell_elixir_range_prot}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
 				}
 			}
 		}
-		{"sell_elixir_und_antipoison"
+		{"sell_elixir_antipoison"
 			{version original}
-			{invention sell_elixir_und_antipoison}
+			{invention sell_elixir_antipoison}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
@@ -10807,7 +8969,7 @@
 		}
 	}
 	{elixir
-		{"sell_elixir_und_magic_prot"
+		{"sell_elixir_magic_prot"
 			{version original}
 			{Elixir elixir_magic_prot}
 			{"Production time" 0}
@@ -10816,10 +8978,10 @@
 				{"count money" 25}
 			}
 			{Prerequesities
-				{invention sell_elixir_und_magic_prot}
+				{invention sell_elixir_magic_prot}
 			}
 		}
-		{"sell_elixir_und_melee_prot"
+		{"sell_elixir_melee_prot"
 			{version original}
 			{Elixir elixir_melee_prot}
 			{"Production time" 0}
@@ -10828,10 +8990,10 @@
 				{"count money" 25}
 			}
 			{Prerequesities
-				{invention sell_elixir_und_melee_prot}
+				{invention sell_elixir_melee_prot}
 			}
 		}
-		{"sell_elixir_und_range_prot"
+		{"sell_elixir_range_prot"
 			{version original}
 			{Elixir elixir_missile_prot}
 			{"Production time" 0}
@@ -10840,10 +9002,10 @@
 				{"count money" 25}
 			}
 			{Prerequesities
-				{invention sell_elixir_und_range_prot}
+				{invention sell_elixir_range_prot}
 			}
 		}
-		{"sell_elixir_und_accuracy"
+		{"sell_elixir_accuracy"
 			{version original}
 			{Elixir elixir_missile_dps}
 			{"Production time" 0}
@@ -10852,10 +9014,10 @@
 				{"count money" 25}
 			}
 			{Prerequesities
-				{invention sell_elixir_und_accuracy}
+				{invention sell_elixir_accuracy}
 			}
 		}
-		{"sell_elixir_und_strength"
+		{"sell_elixir_strength"
 			{version original}
 			{Elixir elixir_melee_dps}
 			{"Production time" 0}
@@ -10864,10 +9026,10 @@
 				{"count money" 25}
 			}
 			{Prerequesities
-				{invention sell_elixir_und_strength}
+				{invention sell_elixir_strength}
 			}
 		}
-		{"sell_elixir_und_wisdom"
+		{"sell_elixir_wisdom"
 			{version original}
 			{Elixir elixir_magic_dps}
 			{"Production time" 0}
@@ -10876,10 +9038,10 @@
 				{"count money" 25}
 			}
 			{Prerequesities
-				{invention sell_elixir_und_wisdom}
+				{invention sell_elixir_wisdom}
 			}
 		}
-		{"sell_elixir_und_antipoison"
+		{"sell_elixir_antipoison"
 			{version original}
 			{Elixir elixir_antipoison}
 			{"Production time" 0}
@@ -10888,7 +9050,7 @@
 				{"count money" 25}
 			}
 			{Prerequesities
-				{invention sell_elixir_und_antipoison}
+				{invention sell_elixir_antipoison}
 			}
 		}
 	}
@@ -10979,7 +9141,7 @@
 				{"count money" 300}
 			}
 			{Prerequesities
-				{invention sell_artefact_of_regeneration}
+				{invention sell_und_artefact_of_regeneration}
 			}
 		}
 		{"sell_artefact_of_protection"
@@ -11048,1329 +9210,11 @@
 			{"Production time" 0}
 			{Cost
 				{money}
-				{"count money" 250}
+				{"count money" 500}
 			}
 			{"Work time" 225}
 			{"Pets cast count" 0}
 			{FXName fx_statue_und}
-		}
-	}
-}
-{"und_guild_archer_ghost"
-	{entity_id und_guild_archer_ghost}
-	{version original}
-	{units
-		{"hero_und_archer_ghost"
-			{version original}
-			{Cost
-				{money}
-				{"count money" 700}
-			}
-			{Entity hero_und_archer_ghost}
-			{"Max count" 3}
-			{"Production time" 15}
-		}
-	}
-	{inventions
-		{"magic_fearless"
-			{version original}
-			{invention magic_fearless}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"archer_ghost_speed"
-			{version original}
-			{invention archer_ghost_speed}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"archer_ghost_imp_attack"
-			{version original}
-			{invention archer_ghost_imp_attack}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"archer_ghost_shield"
-			{version original}
-			{invention archer_ghost_shield}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"archer_ghost_aoe"
-			{version original}
-			{invention archer_ghost_aoe}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-	}
-	{rest
-		{"rest"
-			{version original}
-			{Cost
-				{money}
-				{"count money" 0}
-			}
-			{"Healing time" 10}
-			{"Resting time" 10}
-		}
-	}
-	{actions
-		{"archer_ghost_speed"
-			{version original}
-			{Action archer_ghost_speed}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 5}
-			}
-			{Prerequesities
-				{invention archer_ghost_speed}
-			}
-		}
-		{"archer_ghost_imp_attack"
-			{version original}
-			{Action archer_ghost_imp_attack}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 5}
-			}
-			{Prerequesities
-				{invention archer_ghost_imp_attack}
-			}
-		}
-		{"archer_ghost_shield"
-			{version original}
-			{Action archer_ghost_shield}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 5}
-			}
-			{Prerequesities
-				{invention archer_ghost_shield}
-			}
-		}
-		{"archer_ghost_aoe"
-			{version original}
-			{Action archer_ghost_aoe}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 5}
-			}
-			{Prerequesities
-				{invention archer_ghost_aoe}
-			}
-		}
-	}
-}
-{"und_smithy"
-	{entity_id und_smithy}
-	{version original}
-	{inventions
-		{"und_plate_2"
-			{version original}
-			{invention und_plate_2}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_plate_3"
-			{version original}
-			{invention und_plate_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_leather_1"
-			{version original}
-			{invention und_leather_1}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_leather_2"
-			{version original}
-			{invention und_leather_2}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_leather_3"
-			{version original}
-			{invention und_leather_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_cloth_1"
-			{version original}
-			{invention und_cloth_1}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_cloth_2"
-			{version original}
-			{invention und_cloth_2}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_cloth_3"
-			{version original}
-			{invention und_cloth_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_sword_1"
-			{version original}
-			{invention und_sword_1}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_sword_2"
-			{version original}
-			{invention und_sword_2}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_sword_3"
-			{version original}
-			{invention und_sword_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_aura_def_1"
-			{version original}
-			{invention und_aura_def_1}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_aura_def_2"
-			{version original}
-			{invention und_aura_def_2}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_aura_def_3"
-			{version original}
-			{invention und_aura_def_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_aura_def_4"
-			{version original}
-			{invention und_aura_def_4}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_staff_1"
-			{version original}
-			{invention und_staff_1}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_staff_2"
-			{version original}
-			{invention und_staff_2}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_staff_3"
-			{version original}
-			{invention und_staff_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_plate_1"
-			{version original}
-			{invention und_plate_1}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_bow_1"
-			{version original}
-			{invention und_bow_1}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_bow_2"
-			{version original}
-			{invention und_bow_2}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_bow_3"
-			{version original}
-			{invention und_bow_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_plate_4"
-			{version original}
-			{invention und_plate_4}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_leather_4"
-			{version original}
-			{invention und_leather_4}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_aura_atk_1"
-			{version original}
-			{invention und_aura_atk_1}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_aura_atk_2"
-			{version original}
-			{invention und_aura_atk_2}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_aura_atk_3"
-			{version original}
-			{invention und_aura_atk_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_aura_atk_4"
-			{version original}
-			{invention und_aura_atk_4}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_cloth_4"
-			{version original}
-			{invention und_cloth_4}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_bow_4"
-			{version original}
-			{invention und_bow_4}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_sword_4"
-			{version original}
-			{invention und_sword_4}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"und_staff_4"
-			{version original}
-			{invention und_staff_4}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-	}
-	{weapon
-		{"und_skeleton_sword_01"
-			{version original}
-			{Weapon "hero_und_skeleton_swords/hero_und_skeleton_sword_02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_sword_1}
-			}
-		}
-		{"und_skeleton_sword_02"
-			{version original}
-			{Weapon "hero_und_skeleton_swords/hero_und_skeleton_sword_03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_sword_2}
-			}
-		}
-		{"und_skeleton_sword_03"
-			{version original}
-			{Weapon "hero_und_skeleton_swords/hero_und_skeleton_sword_04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_sword_3}
-			}
-		}
-		{"und_skeleton_sword_04"
-			{version original}
-			{Weapon "hero_und_skeleton_swords/hero_und_skeleton_sword_05"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_sword_4}
-			}
-		}
-		{"und_zombie_axe_01"
-			{version original}
-			{Weapon "hero_und_zombie_axes/hero_und_zombie_axe_02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_sword_1}
-			}
-		}
-		{"und_zombie_axe_02"
-			{version original}
-			{Weapon "hero_und_zombie_axes/hero_und_zombie_axe_03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_sword_2}
-			}
-		}
-		{"und_zombie_axe_03"
-			{version original}
-			{Weapon "hero_und_zombie_axes/hero_und_zombie_axe_04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_sword_3}
-			}
-		}
-		{"und_zombie_axe_04"
-			{version original}
-			{Weapon "hero_und_zombie_axes/hero_und_zombie_axe_05"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_sword_4}
-			}
-		}
-		{"god_skeleton_sword_01"
-			{version original}
-			{Weapon "hero_und_god_skeleton_swords/hero_und_god_skeleton_sword_02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_sword_1}
-			}
-		}
-		{"god_skeleton_sword_02"
-			{version original}
-			{Weapon "hero_und_god_skeleton_swords/hero_und_god_skeleton_sword_03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_sword_2}
-			}
-		}
-		{"god_skeleton_sword_03"
-			{version original}
-			{Weapon "hero_und_god_skeleton_swords/hero_und_god_skeleton_sword_04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_sword_3}
-			}
-		}
-		{"god_skeleton_sword_04"
-			{version original}
-			{Weapon "hero_und_god_skeleton_swords/hero_und_god_skeleton_sword_05"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_sword_4}
-			}
-		}
-		{"und_up_skeleton_sword_01"
-			{version original}
-			{Weapon "hero_und_up_skeleton_swords/hero_und_up_skeleton_sword_02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_sword_1}
-			}
-		}
-		{"und_up_skeleton_sword_02"
-			{version original}
-			{Weapon "hero_und_up_skeleton_swords/hero_und_up_skeleton_sword_03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_sword_2}
-			}
-		}
-		{"und_up_skeleton_sword_03"
-			{version original}
-			{Weapon "hero_und_up_skeleton_swords/hero_und_up_skeleton_sword_04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_sword_3}
-			}
-		}
-		{"und_up_skeleton_sword_04"
-			{version original}
-			{Weapon "hero_und_up_skeleton_swords/hero_und_up_skeleton_sword_05"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_sword_4}
-			}
-		}
-		{"god_archer_bow_01"
-			{version original}
-			{Weapon "hero_und_god_archer_bows/hero_und_god_archer_bow_02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_bow_1}
-			}
-		}
-		{"god_archer_bow_02"
-			{version original}
-			{Weapon "hero_und_god_archer_bows/hero_und_god_archer_bow_03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_bow_2}
-			}
-		}
-		{"god_archer_bow_03"
-			{version original}
-			{Weapon "hero_und_god_archer_bows/hero_und_god_archer_bow_04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_bow_3}
-			}
-		}
-		{"god_archer_bow_04"
-			{version original}
-			{Weapon "hero_und_god_archer_bows/hero_und_god_archer_bow_05"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_bow_4}
-			}
-		}
-		{"archer_bow_01"
-			{version original}
-			{Weapon "hero_archer_bows/hero_archer_bow_02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_bow_1}
-			}
-		}
-		{"archer_bow_02"
-			{version original}
-			{Weapon "hero_archer_bows/hero_archer_bow_03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_bow_2}
-			}
-		}
-		{"archer_bow_03"
-			{version original}
-			{Weapon "hero_archer_bows/hero_archer_bow_04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_bow_3}
-			}
-		}
-		{"archer_bow_04"
-			{version original}
-			{Weapon "hero_archer_bows/hero_archer_bow_05"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_bow_4}
-			}
-		}
-		{"archer_ghost_bow_01"
-			{version original}
-			{Weapon "hero_archer_ghost_bows/hero_archer_ghost_bow_02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_bow_1}
-			}
-		}
-		{"archer_ghost_bow_02"
-			{version original}
-			{Weapon "hero_archer_ghost_bows/hero_archer_ghost_bow_03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_bow_2}
-			}
-		}
-		{"archer_ghost_bow_03"
-			{version original}
-			{Weapon "hero_archer_ghost_bows/hero_archer_ghost_bow_04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_bow_3}
-			}
-		}
-		{"archer_ghost_bow_04"
-			{version original}
-			{Weapon "hero_archer_ghost_bows/hero_archer_ghost_bow_05"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_bow_4}
-			}
-		}
-		{"und_dark_mage_staff01"
-			{version original}
-			{Weapon "hero_und_dark_mage_staff/hero_und_dark_mage_staff02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_staff_1}
-			}
-		}
-		{"und_dark_mage_staff02"
-			{version original}
-			{Weapon "hero_und_dark_mage_staff/hero_und_dark_mage_staff03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_staff_2}
-			}
-		}
-		{"und_dark_mage_staff03"
-			{version original}
-			{Weapon "hero_und_dark_mage_staff/hero_und_dark_mage_staff04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_staff_3}
-			}
-		}
-		{"und_dark_mage_staff04"
-			{version original}
-			{Weapon "hero_und_dark_mage_staff/hero_und_dark_mage_staff05"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_staff_4}
-			}
-		}
-		{"necromant_staff01"
-			{version original}
-			{Weapon "hero_und_necromant_staffs/hero_necromant_staff02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_staff_1}
-			}
-		}
-		{"necromant_staff02"
-			{version original}
-			{Weapon "hero_und_necromant_staffs/hero_necromant_staff03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_staff_2}
-			}
-		}
-		{"necromant_staff03"
-			{version original}
-			{Weapon "hero_und_necromant_staffs/hero_necromant_staff04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_staff_3}
-			}
-		}
-		{"necromant_staff04"
-			{version original}
-			{Weapon "hero_und_necromant_staffs/hero_necromant_staff05"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_staff_4}
-			}
-		}
-		{"und_up_lich_aura_01"
-			{version original}
-			{Weapon "hero_und_up_lich_staffs/hero_und_up_lich_aura_02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_atk_1}
-			}
-		}
-		{"und_up_lich_aura_02"
-			{version original}
-			{Weapon "hero_und_up_lich_staffs/hero_und_up_lich_aura_03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_atk_2}
-			}
-		}
-		{"und_up_lich_aura_03"
-			{version original}
-			{Weapon "hero_und_up_lich_staffs/hero_und_up_lich_aura_04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_atk_3}
-			}
-		}
-		{"und_up_lich_aura_04"
-			{version original}
-			{Weapon "hero_und_up_lich_staffs/hero_und_up_lich_aura_05"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_atk_4}
-			}
-		}
-		{"und_lich_aura_01"
-			{version original}
-			{Weapon "hero_und_lich_staffs/hero_und_lich_aura_02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_atk_1}
-			}
-		}
-		{"und_lich_aura_02"
-			{version original}
-			{Weapon "hero_und_lich_staffs/hero_und_lich_aura_03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_atk_2}
-			}
-		}
-		{"und_lich_aura_03"
-			{version original}
-			{Weapon "hero_und_lich_staffs/hero_und_lich_aura_04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_atk_3}
-			}
-		}
-		{"und_lich_aura_04"
-			{version original}
-			{Weapon "hero_und_lich_staffs/hero_und_lich_aura_05"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_atk_4}
-			}
-		}
-		{"und_up_vampire_aura_01"
-			{version original}
-			{Weapon "hero_und_up_vampire_staffs/hero_und_up_vampire_aura_02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_atk_1}
-			}
-		}
-		{"und_up_vampire_aura_02"
-			{version original}
-			{Weapon "hero_und_up_vampire_staffs/hero_und_up_vampire_aura_03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_atk_2}
-			}
-		}
-		{"und_up_vampire_aura_03"
-			{version original}
-			{Weapon "hero_und_up_vampire_staffs/hero_und_up_vampire_aura_04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_atk_3}
-			}
-		}
-		{"und_up_vampire_aura_04"
-			{version original}
-			{Weapon "hero_und_up_vampire_staffs/hero_und_up_vampire_aura_05"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_atk_4}
-			}
-		}
-		{"und_vampire_aura_01"
-			{version original}
-			{Weapon "hero_und_vampire_staffs/hero_und_vampire_aura_02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_atk_1}
-			}
-		}
-		{"und_vampire_aura_02"
-			{version original}
-			{Weapon "hero_und_vampire_staffs/hero_und_vampire_aura_03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_atk_2}
-			}
-		}
-		{"und_vampire_aura_03"
-			{version original}
-			{Weapon "hero_und_vampire_staffs/hero_und_vampire_aura_04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_atk_3}
-			}
-		}
-		{"und_vampire_aura_04"
-			{version original}
-			{Weapon "hero_und_vampire_staffs/hero_und_vampire_aura_05"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_atk_4}
-			}
-		}
-		{"und_ghost_hand_01"
-			{version original}
-			{Weapon "hero_und_ghost_hands/hero_und_ghost_hand_02"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_atk_1}
-			}
-		}
-		{"und_ghost_hand_02"
-			{version original}
-			{Weapon "hero_und_ghost_hands/hero_und_ghost_hand_03"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_atk_2}
-			}
-		}
-		{"und_ghost_hand_03"
-			{version original}
-			{Weapon "hero_und_ghost_hands/hero_und_ghost_hand_04"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_atk_3}
-			}
-		}
-		{"und_ghost_hand_04"
-			{version original}
-			{Weapon "hero_und_ghost_hands/hero_und_ghost_hand_05"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_atk_4}
-			}
-		}
-	}
-	{armour
-		{"und_skeleton_armor_1"
-			{version original}
-			{Armour "hero_und_skeleton/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_plate_1}
-			}
-		}
-		{"und_skeleton_armor_2"
-			{version original}
-			{Armour "hero_und_skeleton/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_plate_2}
-			}
-		}
-		{"und_skeleton_armor_3"
-			{version original}
-			{Armour "hero_und_skeleton/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_plate_3}
-			}
-		}
-		{"und_skeleton_armor_4"
-			{version original}
-			{Armour "hero_und_skeleton/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention und_plate_4}
-			}
-		}
-		{"und_god_skeleton_armor_1"
-			{version original}
-			{Armour "hero_und_god_skeleton/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_plate_1}
-			}
-		}
-		{"und_god_skeleton_armor_2"
-			{version original}
-			{Armour "hero_und_god_skeleton/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_plate_2}
-			}
-		}
-		{"und_god_skeleton_armor_3"
-			{version original}
-			{Armour "hero_und_god_skeleton/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_plate_3}
-			}
-		}
-		{"und_god_skeleton_armor_4"
-			{version original}
-			{Armour "hero_und_god_skeleton/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention und_plate_4}
-			}
-		}
-		{"und_god_archer_armor_1"
-			{version original}
-			{Armour "hero_und_god_archer/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_plate_1}
-			}
-		}
-		{"und_god_archer_armor_2"
-			{version original}
-			{Armour "hero_und_god_archer/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_plate_2}
-			}
-		}
-		{"und_god_archer_armor_3"
-			{version original}
-			{Armour "hero_und_god_archer/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_plate_3}
-			}
-		}
-		{"und_god_archer_armor_4"
-			{version original}
-			{Armour "hero_und_god_archer/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention und_plate_4}
-			}
-		}
-		{"und_up_skeleton_armor_1"
-			{version original}
-			{Armour "hero_und_up_skeleton/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_plate_1}
-			}
-		}
-		{"und_up_skeleton_armor_2"
-			{version original}
-			{Armour "hero_und_up_skeleton/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_plate_2}
-			}
-		}
-		{"und_up_skeleton_armor_3"
-			{version original}
-			{Armour "hero_und_up_skeleton/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_plate_3}
-			}
-		}
-		{"und_up_skeleton_armor_4"
-			{version original}
-			{Armour "hero_und_up_skeleton/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention und_plate_4}
-			}
-		}
-		{"und_zombie_armor_1"
-			{version original}
-			{Armour "hero_und_zombie/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_leather_1}
-			}
-		}
-		{"und_zombie_armor_2"
-			{version original}
-			{Armour "hero_und_zombie/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_leather_2}
-			}
-		}
-		{"und_zombie_armor_3"
-			{version original}
-			{Armour "hero_und_zombie/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_leather_3}
-			}
-		}
-		{"und_zombie_armor_4"
-			{version original}
-			{Armour "hero_und_zombie/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention und_leather_4}
-			}
-		}
-		{"und_archer_armor_1"
-			{version original}
-			{Armour "hero_und_archer/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_leather_1}
-			}
-		}
-		{"und_archer_armor_2"
-			{version original}
-			{Armour "hero_und_archer/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_leather_2}
-			}
-		}
-		{"und_archer_armor_3"
-			{version original}
-			{Armour "hero_und_archer/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_leather_3}
-			}
-		}
-		{"und_archer_armor_4"
-			{version original}
-			{Armour "hero_und_archer/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention und_leather_4}
-			}
-		}
-		{"und_archer_ghost_armor_1"
-			{version original}
-			{Armour "hero_und_archer_ghost/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_leather_1}
-			}
-		}
-		{"und_archer_ghost_armor_2"
-			{version original}
-			{Armour "hero_und_archer_ghost/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_leather_2}
-			}
-		}
-		{"und_archer_ghost_armor_3"
-			{version original}
-			{Armour "hero_und_archer_ghost/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_leather_3}
-			}
-		}
-		{"und_archer_ghost_armor_4"
-			{version original}
-			{Armour "hero_und_archer_ghost/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention und_leather_4}
-			}
-		}
-		{"und_vampire_armor_1"
-			{version original}
-			{Armour "hero_und_vampire/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_leather_1}
-			}
-		}
-		{"und_vampire_armor_2"
-			{version original}
-			{Armour "hero_und_vampire/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_leather_2}
-			}
-		}
-		{"und_vampire_armor_3"
-			{version original}
-			{Armour "hero_und_vampire/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_leather_3}
-			}
-		}
-		{"und_vampire_armor_4"
-			{version original}
-			{Armour "hero_und_vampire/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention und_leather_4}
-			}
-		}
-		{"und_necromant_armor_1"
-			{version original}
-			{Armour "hero_und_necromant/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_cloth_1}
-			}
-		}
-		{"und_necromant_armor_2"
-			{version original}
-			{Armour "hero_und_necromant/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_cloth_2}
-			}
-		}
-		{"und_necromant_armor_3"
-			{version original}
-			{Armour "hero_und_necromant/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_cloth_3}
-			}
-		}
-		{"und_necromant_armor_4"
-			{version original}
-			{Armour "hero_und_necromant/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention und_cloth_4}
-			}
-		}
-		{"und_dark_mage_armor_1"
-			{version original}
-			{Armour "hero_und_dark_mage/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_cloth_1}
-			}
-		}
-		{"und_dark_mage_armor_2"
-			{version original}
-			{Armour "hero_und_dark_mage/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_cloth_2}
-			}
-		}
-		{"und_dark_mage_armor_3"
-			{version original}
-			{Armour "hero_und_dark_mage/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_cloth_3}
-			}
-		}
-		{"und_dark_mage_armor_4"
-			{version original}
-			{Armour "hero_und_dark_mage/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention und_cloth_4}
-			}
-		}
-		{"und_ghost_armor_1"
-			{version original}
-			{Armour "hero_und_ghost/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_def_1}
-			}
-		}
-		{"und_ghost_armor_2"
-			{version original}
-			{Armour "hero_und_ghost/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_def_2}
-			}
-		}
-		{"und_ghost_armor_3"
-			{version original}
-			{Armour "hero_und_ghost/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_def_3}
-			}
-		}
-		{"und_ghost_armor_4"
-			{version original}
-			{Armour "hero_und_ghost/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention und_aura_def_4}
-			}
-		}
-		{"und_lich_armor_1"
-			{version original}
-			{Armour "hero_und_lich/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_def_1}
-			}
-		}
-		{"und_lich_armor_2"
-			{version original}
-			{Armour "hero_und_lich/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_def_2}
-			}
-		}
-		{"und_lich_armor_3"
-			{version original}
-			{Armour "hero_und_lich/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_def_3}
-			}
-		}
-		{"und_lich_armor_4"
-			{version original}
-			{Armour "hero_und_lich/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention und_aura_def_4}
-			}
-		}
-		{"und_up_lich_armor_1"
-			{version original}
-			{Armour "hero_und_up_lich/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_def_1}
-			}
-		}
-		{"und_up_lich_armor_2"
-			{version original}
-			{Armour "hero_und_up_lich/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_def_2}
-			}
-		}
-		{"und_up_lich_armor_3"
-			{version original}
-			{Armour "hero_und_up_lich/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_aura_def_3}
-			}
-		}
-		{"und_up_lich_armor_4"
-			{version original}
-			{Armour "hero_und_up_lich/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention und_aura_def_4}
-			}
-		}
-		{"und_up_vampire_armor_1"
-			{version original}
-			{Armour "hero_und_up_vampire/1"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_cloth_1}
-			}
-		}
-		{"und_up_vampire_armor_2"
-			{version original}
-			{Armour "hero_und_up_vampire/2"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_cloth_2}
-			}
-		}
-		{"und_up_vampire_armor_3"
-			{version original}
-			{Armour "hero_und_up_vampire/3"}
-			{"Production time" 15}
-			{Prerequesities
-				{invention und_cloth_3}
-			}
-		}
-		{"und_up_vampire_armor_4"
-			{version original}
-			{Armour "hero_und_up_vampire/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention und_cloth_4}
-			}
 		}
 	}
 }
@@ -12393,33 +9237,11 @@
 			{version original}
 			{Cost
 				{money}
-				{"count money" 500}
+				{"count money" 1200}
 			}
 			{Entity und_market}
-			{"Max count" 1}
+			{"Max count" 2}
 			{"Max upgrade" 3}
-			{Prerequesities
-				{gold 0}
-				{"heroes count" 0}
-			}
-			{"Upgrades prerequsity"
-				{"1"
-					{buildings und_castle_2}
-				}
-				{"2"
-					{buildings und_castle_3}
-				}
-			}
-		}
-		{"und_smithy"
-			{version original}
-			{Cost
-				{money}
-				{"count money" 500}
-			}
-			{Entity und_smithy}
-			{"Max count" 100}
-			{"Max upgrade" 4}
 			{Prerequesities
 				{gold 0}
 				{"heroes count" 0}
@@ -12437,7 +9259,7 @@
 			{version original}
 			{Cost
 				{money}
-				{"count money" 1500}
+				{"count money" 1000}
 			}
 			{Entity und_baazar}
 			{"Max count" 1}
@@ -12462,31 +9284,17 @@
 				{"heroes count" 0}
 			}
 		}
-		{"und_tower_great"
-			{version original}
-			{Cost
-				{money}
-				{"count money" 10}
-			}
-			{Entity und_tower_great}
-			{"Max count" 256}
-			{"Max upgrade" 2}
-			{Prerequesities
-				{gold 0}
-				{"heroes count" 0}
-			}
-		}
 		{"und_magic_statue"
 			{version original}
 			{Cost
 				{money}
-				{"count money" 450}
+				{"count money" 500}
 			}
 			{Entity und_magic_statue}
 			{"Max count" 100}
 			{"Max upgrade" 1}
 			{Prerequesities
-				{buildings und_castle_2}
+				{buildings "und_guild_necromant_1"}
 				{gold 0}
 				{"heroes count" 0}
 			}
@@ -12501,7 +9309,7 @@
 			{"Max count" 1}
 			{"Max upgrade" 1}
 			{Prerequesities
-				{buildings und_castle_2}
+				{buildings "und_castle_2"}
 				{gold 0}
 				{"heroes count" 0}
 			}
@@ -12516,7 +9324,7 @@
 			{"Max count" 1}
 			{"Max upgrade" 1}
 			{Prerequesities
-				{buildings und_castle_2}
+				{buildings "und_castle_2"}
 				{gold 0}
 				{"heroes count" 0}
 			}
@@ -12544,7 +9352,7 @@
 			{version original}
 			{Cost
 				{money}
-				{"count money" 400}
+				{"count money" 550}
 			}
 			{Entity und_guild_ghosts}
 			{"Max count" 4}
@@ -12566,19 +9374,19 @@
 			{version original}
 			{Cost
 				{money}
-				{"count money" 1500}
+				{"count money" 1000}
 			}
 			{Entity und_guild_necromant}
 			{"Max count" 3}
 			{"Max upgrade" 2}
 			{Prerequesities
-				{buildings "und_castle_2 und_guild_lich_1"}
+				{buildings "und_guild_lich_1"}
 				{gold 0}
 				{"heroes count" 0}
 			}
 			{"Upgrades prerequsity"
 				{"1"
-					{buildings und_castle_3}
+					{buildings und_castle_2}
 				}
 			}
 		}
@@ -12601,10 +9409,10 @@
 			{version original}
 			{Cost
 				{money}
-				{"count money" 400}
+				{"count money" 550}
 			}
 			{Entity und_guild_skeleton}
-			{"Max count" 3}
+			{"Max count" 4}
 			{"Max upgrade" 3}
 			{Prerequesities
 				{gold 0}
@@ -12623,7 +9431,7 @@
 			{version original}
 			{Cost
 				{money}
-				{"count money" 550}
+				{"count money" 700}
 			}
 			{Entity und_guild_lich}
 			{"Max count" 4}
@@ -12645,7 +9453,7 @@
 			{version original}
 			{Cost
 				{money}
-				{"count money" 550}
+				{"count money" 600}
 			}
 			{Entity und_guild_zombies}
 			{"Max count" 3}
@@ -12667,33 +9475,13 @@
 			{version original}
 			{Cost
 				{money}
-				{"count money" 1500}
+				{"count money" 2000}
 			}
 			{Entity und_guild_vampire}
 			{"Max count" 3}
 			{"Max upgrade" 3}
 			{Prerequesities
-				{buildings und_castle_2}
-				{gold 0}
-				{"heroes count" 0}
-			}
-			{"Upgrades prerequsity"
-				{"2"
-					{buildings und_castle_3}
-				}
-			}
-		}
-		{"und_guild_archer_ghost"
-			{version original}
-			{Cost
-				{money}
-				{"count money" 1500}
-			}
-			{Entity und_guild_archer_ghost}
-			{"Max count" 3}
-			{"Max upgrade" 2}
-			{Prerequesities
-				{buildings und_castle_2}
+				{buildings und_tavern_2 und_castle_2}
 				{gold 0}
 				{"heroes count" 0}
 			}
@@ -12707,10 +9495,10 @@
 			{version original}
 			{Cost
 				{money}
-				{"count money" 3000}
+				{"count money" 4000}
 			}
 			{Entity und_temple_vampire}
-			{"Max count" 4}
+			{"Max count" 3}
 			{"Max upgrade" 1}
 			{Prerequesities
 				{buildings "und_castle_3 und_guild_vampire_1"}
@@ -12725,47 +9513,12 @@
 				{"count money" 3000}
 			}
 			{Entity und_temple_dark_mage}
-			{"Max count" 4}
-			{"Max upgrade" 1}
+			{"Max count" 3}
+			{"Max upgrade" 2}
 			{Prerequesities
 				{buildings "und_castle_3 und_guild_necromant_1"}
 				{gold 0}
 				{"heroes count" 0}
-			}
-		}
-		{"und_temple_skeleton"
-			{version original}
-			{Cost
-				{money}
-				{"count money" 3000}
-			}
-			{Entity und_temple_skeleton}
-			{"Max count" 4}
-			{"Max upgrade" 1}
-			{Prerequesities
-				{buildings "und_castle_3 und_guild_skeleton_1"}
-				{gold 0}
-				{"heroes count" 0}
-			}
-		}
-		{"und_temple_lich"
-			{version original}
-			{Cost
-				{money}
-				{"count money" 3000}
-			}
-			{Entity und_temple_lich}
-			{"Max count" 4}
-			{"Max upgrade" 2}
-			{Prerequesities
-				{buildings "und_castle_3 und_guild_lich_1"}
-				{gold 0}
-				{"heroes count" 0}
-			}
-			{"Upgrades prerequsity"
-				{"1"
-					{buildings "und_temple_vampire_1 und_temple_skeleton_1 und_temple_dark_mage_1"}
-				}
 			}
 		}
 		{"und_statue"
@@ -12792,7 +9545,7 @@
 			{"Max count" 2}
 			{"Max upgrade" 1}
 			{Prerequesities
-				{buildings und_guild_lich_1}
+				{buildings "und_guild_lich_1"}
 				{gold 0}
 				{"heroes count" 0}
 			}
@@ -12852,45 +9605,34 @@
 			{version original}
 			{Cost
 				{money}
-				{"count money" 1000}
+				{"count money" 700}
 			}
 			{Entity hero_und_god_archer}
-			{"Max count" 3}
+			{"Max count" 2}
 			{"Production time" 10}
-			{buildings und_castle_2}
+			{buildings und_guild_zombies_2}
+		}
+	}
+	{unit_upgrade
+		{"archer_to_god"
+			{version original}
+			{"Base entity" hero_und_archer}
+			{"Target entity" hero_und_god_archer}
 		}
 	}
 	{inventions
-		{"zombie_regen_buff"
+		{"zombie_speed_buff"
 			{version original}
-			{invention zombie_regen_buff}
+			{invention zombie_speed_buff}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
 				}
 			}
 		}
-		{"magic_arrow_rain"
+		{"zombie_roots"
 			{version original}
-			{invention magic_arrow_rain}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"magic_up_arrow"
-			{version original}
-			{invention magic_up_arrow}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"magic_und_aoe_slow"
-			{version original}
-			{invention magic_und_aoe_slow}
+			{invention zombie_roots}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
@@ -12978,24 +9720,6 @@
 				}
 			}
 		}
-		{"god_archer_sleep"
-			{version original}
-			{invention god_archer_sleep}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"zombie_slow_aoe"
-			{version original}
-			{invention zombie_slow_aoe}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
 		{"sniper_weakless_attack"
 			{version original}
 			{invention sniper_weakless_attack}
@@ -13018,28 +9742,28 @@
 		}
 	}
 	{actions
-		{"zombie_regen_buff"
+		{"zombie_speed_buff"
 			{version original}
-			{Action zombie_regen_buff}
+			{Action zombie_speed_buff}
 			{"Production time" 0}
 			{Cost
 				{money}
 				{"count money" 5}
 			}
 			{Prerequesities
-				{invention zombie_regen_buff}
+				{invention zombie_speed_buff}
 			}
 		}
-		{"god_archer_sleep"
+		{"zombie_roots"
 			{version original}
-			{Action god_archer_sleep}
+			{Action zombie_roots}
 			{"Production time" 0}
 			{Cost
 				{money}
 				{"count money" 5}
 			}
 			{Prerequesities
-				{invention god_archer_sleep}
+				{invention zombie_roots}
 			}
 		}
 		{"zombie_poison_attack"
@@ -13126,18 +9850,6 @@
 				{invention god_archer_imp_attack}
 			}
 		}
-		{"zombie_slow_aoe"
-			{version original}
-			{Action zombie_slow_aoe}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 5}
-			}
-			{Prerequesities
-				{invention zombie_slow_aoe}
-			}
-		}
 		{"sniper_weakless_attack"
 			{version original}
 			{Action sniper_weakless_attack}
@@ -13177,9 +9889,18 @@
 				}
 			}
 		}
-		{"magic_arrow_rain"
+		{"necr_heal_mana"
 			{version original}
-			{invention magic_arrow_rain}
+			{invention necr_heal_mana}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"magic_light"
+			{version original}
+			{invention magic_light}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
@@ -13241,6 +9962,18 @@
 				{invention necr_summon_guard}
 			}
 		}
+		{"necr_heal_mana"
+			{version original}
+			{Action necr_heal_mana}
+			{"Production time" 0}
+			{Cost
+				{money}
+				{"count money" 5}
+			}
+			{Prerequesities
+				{invention necr_heal_mana}
+			}
+		}
 		{"necr_stun"
 			{version original}
 			{Action necr_stun}
@@ -13273,36 +10006,25 @@
 			{version original}
 			{Cost
 				{money}
-				{"count money" 1000}
+				{"count money" 700}
 			}
 			{Entity hero_und_god_skeleton}
-			{"Max count" 3}
+			{"Max count" 2}
 			{"Production time" 10}
-			{buildings und_castle_2}
+			{buildings und_guild_skeleton_2}
+		}
+	}
+	{unit_upgrade
+		{"skeleton_to_god"
+			{version original}
+			{"Base entity" hero_und_skeleton}
+			{"Target entity" hero_und_god_skeleton}
 		}
 	}
 	{inventions
 		{"skelet_taunt"
 			{version original}
 			{invention skelet_taunt}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"magic_skel_protect"
-			{version original}
-			{invention magic_skel_protect}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"magic_break_protect"
-			{version original}
-			{invention magic_break_protect}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
@@ -13508,18 +10230,9 @@
 		}
 	}
 	{inventions
-		{"lich_heal_mana"
+		{"lich_aoe_control"
 			{version original}
-			{invention lich_heal_mana}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"magic_light"
-			{version original}
-			{invention magic_light}
+			{invention lich_aoe_control}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
@@ -13587,16 +10300,16 @@
 				{invention lich_heal}
 			}
 		}
-		{"lich_heal_mana"
+		{"lich_aoe_control"
 			{version original}
-			{Action lich_heal_mana}
+			{Action lich_aoe_control}
 			{"Production time" 0}
 			{Cost
 				{money}
 				{"count money" 5}
 			}
 			{Prerequesities
-				{invention lich_heal_mana}
+				{invention lich_aoe_control}
 			}
 		}
 		{"lich_buff"
@@ -13628,6 +10341,18 @@
 {"und_lich_mirror"
 	{entity_id und_lich_mirror}
 	{version original}
+	{units
+		{"und_lich_prot"
+			{version original}
+			{Cost
+				{money}
+				{"count money" 400}
+			}
+			{Entity und_lich_prot}
+			{"Max count" 2}
+			{"Production time" 20}
+		}
+	}
 }
 {"und_guild_ghosts"
 	{entity_id guild_hunter}
@@ -13637,7 +10362,7 @@
 			{version original}
 			{Cost
 				{money}
-				{"count money" 300}
+				{"count money" 350}
 			}
 			{Entity hero_und_ghost}
 			{"Max count" 3}
@@ -13654,9 +10379,9 @@
 				}
 			}
 		}
-		{"magic_ghost_speed"
+		{"magic_und_summon_knight"
 			{version original}
-			{invention magic_ghost_speed}
+			{invention magic_und_summon_knight}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
@@ -13675,15 +10400,6 @@
 		{"ghost_slow_attack"
 			{version original}
 			{invention ghost_slow_attack}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"ghost_touch_attack"
-			{version original}
-			{invention ghost_touch_attack}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
@@ -13715,19 +10431,9 @@
 				{invention ghost_resistance_buff}
 			}
 		}
-		{"ghost_touch_attack"
-			{version original}
-			{Action ghost_touch_attack}
-			{"Production time" 0}
-			{Cost
-				{money}
-				{"count money" 5}
-			}
-			{Prerequesities
-				{invention ghost_touch_attack}
-			}
-		}
 		{"ghost_imp"
+		
+							
 			{version original}
 			{Action ghost_imp}
 			{"Production time" 0}
@@ -13740,6 +10446,8 @@
 			}
 		}
 		{"ghost_slow_attack"
+		 
+			 
 			{version original}
 			{Action ghost_slow_attack}
 			{"Production time" 0}
@@ -13761,10 +10469,10 @@
 			{version original}
 			{Cost
 				{money}
-				{"count money" 700}
+				{"count money" 1000}
 			}
 			{Entity hero_und_vampire}
-			{"Max count" 3}
+			{"Max count" 2}
 			{"Production time" 9}
 		}
 	}
@@ -13787,15 +10495,6 @@
 				}
 			}
 		}
-		{"vampire_knockback"
-			{version original}
-			{invention vampire_knockback}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
 		{"vampire_fearless"
 			{version original}
 			{invention vampire_fearless}
@@ -13805,9 +10504,18 @@
 				}
 			}
 		}
-		{"vampire_aoe_light"
+		{"vampire_anti_regen"
 			{version original}
-			{invention vampire_aoe_light}
+			{invention vampire_anti_regen}
+			{prerequsity
+				{"Buildings count"
+					{count 0}
+				}
+			}
+		}
+		{"vampire_imp"
+			{version original}
+			{invention vampire_imp}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
@@ -13840,6 +10548,8 @@
 			}
 		}
 		{"vampire_fearless"
+		   
+						
 			{version original}
 			{Action vampire_fearless}
 			{"Production time" 0}
@@ -13851,28 +10561,28 @@
 				{invention vampire_fearless}
 			}
 		}
-		{"vampire_aoe_light"
+		{"vampire_anti_regen"
 			{version original}
-			{Action vampire_aoe_light}
+			{Action vampire_anti_regen}
 			{"Production time" 0}
 			{Cost
 				{money}
 				{"count money" 5}
 			}
 			{Prerequesities
-				{invention vamp_clone}
+				{invention vampire_anti_regen}
 			}
 		}
-		{"vampire_knockback"
+		{"vampire_imp"
 			{version original}
-			{Action vampire_knockback}
+			{Action vampire_imp}
 			{"Production time" 0}
 			{Cost
 				{money}
 				{"count money" 5}
 			}
 			{Prerequesities
-				{invention vampire_knockback}
+				{invention vampire_imp}
 			}
 		}
 	}
@@ -13881,60 +10591,38 @@
 	{entity_id und_temple_vampire}
 	{version original}
 	{units
-		{"hero_und_up_vampire"
-			{version original}
-			{Cost
-				{money}
-				{"count money" 700}
-			}
-			{Entity hero_und_up_vampire}
-			{"Max count" 2}
-			{"Production time" 15}
-		}
-	}
-	{unit_upgrade
-		{"vampire_upgrade_vampire"
-			{version original}
-			{"Base entity" hero_und_vampire}
-			{"Target entity" hero_und_up_vampire}
-		}
-	}
-	{inventions
-		{"magic_aoe_stun"
-			{version original}
-			{invention magic_aoe_stun}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-	}
-	{rest
-		{"rest"
-			{version original}
-			{Cost
-				{money}
-				{"count money" 0}
-			}
-			{"Healing time" 10}
-			{"Resting time" 10}
-		}
-	}
-}
-{"und_temple_lich"
-	{entity_id und_temple_lich}
-	{version original}
-	{units
 		{"hero_und_up_lich"
 			{version original}
 			{Cost
 				{money}
-				{"count money" 1000}
+				{"count money" 1500}
 			}
 			{Entity hero_und_up_lich}
-			{"Max count" 2}
+			{"Max count" 1}
 			{"Production time" 15}
+			{buildings und_guild_lich_2}
+		}
+		{"hero_und_up_skeleton"
+			{version original}
+			{Cost
+				{money}
+				{"count money" 1500}
+			}
+			{Entity hero_und_up_skeleton}
+			{"Max count" 1}
+			{"Production time" 15}
+			{buildings und_guild_skeleton_2}
+		}
+		{"hero_und_up_vampire"
+			{version original}
+			{Cost
+				{money}
+				{"count money" 1500}
+			}
+			{Entity hero_und_up_vampire}
+			{"Max count" 1}
+			{"Production time" 15}
+			{buildings und_guild_vampire_2}
 		}
 	}
 	{unit_upgrade
@@ -13943,59 +10631,15 @@
 			{"Base entity" hero_und_lich}
 			{"Target entity" hero_und_up_lich}
 		}
-	}
-	{inventions
-		{"magic_res_und"
-			{version original}
-			{invention magic_res_und}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"magic_boss_lich_summon"
-			{version original}
-			{invention magic_boss_lich_summon}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-	}
-	{rest
-		{"rest"
-			{version original}
-			{Cost
-				{money}
-				{"count money" 0}
-			}
-			{"Healing time" 10}
-			{"Resting time" 10}
-		}
-	}
-}
-{"und_temple_skeleton"
-	{entity_id und_temple_skeleton}
-	{version original}
-	{units
-		{"hero_und_up_skeleton"
-			{version original}
-			{Cost
-				{money}
-				{"count money" 1000}
-			}
-			{Entity hero_und_up_skeleton}
-			{"Max count" 2}
-			{"Production time" 15}
-		}
-	}
-	{unit_upgrade
 		{"skeleton_upgrade_skeleton"
 			{version original}
-			{"Base entity" hero_und_skeleton}
+			{"Base entity" hero_und_god_skeleton}
 			{"Target entity" hero_und_up_skeleton}
+		}
+		{"vampire_upgrade_vampire"
+			{version original}
+			{"Base entity" hero_und_vampire}
+			{"Target entity" hero_und_up_vampire}
 		}
 	}
 	{inventions

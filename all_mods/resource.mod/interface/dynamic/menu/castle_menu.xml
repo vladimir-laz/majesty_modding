@@ -113,7 +113,7 @@
 			<Button_3 action="CastleMenuItemClickAction" stateAction="CheckBuildAvailableAction" transition="castle_build_in_progress">
 				<appearance texture="BUT_build_tower_dwarf" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="tower_dwarf" />
 			</Button_3>
-		</Row>
+			</Row>
 		<Row>
 		<Button_1 action="CastleMenuItemClickAction" stateAction="CheckBuildAvailableAction" transition="castle_build_in_progress">
 				<appearance texture="but_unique_tower_guard" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="unique_tower_guard" />
@@ -150,7 +150,7 @@
 			</Button_4>
 		</Row>
 		<Row>
-			<Button_1 transition="group_portal" hideGroupOnDeactivate="true" nextGroupAtActiveElement="false">
+		<Button_1 transition="group_portal" hideGroupOnDeactivate="true" nextGroupAtActiveElement="false">
 				<appearance texture="but_group_portal" autoTexture="TEX_MASK" autoHint="true" propertyBlock="action_but" />
 			</Button_1>
 			<Button_2 transition="group_elem" hideGroupOnDeactivate="true" nextGroupAtActiveElement="false">

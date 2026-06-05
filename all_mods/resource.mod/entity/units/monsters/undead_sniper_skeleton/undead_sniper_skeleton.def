@@ -666,8 +666,8 @@
 ;#line 32: 	(include "extenders/level.inc")
 ;#line 32: entity/units/monsters/undead_sniper_skeleton/extenders/level.inc BEGIN
 {"Level"
-	{MaxLevel 8}
-	{CurrentLevel 8}
+	{MaxLevel 15}
+	{CurrentLevel 15}
 	{CurrentExperiens 0.0}
 }
 

@@ -1,0 +1,4 @@
+{simple "items"
+	{diffuse "$/items/monsters/goblinarcherchampion_items_diffuse"}
+	{blend none}
+}

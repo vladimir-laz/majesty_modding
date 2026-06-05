@@ -679,8 +679,8 @@
 ;#line 46: 	(include "extenders/level.inc")
 ;#line 46: entity/units/monsters/undead_ghost/extenders/level.inc BEGIN
 {"Level"
-	{MaxLevel 7}
-	{CurrentLevel 7}
+	{MaxLevel 10}
+	{CurrentLevel 10}
 	{CurrentExperiens 0.0}
 }
 

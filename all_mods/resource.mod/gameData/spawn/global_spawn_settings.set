@@ -13,20 +13,6 @@
 	{"spawn time" 5}
 	{"max count" 1}
 }
-{"und_lich_prot"
-	{"spawn type" units}
-	{raw und_lich_prot}
-	{Nationality Same}
-	{level 0}
-	{"AI task"
-		{task none}
-	}
-	{postspawn_i 0}
-	{gold 0}
-	{count "1 1"}
-	{"spawn time" 150}
-	{"max count" 3}
-}
 {"insect_spider_red"
 	{"spawn type" units}
 	{raw insect_spider_red}
@@ -616,7 +602,7 @@
 	{postspawn_i 1}
 	{gold 0}
 	{count "1 1"}
-	{"spawn time" 45}
+	{"spawn time" 135}
 	{"max count" 1}
 }
 {"beast_wolfman"
@@ -631,7 +617,7 @@
 	{postspawn_i 1}
 	{gold 0}
 	{count "1 1"}
-	{"spawn time" 45}
+	{"spawn time" 135}
 	{"max count" 1}
 }
 {"fantasy_dragon"
@@ -677,6 +663,28 @@
 	{gold 0}
 	{count "1 1"}
 	{"spawn time" 40}
+	{"max count" 1}
+}
+{"fantasy_dragon_shadow"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 3}
+		}
+	}
+	{raw fantasy_dragon_shadow}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 180}
 	{"max count" 1}
 }
 {"fantasy_dragon_red"
@@ -956,8 +964,30 @@
 	{"spawn time" 60}
 	{"max count" 2}
 }
-{"guard_spawner"
+{"guard_in_tower_spawner"
 	{"spawn type" units}
+	{raw guard}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 15}
+	{"max count" 1}
+}
+{"guard_in_tower_spawner2"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 2}
+		}
+	}
 	{raw guard}
 	{Nationality Same}
 	{level 0}
@@ -2441,6 +2471,28 @@
 	{"spawn time" 15}
 	{"max count" 1}
 }
+{"mks_guard_spawner2"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 2}
+		}
+	}
+	{raw mks_guard}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 15}
+	{"max count" 1}
+}
 {"peasant_house_spawner_undead1"
 	{"spawn type" buildings}
 	{Prerequsities_list city_value}
@@ -3024,28 +3076,6 @@
 	{"spawn time" 15}
 	{"max count" 1}
 }
-{"und_summon_knight_trade"
-	{"spawn type" units}
-	{Prerequsities_list building_level}
-	{Prerequsities
-		{building_level
-			{Operation ">="}
-			{Level 3}
-		}
-	}
-	{raw und_summon_knight}
-	{Nationality Same}
-	{level 0}
-	{"AI task"
-		{task none}
-	}
-	{postspawn_i 0}
-	{gold 0}
-	{count "1 1"}
-	{"spawn time" 50}
-	{"max count" 1}
-	{"First wave"}
-}
 {"und_summon_knight"
 	{"spawn type" units}
 	{raw und_summon_knight}
@@ -3058,70 +3088,7 @@
 	{postspawn_i 1}
 	{gold 0}
 	{count "1 1"}
-	{"spawn time" 50}
+	{"spawn time" 9999}
 	{"max count" 1}
 	{"First wave"}
-}
-
-;=== merged: tower guard spawners from mod 'Vtoroy strazhnik' ===
-{"guard_in_tower_spawner"
-	{"spawn type" units}
-	{raw guard}
-	{Nationality Same}
-	{level 0}
-	{"AI task"
-		{task none}
-	}
-	{postspawn}
-	{postspawn_i 1}
-	{gold 0}
-	{count "1 1"}
-	{"spawn time" 15}
-	{"max count" 1}
-}
-
-{"guard_in_tower_spawner2"
-	{"spawn type" units}
-	{Prerequsities_list building_level}
-	{Prerequsities
-		{building_level
-			{Operation ">="}
-			{Level 2}
-		}
-	}
-	{raw guard}
-	{Nationality Same}
-	{level 0}
-	{"AI task"
-		{task none}
-	}
-	{postspawn}
-	{postspawn_i 1}
-	{gold 0}
-	{count "1 1"}
-	{"spawn time" 15}
-	{"max count" 1}
-}
-
-{"mks_guard_spawner2"
-	{"spawn type" units}
-	{Prerequsities_list building_level}
-	{Prerequsities
-		{building_level
-			{Operation ">="}
-			{Level 2}
-		}
-	}
-	{raw mks_guard}
-	{Nationality Same}
-	{level 0}
-	{"AI task"
-		{task none}
-	}
-	{postspawn}
-	{postspawn_i 1}
-	{gold 0}
-	{count "1 1"}
-	{"spawn time" 15}
-	{"max count" 1}
 }

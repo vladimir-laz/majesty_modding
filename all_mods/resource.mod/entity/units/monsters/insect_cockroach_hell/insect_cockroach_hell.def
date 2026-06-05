@@ -716,7 +716,13 @@
 ;#line 35: entity/units/monsters/insect_cockroach_hell/extenders/inventory.inc END
 
 	{"RPGModule"}	
+	
 
+{"RPGModule"
+	{perks
+		{perkinstance "perk_barlog_regeneration"}
+	}
+}
 
 ;#line 38: 	(include "extenders/mover.inc")
 ;#line 38: entity/units/monsters/insect_cockroach_hell/extenders/mover.inc BEGIN

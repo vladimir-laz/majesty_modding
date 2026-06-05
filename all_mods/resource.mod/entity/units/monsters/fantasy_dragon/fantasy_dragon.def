@@ -548,8 +548,8 @@
 ;#line 32: 	(include "extenders/level.inc")
 ;#line 32: /entity/units/monsters/fantasy_dragon/extenders/level.inc BEGIN
 {"Level"
-	{MaxLevel 25}
-	{CurrentLevel 25}
+	{MaxLevel 20}
+	{CurrentLevel 20}
 	{CurrentExperiens 0.0}
 }
 

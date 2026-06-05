@@ -535,7 +535,6 @@
 	"unit"
 	"monster"
 	"beast"
-	"sleep_beast"; против этого зверя используется способность archer_sleep_vs_beast
 	"blood_splash"
 }
 

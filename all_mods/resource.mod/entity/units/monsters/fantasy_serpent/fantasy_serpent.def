@@ -505,8 +505,8 @@
 ;#line 31: 	(include "extenders/level.inc")
 ;#line 31: /entity/units/monsters/fantasy_serpent/extenders/level.inc BEGIN
 {"Level"
-	{MaxLevel 6}
-	{CurrentLevel 6}
+	{MaxLevel 5}
+	{CurrentLevel 5}
 	{CurrentExperiens 0.0}
 }
 

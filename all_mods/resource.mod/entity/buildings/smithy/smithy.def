@@ -1,0 +1,387 @@
+{entity
+	
+	{"zones"
+		{ObstacleID "fly_over"}
+		{body {proper body sensible} {permit body}}
+	}
+	{actor}
+
+;#line 8: 	(include "/properties/buildings/extenders/level.inc")
+;#line 8: properties/buildings/extenders/level.inc BEGIN
+{"Level"
+	{MaxLevel 1}
+	{CurrentLevel 1}
+	{CurrentExperiens 0.0}
+}
+;#line 8: properties/buildings/extenders/level.inc END
+
+
+;#line 9: 	(include "/properties/buildings/extenders/death.inc")
+;#line 9: properties/buildings/extenders/death.inc BEGIN
+{"IDeath.BuildingDeath"
+}
+
+;#line 9: properties/buildings/extenders/death.inc END
+
+
+;#line 10: 	(include "/properties/buildings/extenders/seller.inc")
+;#line 10: properties/buildings/extenders/seller.inc BEGIN
+{"entity_seller"
+}
+;#line 10: properties/buildings/extenders/seller.inc END
+
+
+;#line 11: 	(include "/properties/buildings/extenders/entity_nationality.inc")
+;#line 11: properties/buildings/extenders/entity_nationality.inc BEGIN
+{"EntityNationality"
+}
+
+;#line 11: properties/buildings/extenders/entity_nationality.inc END
+
+
+	;===================================================
+	;	Индивидуальные свойства здания
+	;===================================================
+
+
+;#line 17: 	(include "extenders/name.inc")
+;#line 17: entity/buildings/smithy/extenders/name.inc BEGIN
+{"Name"
+}
+;#line 17: entity/buildings/smithy/extenders/name.inc END
+
+
+;#line 18: 	(include "extenders/entity_classes.inc")
+;#line 18: entity/buildings/smithy/extenders/entity_classes.inc BEGIN
+{"EntityClasses"
+	"building" "candest"
+	"smithy"
+	"teg"
+}
+
+;#line 18: entity/buildings/smithy/extenders/entity_classes.inc END
+
+
+
+;#line 20: 	(include "/properties/buildings/extenders/rpg_no_perks.inc")
+;#line 20: properties/buildings/extenders/rpg_no_perks.inc BEGIN
+{"RPGModule" {perks {perkinstance "no_perks_4_building"}}}
+;#line 20: properties/buildings/extenders/rpg_no_perks.inc END
+
+	{"Health" {value_new {rpg_building} } }
+
+;#line 22: 	(include "extenders/building.inc")
+;#line 22: 	(include "extenders/treasures_generator.inc")
+;#line 22: /entity/buildings/smithy/extenders/treasures_generator.inc BEGIN
+{"TreasuresGenerator"
+	{PerDay
+		"money" 5
+	}
+}
+
+;#line 22: /entity/buildings/smithy/extenders/treasures_generator.inc END
+;#line 22: entity/buildings/smithy/extenders/building.inc BEGIN
+{"Home"
+}
+{"building"
+	{stamp "bg_smithy"}
+	{has_static}
+	{building_value 0.2}
+	{CashMachine
+		{Base
+			{AcceptableCards
+				{Tax
+					"citizen_taxer"
+				}
+				{Personal
+					"hero_knight"
+					"hero_warrior"
+					"hero_hunter"
+					"hero_rogue"
+					"hero_mage"
+					"hero_cleric"
+					"hero_fire_mage"
+
+					"hero_elf"
+					"hero_dwarf"
+
+					"hero_priest"
+					"hero_dark_priest"
+					"hero_paladin"
+					"hero_marksman"
+					"hero_blade_master"
+					"hero_beast_master"
+					"hero_ice_mage"
+					"hero_death_knight"
+					"hero_fatherfrost"
+				}
+			}
+		}
+	}
+}
+
+
+;#line 111: (include "/properties/buildings/visual/smithy_vis.inc")
+;#line 111: properties/buildings/visual/smithy_vis.inc BEGIN
+{"visialstatemanager"
+	{desc
+		{enable "ENTERING_HERO"} 
+		{ref "object43_l2__vol_0"} {name "oneEnteringSnd"} {effect}
+	}
+
+	{desc
+		{enable "EXITING_HERO"}
+		{ref "object43_l2__vol_0"} {name "oneExitingSnd"} {effect}
+	}		
+	
+	{desc ; анимация молотилки
+		{enable "PEOPLE_INSIDE"} 
+		{ref "object49_l2_dust_smithy"} {name "people_inside"} {anim} {looped}
+	}
+	{desc ; анимация молотилки
+		{enable "PEOPLE_INSIDE"} 
+		{ref "object50_l2_dust_smithy"} {name "people_inside"} {anim} {looped}
+	}
+	{desc ;озвучка молотилок
+		{enable "PEOPLE_INSIDE"} 
+		{ref "p_sound_forcer1"} {name "smithy_forcer_fx"} {effect} {detachoff} {looped} {single}
+	}
+	{desc ;озвучка молотилок
+		{enable "PEOPLE_INSIDE"} 
+		{ref "p_sound_forcer2"} {name "smithy_forcer_fx"} {effect} {detachoff} {looped} {single}
+	}
+	{desc ;анимация вращения колеса, люди внутри
+		{enable "PEOPLE_INSIDE"} 
+		{ref "object44_l2_base_smithy"} {name "people_inside"} {anim} {looped}
+	}
+	{desc ;анимация вращения колеса, айдл и нет людей внутри
+		{enable "IDLE" "BUILDING" "BROKING"}
+		{disable "PEOPLE_INSIDE"}
+		{ref "object44_l2_base_smithy"} {name "idle"} {anim} {looped}
+	}
+	{desc ;озвучка вращения колеса, p_sound_gearwheel, эффектом smithy_gearwheel_fx
+		{enable "IDLE" "BUILDING" "BROKING" "PEOPLE_INSIDE"} 
+		{ref "p_sound_gearwheel"} {name "smithy_gearwheel_fx"} {effect} {looped} {detachoff} {single}
+	}
+
+	{desc
+		{enable "PEOPLE_INSIDE"} 
+		{ref "p_fx_1u_smoke"} {name "smoke_radial_start"} {single} {effect} {detachoff} {looped}
+	}
+	{desc
+		{enable "PEOPLE_INSIDE"} 
+		{ref "p_fx_2u_smoke"} {name "smoke_radial_start"} {single} {effect} {detachoff} {looped}
+	}
+	{desc
+		{enable "PEOPLE_INSIDE"} 
+		{ref "p_fx_3u_smoke"} {name "smoke_radial_start"} {single} {effect} {detachoff} {looped}
+	}
+
+	{desc ;включаем обычная текстура
+		{enable "NO_PEOPLE_INSIDE"} 
+		{name ""} {texmode_whole}
+	}
+	{desc ;включаем текстура со светом в окошках
+		{enable "PEOPLE_INSIDE"} 
+		{name "01"} {texmode_whole}
+	}
+	{desc ;fx effect for 3rd level smithy
+		{enable "IDLE" "BUILDING" "BROKING" "PEOPLE_INSIDE"} 
+		{ref "smithy_point_fx_l3"} {name "smithy_fx_l3"} {effect} {looped} {detachoff} {single}
+	}
+}
+
+;#line 111: properties/buildings/visual/smithy_vis.inc END
+
+
+;#line 22: entity/buildings/smithy/extenders/building.inc END
+
+
+;#line 23: 	(include "extenders/upgrades.inc")
+;#line 23: entity/buildings/smithy/extenders/upgrades.inc BEGIN
+{"Upgrades" 
+	{available
+		{;level 1
+                    {money 5}
+			{health 150}
+			{building_value 0.2}
+			{cost
+				"money" 1000
+			}
+		}
+		{;level 2
+                     {money 5}
+			{health 150}
+			{building_value 0.2}
+			{cost
+				"money" 2000
+			}
+		}
+		{;level 3
+                    {money 5}
+			{health 100}
+			{building_value 0.2}
+			{cost
+				"money" 2500
+			}
+		}
+	}
+}
+
+;#line 23: entity/buildings/smithy/extenders/upgrades.inc END
+
+
+;#line 24: 	(include "extenders/safety_emitter.inc")
+;#line 24: entity/buildings/smithy/extenders/safety_emitter.inc BEGIN
+{"safety_emitter"
+	{power  5}
+	{radius 20}
+}
+;#line 24: entity/buildings/smithy/extenders/safety_emitter.inc END
+
+	
+
+;#line 26: 	(include "extenders/sensor.inc")
+;#line 26: entity/buildings/smithy/extenders/sensor.inc BEGIN
+{"m2sensor"
+	{ViewRadius 10}
+	{Visors
+		{FellowVisor 10}
+	}
+}
+;#line 26: entity/buildings/smithy/extenders/sensor.inc END
+
+
+;#line 27: 	(include "extenders/inventory.inc")
+;#line 27: entity/buildings/smithy/extenders/inventory.inc BEGIN
+{"m2inventory"
+}
+
+;#line 27: entity/buildings/smithy/extenders/inventory.inc END
+
+
+
+;#line 29: 	(include "extenders/prime_cost.inc")
+;#line 29: entity/buildings/smithy/extenders/prime_cost.inc BEGIN
+{"EntityPrimeCost"
+	{Cost 35.0}
+}
+;#line 29: entity/buildings/smithy/extenders/prime_cost.inc END
+
+
+;#line 30: 	(include "/properties/buildings/sound/destroyable_smithy.inc")
+;#line 30: properties/buildings/sound/destroyable_smithy.inc BEGIN
+{"sound"
+	{"destroyable_building"
+		{state "building_one_past_ill" {desc {param}}}
+		{state "building_one_to_full" {desc {param}}}
+		{state "building_destroied" {desc {param {name "buildings/crash/building_crash_3"}{posi}}}}
+		{state "building_is_building" {desc {param {name "buildings/construction/construction"}{looped}{posi}}}}
+		{state "building_building_is_selected" {desc {param {name "interface/building_select/building_building"} }}}
+		{state "building_ready_is_selected" {desc {param {name "interface/building_select/smithy_select"} }}}
+		{state "building_people_ambient" {desc {param {name "buildings/ambient/smithy_am"} {looped} {posi}}}}
+		{state "building_25_live" {desc {param {name "buildings/crash/fire_small/fire_big_1"}{looped}{posi} }}}
+		{state "building_50_live" {desc {param {name "buildings/crash/fire_small/fire_med_1"}{looped}{posi} }}}
+		{state "building_75_live" {desc {param {name "buildings/crash/fire_small/fire_small_1"}{looped}{posi} }}}
+	}
+}
+
+;#line 30: properties/buildings/sound/destroyable_smithy.inc END
+
+
+;#line 31:     (include "/properties/sound/stone_material_sound.inc")
+;#line 31: properties/sound/stone_material_sound.inc BEGIN
+{"snd_props"
+	{prop {tag "hitprop"}{val "stone"}}
+}
+
+;#line 31: properties/sound/stone_material_sound.inc END
+
+		
+	{"building" {version 25}}
+	{"placer"}
+	{xform scale 0.75}
+	{"structure"
+		{place "dummy_static_1" "smithy_l0"}
+		{place "dummy_static_2" "smithy_l1"}
+		{place "dummy_static_3" "smithy_l2"}
+		{place "dummy_static_4" "smithy_l0_nati_"}
+
+	;	{place "dummy_fx_l3" "smithy_fx_l3_base"}	
+
+		{place "p_fx_shtender" "banner03"}
+		{place "dummy02" "object01_l0_ground_smithy"}
+		{place "dummy03" "object02_l0_ground_smithy"}
+		{place "dummy04" "object03_l0_ground_smithy"}
+		{place "dummy05" "object04_l0_base_smithy"}
+		{place "dummy06" "object05_l0_dust_smithy"}
+		{place "dummy07" "object06_l0_base_smithy"}
+		{place "dummy08" "object07_l0_dust_smithy"}
+		{place "dummy09" "object08_l0_dust_smithy"}
+		{place "dummy10" "object09_l0_dust_smithy"}
+		{place "dummy11" "object10_l0_dust_smithy"}
+		{place "dummy12" "object12_l0_base_smithy"}
+		{place "dummy13" "object13_l0_base_smithy"}
+		{place "dummy14" "object14_l0_base_smithy"}
+		{place "dummy15" "object15_l0_base_smithy"}
+		{place "dummy16" "object16_l0_base_smithy"}
+		{place "dummy17" "object17_l0_base_smithy"}
+		{place "dummy18" "object18_l0_dust_smithy"}
+		{place "dummy19" "object19_l0_base_smithy"}
+		{place "dummy20" "object20_l0_dust_smithy"}
+		{place "dummy21" "object21_l0_base_smithy"}
+		{place "dummy22" "object22_l0_dust_smithy"}
+		{place "dummy23" "object23_l0_base_smithy"}
+		{place "dummy24" "object24_l0_base_smithy"}
+		{place "dummy25" "object25_l0_base_smithy"}
+		{place "dummy26" "object26_l0_base_smithy"}
+		{place "dummy27" "object27_l0_dust_smithy"}
+		{place "dummy28" "object28_l0_dust_smithy"}
+		{place "dummy29" "object29_l0_base_smithy"}
+		{place "dummy30" "object30_l0_base_smithy"}
+		{place "dummy31" "object31_l0_dust_smithy"}
+		{place "dummy32" "object32_l0_base_smithy"}
+		{place "dummy33" "object33_l0_base_smithy"}
+		{place "dummy34" "object34_l0_base_smithy"}
+		{place "dummy35" "object35_l0_base_smithy"}
+		{place "dummy36" "object36_l1_base_smithy"}
+		{place "dummy37" "object37_l1_base_smithy"}
+		{place "dummy38" "object38_l1_ground_smithy"}
+		{place "dummy39" "object39_l1_base_smithy"}
+		{place "dummy40" "object40_l1_base_smithy"}
+		{place "dummy41" "object41_l1_dust_smithy"}
+		{place "dummy42" "object42_l1_base_smithy"}
+		{place "dummy43" "object43_l2_ground_smithy"}
+		{place "dummy44" "object44_l2_base_smithy"}
+		{place "dummy45" "object45_l2_dust_smithy"}
+		{place "dummy46" "object46_l2_base_smithy"}
+		{place "dummy47" "object47_l2_base_smithy"}
+		{place "dummy48" "object48_l2_dust_smithy"}
+		{place "dummy49" "object49_l2_dust_smithy"}
+		{place "dummy50" "object50_l2_dust_smithy"}
+		{place "dummy51" "object51_l0_nati_dust_smithy"}
+		{place "dummy52" "object52_l0_nati_dust_smithy"}
+		{place "dummy53" "object53_l0_nati_dust_smithy"}
+		{place "dummy54" "object54_l0_nati_base_smithy"}
+		{place "dummy55" "object55_l0_nati_dust_smithy"}
+		{place "dummy56" "object56_l0_nati_dust_smithy"}
+		{place "dummy57" "object57_l0_nati_base_smithy"}
+		{place "dummy58" "object58_l0_nati_dust_smithy"}
+		{place "dummy59" "object59_l0_nati_dust_smithy"}
+		{place "dummy60" "object60_l0_nati_dust_smithy"}
+		{place "dummy61" "object61_l0_nati_base_smithy"}
+		{place "dummy62" "object62_l0_nati_base_smithy"}
+		{place "dummy63" "object63_l0_nati_dust_smithy"}
+		{place "dummy64" "object64_l0_nati_dust_smithy"}
+		{place "dummy65" "object65_l0_nati_dust_smithy"}
+		{place "dummy66" "object66_l0_nati_dust_smithy"}
+		{place "dummy67" "object67_l0_nati_dust_smithy"}
+		{place "dummy68" "object68_l0_nati_base_smithy"}
+		{place "dummy69" "smithy_l0_scaffold_smithy"}
+		{place "dummy70" "smithy_l1_scaffold_smithy"}
+		{place "dummy71" "smithy_l2_scaffold_smithy"}
+		{place "dummy72" "unseen_l3_base_smithy"}
+	}
+	{"FogVisor" {radius 25}}
+	{"Laboratory"}
+}

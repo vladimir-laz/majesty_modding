@@ -691,7 +691,6 @@
 ;#line 29: /entity/units/monsters/beast_bearman/extenders/entity_classes.inc BEGIN
 {"EntityClasses"
 	"unit"
-	"has_perk_specials"			
 	"monster"
 	"beast"
 	"mana_user"
@@ -722,8 +721,8 @@
 ;#line 32: 	(include "extenders/level.inc")
 ;#line 32: /entity/units/monsters/beast_bearman/extenders/level.inc BEGIN
 {"Level"
-	{MaxLevel 25}
-	{CurrentLevel 25}
+	{MaxLevel 20}
+	{CurrentLevel 20}
 	{CurrentExperiens 0.0}
 }
 

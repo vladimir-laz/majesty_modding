@@ -535,7 +535,6 @@
 	"unit"
 	"monster"
 	"beast"
-	"sleep_beast"; против этого зверя используется способность archer_sleep_vs_beast																										
 	"blood_splash"
 }
 
@@ -563,8 +562,8 @@
 ;#line 31: 	(include "extenders/level.inc")
 ;#line 31: /entity/units/monsters/beast_bear/extenders/level.inc BEGIN
 {"Level"
-	{MaxLevel 5}
-	{CurrentLevel 5}
+	{MaxLevel 10}
+	{CurrentLevel 10}
 	{CurrentExperiens 0.0}
 }
 

@@ -607,8 +607,8 @@
 ;#line 38: 	(include "extenders/level.inc")
 ;#line 38: entity/units/monsters/boss_elemental_fire/extenders/level.inc BEGIN
 {"Level"
-	{MaxLevel 31}
-	{CurrentLevel 31}
+	{MaxLevel 20}
+	{CurrentLevel 20}
 	{CurrentExperiens 0.0}
 }
 

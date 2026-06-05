@@ -6,6 +6,11 @@
 		<s_tuv_file>textures\gui_cursors.tuv</s_tuv_file>
 	</texture>
 	<texture>
+		<s_name>adv_smithy</s_name>
+		<s_tex_file>textures\adv_smithy.dds</s_tex_file>
+		<s_tuv_file>textures\adv_smithy.tuv</s_tuv_file>
+	</texture>
+	<texture>
 		<s_name>BUT_magic_dest</s_name>
 		<s_tex_file>textures\BUT_magic_dest.dds</s_tex_file>
 		<s_tuv_file>textures\BUT_magic_dest.tuv</s_tuv_file>
@@ -309,11 +314,6 @@
 	
 <!--forRaceUndead-->
 	<texture>
-		<s_name>und_smithy</s_name>
-		<s_tex_file>textures\m2_gui.dds</s_tex_file>
-		<s_tuv_file>textures\m2_gui.tuv</s_tuv_file>
-	</texture>
-	<texture>
 		<s_name>m2_cards_und</s_name>
 		<s_tex_file>textures\m2_cards_und.dds</s_tex_file>
 		<s_tuv_file>textures\m2_cards_und.tuv</s_tuv_file>
@@ -342,10 +342,5 @@
 		<s_name>undead_act</s_name>
 		<s_tex_file>textures\undead_act.dds</s_tex_file>
 		<s_tuv_file>textures\undead_act.tuv</s_tuv_file>
-	</texture>
-	<texture>
-		<s_name>und_clone_vamp</s_name>
-		<s_tex_file>textures\m2_gui.dds</s_tex_file>
-		<s_tuv_file>textures\m2_gui.tuv</s_tuv_file>
 	</texture>
 </Textures>

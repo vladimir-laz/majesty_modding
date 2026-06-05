@@ -4,3 +4,10 @@ Thumbs.db
 
 # локальный конфиг Claude Code
 .claude/settings.local.json
+
+# временные тестовые сборки для отладки
+debug/
+debug_*.zip
+
+# распакованная для теста сборка в корне (не часть репо)
+/resource.mod/

@@ -127,6 +127,13 @@
 			"money" 3000
 			}
 		}
+		{;1й апгрейт
+			{health 1000}				;Добавляет хитпоинтов
+			{building_value 0.35}
+			{cost					;Стоимость апргейда
+			"money" 4000
+			}
+		}
 	}
 }
 
@@ -155,7 +162,7 @@
 ;#line 35: 	(include "extenders/spawner_extender.inc")
 ;#line 35: entity/buildings/logovo_dragon/extenders/spawner_extender.inc BEGIN
 {"spawner_extender"
-	{global_spawn_progs "fantasy_dragon fantasy_dragon_red"}
+	{global_spawn_progs "fantasy_dragon fantasy_dragon_red fantasy_dragon_shadow"}
 }
 
 

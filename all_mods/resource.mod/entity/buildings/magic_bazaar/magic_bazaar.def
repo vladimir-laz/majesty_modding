@@ -83,7 +83,7 @@
 ;#line 30: entity/buildings/magic_bazaar/extenders/building.inc BEGIN
 {"Home"
 }
-{"building"
+{"Building"
 ;	{stamp "bg_market"}
 	{has_static}
 	{building_value 0.5}
