@@ -1,0 +1,54 @@
+{fx
+	{particle_flow "Tail"
+		{birth
+			{limit 8}
+			{speed 4}
+			{## time_to_live 1.9}
+		}
+		{init
+			{## "speed.cone" 0.1
+				{angle 90}
+				{hollow}
+			}
+			{"effect.move" local_cs
+				{x -0.2}
+				{y 0}
+				{z 0}
+			}
+			{"position.cylinder" 0.7}
+		}
+		{common
+			{"shape.sprite"
+				{sprite "$/flares/_flare02_n"}
+				{orientation billboard}
+				{target scene }
+				{blend_mode ADD}
+				{layer alpha}
+				{center_axis}
+			}
+			{animate 2
+				{"effect.color"
+					{to 0xffff9a1f}
+					{from 0xff000000}
+					{peak}
+				}
+				{"effect.scale_xy"
+					{to 0.0525 -0.0075}
+					{from 0.125 -0.015}
+				}
+				{on_end
+					{delete}
+				}
+			}
+			{"effect.prerotate_z" 0 180}
+			{## "effect.acc_z" 1.5}
+			{"effect.acc" global_cs
+				{x 0}
+				{y 0}
+				{z 0.4 0.1}
+			}
+		}
+		{axis_z}
+		{local_cs}
+	}
+}

@@ -1,0 +1,975 @@
+{entity
+	
+	{"zones"
+		{body {proper body sensible} {permit 	body}}
+		{Collider "default"}
+	}
+
+	{actor}
+
+
+;#line 10: 	(include "anim.inc")	
+;#line 10: entity/units/monsters/beast_greater_werewolf/anim.inc BEGIN
+{Skeleton
+	{animation
+		{blend "pose_from_idle"{pose "idle" end}}
+		{blend "pose_to_stun"{pose "stun" begin}}
+		{binary "stun"{speed 0.6}}
+		{blend "pose_to_mass_damage_fly"{pose "mass_damage_fly" begin}}
+		{binary "mass_damage_fly"{speed 0.6}}
+		{binary "massive_stand_up"{speed 0.6}}
+		{blend "pose_to_walk"{pose "walk" begin}}
+		{binary "walk"{speed 0.6}}
+		{blend "pose_to_idle"{pose "idle" begin}}
+		{binary "idle"{speed 0.6}}
+		{binary "idle_rand01"{speed 0.6}}
+		{blend "pose_to_idle_rand01"{pose "idle_rand01" begin}}
+		{blend "pose_to_blow01"{pose "blow01" begin}}
+		{binary "blow01"{speed 0.6}}
+		{blend "pose_to_ag_walk"{pose "ag_walk" begin}}
+		{binary "ag_walk"{speed 0.6}}
+		{binary "death"{speed 0.6}}
+		{blend "pose_from_death"{pose "death" end}}
+		{blend "pose_to_blow02"{pose "blow02" begin}}
+		{binary "blow02"{speed 0.6}}
+	}
+}
+;#line 10: entity/units/monsters/beast_greater_werewolf/anim.inc END
+
+
+;#line 11: 	(include "fsm.inc")		
+;#line 11: entity/units/monsters/beast_greater_werewolf/fsm.inc BEGIN
+{"FSM.AnimationsFSM"
+
+;********************************************************************
+; Requests
+;********************************************************************
+	{AnimRequest "idle" {System "PRE_IDLE"}}
+
+	{AnimRequest "move" {System "PRE_MOVE"}}
+
+	{AnimRequest "rotate" {System "PRE_ROTATE_LEFT"}}
+
+	{AnimRequest "rotate" {System "PRE_ROTATE_RIGHT"}}
+
+	{AnimRequest "attack" {System "PRE_MELEE_ATTACK"}}
+
+	{AnimRequest "death" {System "PRE_DEATH"}}
+
+;********************************************************************
+; States
+;********************************************************************
+{State "freeze"
+	;transations
+	{from "stun"}
+	{from "pose_to_stun"}
+	{from "pose_to_move_default"}
+	{from "move_default"}
+	{from "pose_to_idle_default"}
+	{from "idle_default"}
+	{from "pose_to_buff_default"}
+	{from "buff_default"}
+	{from "pose_to_summon_default"}
+	{from "summon_default"}
+	{from "pose_to_idle_panic"}
+	{from "idle_panic"}
+	{from "pose_to_move_panic"}
+	{from "move_panic"}
+	{from "pose_to_attack_fight"}
+	{from "attack_fight"}
+	{from "pose_to_move_fight"}
+	{from "move_fight"}
+	{from "pose_to_idle_fight"}
+	{from "idle_fight"}
+	{from "pose_to_imp_attack01_fight"}
+	{from "imp_attack01_fight"}
+	{from "from_default"}
+	{from "from_panic"}
+	{from "from_fight"}
+	;tags
+	{tag "freeze"}
+}
+{StateWork "freeze"
+	{pose}
+	{AnimName "pose_from_idle" {speed 0.1} }
+}
+
+{State "pose_to_stun"
+	;transations
+	{from "freeze"}
+	{from "pose_to_move_default"}
+	{from "move_default"}
+	{from "pose_to_idle_default"}
+	{from "idle_default"}
+	{from "pose_to_buff_default"}
+	{from "buff_default"}
+	{from "pose_to_summon_default"}
+	{from "summon_default"}
+	{from "pose_to_idle_panic"}
+	{from "idle_panic"}
+	{from "pose_to_move_panic"}
+	{from "move_panic"}
+	{from "pose_to_attack_fight"}
+	{from "attack_fight"}
+	{from "pose_to_move_fight"}
+	{from "move_fight"}
+	{from "pose_to_idle_fight"}
+	{from "idle_fight"}
+	{from "pose_to_imp_attack01_fight"}
+	{from "imp_attack01_fight"}
+	{from "from_default"}
+	{from "from_panic"}
+	{from "from_fight"}
+}
+{StateWork "pose_to_stun"
+	{pose}
+	{AnimName "pose_to_stun" {speed 0.1} }
+}
+
+{State "stun"
+	;transations
+	{from "pose_to_stun"}
+	;tags
+	{tag "stun"}
+}
+{StateWork "stun"
+	{looped}
+	{AnimName "stun" {speed 1} }
+}
+
+{State "from_unmoved_1"
+	;transations
+	{from "freeze"}
+	{from "stun"}
+	{from "stand_up"}
+	{from "pose_to_stun"}
+}
+{StateWork "from_unmoved_1"
+}
+
+{State "from_unmoved_2"
+	;transations
+	{from "from_unmoved_1"}
+}
+{StateWork "from_unmoved_2"
+}
+
+{State "pose_to_mass_damage"
+	;transations
+	{from "from_stun_1"}
+	{from "pose_to_move_default"}
+	{from "move_default"}
+	{from "pose_to_idle_default"}
+	{from "idle_default"}
+	{from "pose_to_buff_default"}
+	{from "buff_default"}
+	{from "pose_to_summon_default"}
+	{from "summon_default"}
+	{from "pose_to_idle_panic"}
+	{from "idle_panic"}
+	{from "pose_to_move_panic"}
+	{from "move_panic"}
+	{from "pose_to_attack_fight"}
+	{from "attack_fight"}
+	{from "pose_to_move_fight"}
+	{from "move_fight"}
+	{from "pose_to_idle_fight"}
+	{from "idle_fight"}
+	{from "pose_to_imp_attack01_fight"}
+	{from "imp_attack01_fight"}
+	{from "from_default"}
+	{from "from_panic"}
+	{from "from_fight"}
+}
+{StateWork "pose_to_mass_damage"
+	{pose}
+	{AnimName "pose_to_mass_damage_fly" {speed 0.001} }
+}
+
+{State "mass_damage"
+	;transations
+	{from "pose_to_mass_damage"}
+	;tags
+	{tag "mass_damage"}
+}
+{StateWork "mass_damage"
+	{SyncNotifyStart "MASS_FLY"}
+	{looped}
+	{AnimName "mass_damage_fly" {speed 1} }
+}
+
+{State "stand_up"
+	;transations
+	{from "mass_damage"}
+	{from "pose_to_mass_damage"}
+	;tags
+	{tag "stand_up"}
+}
+{StateWork "stand_up"
+	{SyncNotifyFinish "STAND_READY"}
+	{AnimName "massive_stand_up" {speed 1.1} }
+}
+
+{State "from_unmoved_3"
+	;transations
+	{from "mass_damage"}
+	{from "pose_to_mass_damage"}
+}
+{StateWork "from_unmoved_3"
+}
+
+{State "from_unmoved_4"
+	;transations
+	{from "from_unmoved_3"}
+}
+{StateWork "from_unmoved_4"
+}
+
+{State "from_unmoved_5"
+	;transations
+	{from "from_unmoved_4"}
+}
+{StateWork "from_unmoved_5"
+}
+
+{State "from_stun_2"
+	;transations
+	{from "from_stun_3"}
+}
+{StateWork "from_stun_2"
+}
+
+{State "from_stun_3"
+	;transations
+	{from "freeze"}
+	{from "stun"}
+	{from "pose_to_stun"}
+}
+{StateWork "from_stun_3"
+}
+
+{State "from_stun_1"
+	;transations
+	{from "from_stun_2"}
+}
+{StateWork "from_stun_1"
+}
+
+{State "pose_to_move_default"
+	;transations
+	{from "from_default"}
+	{from "idle_default"}
+	{from "buff_default"}
+	{from "summon_default"}
+	{from "pose_to_idle_default"}
+	{from "pose_to_buff_default"}
+	{from "pose_to_summon_default"}
+}
+{StateWork "pose_to_move_default"
+	{pose}
+	{AnimName "pose_to_walk" {speed 0.25} }
+}
+
+{State "move_default"
+	;transations
+	{from "pose_to_move_default"}
+	;tags
+	{tag "move"}
+	{tag "default"}
+}
+{StateWork "move_default"
+	{SyncNotifyStart "MOVE_RESUME"}
+	{SyncNotifyFinish "MOVE_PAUSE"}
+	{looped}
+	{AnimName "walk" {speed 1.3} }
+}
+
+{State "pose_to_idle_default"
+	;transations
+	{from "move_default"}
+	{from "from_default"}
+	{from "buff_default"}
+	{from "summon_default"}
+	{from "pose_to_move_default"}
+	{from "pose_to_buff_default"}
+	{from "pose_to_summon_default"}
+}
+{StateWork "pose_to_idle_default"
+	{pose}
+	{AnimName "pose_to_idle" {speed 0.25} }
+}
+
+{State "idle_default"
+	;transations
+	{from "pose_to_idle_default"}
+	;tags
+	{tag "idle"}
+	{tag "default"}
+}
+{StateWork "idle_default"
+	{SyncNotifyStart "MOVE_PAUSE"}
+	{looped}
+	{random}
+	{AnimName "idle" {speed 1} {count 2} }
+	{AnimName "idle_rand01" {speed 1} }
+}
+
+{State "pose_to_buff_default"
+	;transations
+	{from "move_default"}
+	{from "idle_default"}
+	{from "from_default"}
+	{from "summon_default"}
+	{from "pose_to_move_default"}
+	{from "pose_to_idle_default"}
+	{from "pose_to_summon_default"}
+}
+{StateWork "pose_to_buff_default"
+	{pose}
+	{AnimName "pose_to_idle_rand01" {speed 0.4} }
+}
+
+{State "buff_default"
+	;transations
+	{from "pose_to_buff_default"}
+	;tags
+	{tag "buff"}
+	{tag "default"}
+}
+{StateWork "buff_default"
+	{SyncNotifyStart "ATTACK"}
+	{SyncNotifyFinish "ATTACK"}
+	{AnimName "idle_rand01" {speed 1.2} {frame 22 "ATTACK"} {frame -1 "ATTACK"} }
+}
+
+{State "pose_to_summon_default"
+	;transations
+	{from "buff_default"}
+	{from "move_default"}
+	{from "idle_default"}
+	{from "from_default"}
+	{from "pose_to_move_default"}
+	{from "pose_to_idle_default"}
+	{from "pose_to_buff_default"}
+}
+{StateWork "pose_to_summon_default"
+	{pose}
+	{AnimName "pose_to_blow01" {speed 0.4} }
+}
+
+{State "summon_default"
+	;transations
+	{from "pose_to_summon_default"}
+	;tags
+	{tag "summon"}
+	{tag "default"}
+}
+{StateWork "summon_default"
+	{SyncNotifyStart "ATTACK"}
+	{SyncNotifyFinish "ATTACK"}
+	{AnimName "blow01" {speed 1.2} {frame 15 "GREATER_WERWOLF_ATTACK_SND"} {frame 17 "IMP_SWISH_SND"} {frame 32 "IMP_SWISH_SND"} {frame 39 "ATTACK"} {frame 48 "IMP_SWISH_SND"} {frame 63 "IMP_SWISH_SND"} {frame -1 "ATTACK"} }
+}
+
+{State "pose_to_idle_panic"
+	;transations
+	{from "from_panic"}
+	{from "move_panic"}
+	{from "pose_to_move_panic"}
+}
+{StateWork "pose_to_idle_panic"
+	{pose}
+	{AnimName "pose_to_idle" {speed 0.25} }
+}
+
+{State "idle_panic"
+	;transations
+	{from "pose_to_idle_panic"}
+	;tags
+	{tag "idle"}
+	{tag "panic"}
+}
+{StateWork "idle_panic"
+	{SyncNotifyStart "MOVE_PAUSE"}
+	{looped}
+	{AnimName "idle" {speed 0.8} }
+}
+
+{State "pose_to_move_panic"
+	;transations
+	{from "from_panic"}
+	{from "idle_panic"}
+	{from "pose_to_idle_panic"}
+}
+{StateWork "pose_to_move_panic"
+	{pose}
+	{AnimName "pose_to_ag_walk" {speed 0.25} }
+}
+
+{State "move_panic"
+	;transations
+	{from "pose_to_move_panic"}
+	;tags
+	{tag "move"}
+	{tag "panic"}
+}
+{StateWork "move_panic"
+	{SyncNotifyStart "MOVE_RESUME"}
+	{SyncNotifyFinish "MOVE_PAUSE"}
+	{looped}
+	{AnimName "ag_walk" {speed 1.1} }
+}
+
+{State "to_death"
+	;transations
+	{from "blank01"}
+}
+{StateWork "to_death"
+}
+
+{State "death_anim"
+	;transations
+	{from "to_death"}
+	;tags
+	{tag "death_anim"}
+}
+{StateWork "death_anim"
+	{AnimName "death" {speed 1} {frame 11 "WOLFMAN_DEATH_SND"} {frame 49 "GREATER_WERWOLF_HOWL_SND"} {frame 124 "BODYFALL_SND"} }
+}
+
+{State "blank01"
+	;transations
+	{from "pose_to_move_default"}
+	{from "move_default"}
+	{from "pose_to_idle_default"}
+	{from "idle_default"}
+	{from "pose_to_buff_default"}
+	{from "buff_default"}
+	{from "pose_to_summon_default"}
+	{from "summon_default"}
+	{from "pose_to_idle_panic"}
+	{from "idle_panic"}
+	{from "pose_to_move_panic"}
+	{from "move_panic"}
+	{from "pose_to_attack_fight"}
+	{from "attack_fight"}
+	{from "pose_to_move_fight"}
+	{from "move_fight"}
+	{from "pose_to_idle_fight"}
+	{from "idle_fight"}
+	{from "pose_to_imp_attack01_fight"}
+	{from "imp_attack01_fight"}
+	{from "from_default"}
+	{from "from_panic"}
+	{from "from_fight"}
+}
+{StateWork "blank01"
+}
+
+{State "death"
+	;transations
+	{from "death_anim"}
+	{from "from_unmoved_5"}
+	;tags
+	{tag "death"}
+}
+{StateWork "death"
+	{SyncNotifyStart "FINAL_DEATH"}
+	{pose}
+	{AnimName "pose_from_death" {speed 0.5} }
+}
+
+{State "pose_to_attack_fight"
+	;transations
+	{from "idle_fight"}
+	{from "move_fight"}
+	{from "from_fight"}
+	{from "imp_attack01_fight"}
+	{from "pose_to_move_fight"}
+	{from "pose_to_idle_fight"}
+	{from "pose_to_imp_attack01_fight"}
+}
+{StateWork "pose_to_attack_fight"
+	{pose}
+	{AnimName "pose_to_blow01" {speed 0.4} }
+}
+
+{State "attack_fight"
+	;transations
+	{from "pose_to_attack_fight"}
+	;tags
+	{tag "attack"}
+	{tag "fight"}
+}
+{StateWork "attack_fight"
+	{SyncNotifyStart "ATTACK"}
+	{SyncNotifyFinish "ATTACK"}
+	{AnimName "blow01" {speed 1.2} {frame 15 "GREATER_WERWOLF_ATTACK_SND"} {frame 17 "IMP_SWISH_SND"} {frame 32 "IMP_SWISH_SND"} {frame 39 "ATTACK"} {frame 48 "IMP_SWISH_SND"} {frame 63 "IMP_SWISH_SND"} {frame -1 "ATTACK"} }
+}
+
+{State "pose_to_move_fight"
+	;transations
+	{from "idle_fight"}
+	{from "attack_fight"}
+	{from "from_fight"}
+	{from "imp_attack01_fight"}
+	{from "pose_to_attack_fight"}
+	{from "pose_to_idle_fight"}
+	{from "pose_to_imp_attack01_fight"}
+}
+{StateWork "pose_to_move_fight"
+	{pose}
+	{AnimName "pose_to_ag_walk" {speed 0.25} }
+}
+
+{State "move_fight"
+	;transations
+	{from "pose_to_move_fight"}
+	;tags
+	{tag "move"}
+	{tag "fight"}
+}
+{StateWork "move_fight"
+	{SyncNotifyStart "MOVE_RESUME"}
+	{SyncNotifyFinish "MOVE_PAUSE"}
+	{looped}
+	{AnimName "ag_walk" {speed 1} }
+}
+
+{State "pose_to_idle_fight"
+	;transations
+	{from "move_fight"}
+	{from "attack_fight"}
+	{from "from_fight"}
+	{from "imp_attack01_fight"}
+	{from "pose_to_attack_fight"}
+	{from "pose_to_move_fight"}
+	{from "pose_to_imp_attack01_fight"}
+}
+{StateWork "pose_to_idle_fight"
+	{pose}
+	{AnimName "pose_to_idle" {speed 0.25} }
+}
+
+{State "idle_fight"
+	;transations
+	{from "pose_to_idle_fight"}
+	;tags
+	{tag "idle"}
+	{tag "fight"}
+}
+{StateWork "idle_fight"
+	{SyncNotifyStart "MOVE_PAUSE"}
+	{looped}
+	{AnimName "idle" {speed 1} }
+}
+
+{State "pose_to_imp_attack01_fight"
+	;transations
+	{from "attack_fight"}
+	{from "idle_fight"}
+	{from "move_fight"}
+	{from "from_fight"}
+	{from "pose_to_attack_fight"}
+	{from "pose_to_move_fight"}
+	{from "pose_to_idle_fight"}
+}
+{StateWork "pose_to_imp_attack01_fight"
+	{pose}
+	{AnimName "pose_to_blow02" {speed 0.4} }
+}
+
+{State "imp_attack01_fight"
+	;transations
+	{from "pose_to_imp_attack01_fight"}
+	;tags
+	{tag "imp_attack01"}
+	{tag "fight"}
+}
+{StateWork "imp_attack01_fight"
+	{SyncNotifyStart "ATTACK"}
+	{SyncNotifyFinish "ATTACK"}
+	{AnimName "blow02" {speed 1.2} {frame 17 "GREATER_WERWOLF_ATTACK_SND"} {frame 29 "ATTACK"} {frame 38 "WOLFMAN_BITE_SND"} {frame -1 "ATTACK"} }
+}
+
+{State "from_default"
+	;transations
+	{from "move_default"}
+	{from "idle_default"}
+	{from "from_panic"}
+	{from "from_fight"}
+	{from "death"}
+	{from "from_unmoved_2"}
+	{from "buff_default"}
+	{from "summon_default"}
+	{from "pose_to_move_default"}
+	{from "pose_to_idle_default"}
+	{from "pose_to_buff_default"}
+	{from "pose_to_summon_default"}
+}
+{StateWork "from_default"
+	{SyncNotifyStart "MOVE_PAUSE"}
+}
+
+{State "from_panic"
+	;transations
+	{from "idle_panic"}
+	{from "move_panic"}
+	{from "from_default"}
+	{from "from_fight"}
+	{from "death"}
+	{from "from_unmoved_2"}
+	{from "pose_to_idle_panic"}
+	{from "pose_to_move_panic"}
+}
+{StateWork "from_panic"
+	{SyncNotifyStart "MOVE_PAUSE"}
+}
+
+{State "from_fight"
+	;transations
+	{from "from_default"}
+	{from "from_panic"}
+	{from "idle_fight"}
+	{from "move_fight"}
+	{from "attack_fight"}
+	{from "imp_attack01_fight"}
+	{from "death"}
+	{from "from_unmoved_2"}
+	{from "pose_to_attack_fight"}
+	{from "pose_to_move_fight"}
+	{from "pose_to_idle_fight"}
+	{from "pose_to_imp_attack01_fight"}
+}
+{StateWork "from_fight"
+	{SyncNotifyStart "MOVE_PAUSE"}
+}
+
+;********************************************************************
+; Subsets
+;********************************************************************
+{subset "default"
+	{enable "default"}
+	{disable "panic"}
+	{disable "fight"}
+}
+
+{subset "panic"
+	{disable "default"}
+	{enable "panic"}
+	{disable "fight"}
+}
+
+{subset "fight"
+	{disable "default"}
+	{disable "panic"}
+	{enable "fight"}
+}
+
+;********************************************************************
+; Start state \ subset
+;********************************************************************
+	{Start "idle_default"}
+
+	{WorkSubset "default"}
+
+}
+
+;#line 11: entity/units/monsters/beast_greater_werewolf/fsm.inc END
+
+	{xform scale 1.85}	
+
+	;===================================================
+	;	Общие свойства юнитов
+	;===================================================
+
+
+;#line 18: 	(include "/properties/units/extenders/tex_mod_manager.inc")
+;#line 18: properties/units/extenders/tex_mod_manager.inc BEGIN
+	{"M2TexModManager"}
+;#line 18: properties/units/extenders/tex_mod_manager.inc END
+
+
+;#line 19: 	(include "/properties/units/extenders/entity_nationality.inc")
+;#line 19: properties/units/extenders/entity_nationality.inc BEGIN
+{"EntityNationality"
+}
+
+;#line 19: properties/units/extenders/entity_nationality.inc END
+
+
+;#line 20: 	(include "/properties/units/extenders/selection_box1.inc")	
+;#line 20: properties/units/extenders/selection_box1.inc BEGIN
+{"volumes"
+	{"selection_box1"
+		{able
+			{visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}
+			{blast 0}{hole 0}{holed 0}{touch 0}{float 0}{window 0}
+			{select 1}
+		}
+	}
+}
+
+{"zones"
+	{Collider "can_stir"}
+}
+;#line 20: properties/units/extenders/selection_box1.inc END
+
+
+;#line 21: 	(include "/properties/units/extenders/items_attachment.inc")
+;#line 21: properties/units/extenders/items_attachment.inc BEGIN
+{"ItemsAttachment"
+}
+
+;#line 21: properties/units/extenders/items_attachment.inc END
+
+
+;#line 22: 	(include "/properties/sound/leather_material_sound.inc")
+;#line 22: properties/sound/leather_material_sound.inc BEGIN
+{"snd_props"
+	{prop {tag "hitprop"}{val "leather"}}
+}
+
+;#line 22: properties/sound/leather_material_sound.inc END
+
+	
+	;===================================================
+	;	Индивидуальные свойства юнита
+	;===================================================
+
+;#line 27: 	(include "extenders/death.inc")
+;#line 27: entity/units/monsters/beast_greater_werewolf/extenders/death.inc BEGIN
+{"IDeath.UnitDeath"
+	{grave_name "grave_monster"}
+	{long_phases
+		"unit_putrefaction"		1.5   ; время тления трупа юнита... 
+		"unit_resurrection"		1.5   ; время воскрешения
+
+		"grave_alive"		20.0		; время в течение которого живет могилка
+		"grave_putrefaction"	2.5		; время исчезновения могилки	
+		"grave_resurrection"	2.5		; время появления могилки
+	}
+}
+;#line 27: entity/units/monsters/beast_greater_werewolf/extenders/death.inc END
+
+
+;#line 28: 	(include "extenders/name.inc")
+;#line 28: entity/units/monsters/beast_greater_werewolf/extenders/name.inc BEGIN
+{"Name"
+}
+
+;#line 28: entity/units/monsters/beast_greater_werewolf/extenders/name.inc END
+
+
+;#line 29: 	(include "extenders/entity_classes.inc")
+;#line 29: entity/units/monsters/beast_greater_werewolf/extenders/entity_classes.inc BEGIN
+{"EntityClasses"
+	"unit"
+	"monster"
+	"beast"
+	"blood_splash"
+}
+
+;#line 29: entity/units/monsters/beast_greater_werewolf/extenders/entity_classes.inc END
+
+
+
+;#line 31: 	(include "extenders/unit.inc")
+;#line 31: entity/units/monsters/beast_greater_werewolf/extenders/unit.inc BEGIN
+{"Unit"
+	{PersonalCashCard
+		{Classes
+			"monster"
+		}
+		{TreasureKeeper
+			"money" 600
+		}
+	}
+}
+
+
+;#line 31: entity/units/monsters/beast_greater_werewolf/extenders/unit.inc END
+
+
+;#line 32: 	(include "extenders/level.inc")
+;#line 32: entity/units/monsters/beast_greater_werewolf/extenders/level.inc BEGIN
+{"Level"
+	{MaxLevel 20}
+	{CurrentLevel 20}
+	{CurrentExperiens 0.0}
+}
+
+;#line 32: entity/units/monsters/beast_greater_werewolf/extenders/level.inc END
+
+
+;#line 33: 	(include "extenders/health.inc")
+;#line 33: entity/units/monsters/beast_greater_werewolf/extenders/health.inc BEGIN
+
+{"Health"
+	{value {			;Начальные данные - не важны (затираются при применении дизайнерских формул)
+			value 1
+			usemin 1
+			min 0
+			usemax 1
+			max 1
+		}
+	}
+}
+
+
+;#line 33: entity/units/monsters/beast_greater_werewolf/extenders/health.inc END
+
+
+
+;#line 35: 	(include "extenders/ai.inc")
+;#line 35: entity/units/monsters/beast_greater_werewolf/extenders/ai.inc BEGIN
+{"Behaviour.HeroMonsterBehaviour"
+	{HeroMonsterTargetManager
+		{AllureFactors
+		}
+		{"relations"
+			"hero" 5
+			"castle" 5
+			"guild" 5
+		}
+	}
+}
+{".black_out"
+	{time 5.0}
+}
+;#line 35: entity/units/monsters/beast_greater_werewolf/extenders/ai.inc END
+
+
+;#line 36: 	(include "extenders/mover.inc")
+;#line 36: entity/units/monsters/beast_greater_werewolf/extenders/mover.inc BEGIN
+{"Mover.FootMover"
+
+;#line 845: 	(include "/properties/non_dest_08.mover")
+;#line 845: properties/non_dest_08.mover BEGIN
+{pathprofile "DEFAULT"
+}
+
+;#line 845: properties/non_dest_08.mover END
+
+	{stepLength 2}
+	{speed 4 5 5}
+	{angleSpeed 300}
+}
+{".speed_property"
+}
+
+;#line 36: entity/units/monsters/beast_greater_werewolf/extenders/mover.inc END
+
+
+;#line 37: 	(include "extenders/sensor.inc")
+;#line 37: entity/units/monsters/beast_greater_werewolf/extenders/sensor.inc BEGIN
+{"m2sensor"
+	{ViewRadius 25}
+	{Visors
+	    {AllyVisor}
+		{EnemyVisor}
+	
+	    {FellowVisor}
+	    {NeutralVisor}
+	}
+}
+
+;#line 37: entity/units/monsters/beast_greater_werewolf/extenders/sensor.inc END
+
+
+
+;#line 39: 	(include "extenders/actions.inc")		
+;#line 39: entity/units/monsters/beast_greater_werewolf/extenders/actions.inc BEGIN
+{"ActionManager"
+	{actions
+		{action
+			{name "greater_werewolf_basic_attack"}
+		}
+		{action
+			{name "greater_werewolf_buff"}
+		}
+		{action
+			{name "greater_werewolf_melee_attack"}
+		}
+		{action
+			{name "greater_werewolf_magic_attack"}
+		}
+		{action
+			{name "werewolf_stun_attack"}
+		}
+		{action
+			{name "greater_werewolf_summon"}
+		}
+	}
+}
+
+;#line 39: entity/units/monsters/beast_greater_werewolf/extenders/actions.inc END
+
+	{"Attacker"}
+
+;#line 41: 	(include "extenders/inventory.inc")
+;#line 41: entity/units/monsters/beast_greater_werewolf/extenders/inventory.inc BEGIN
+{"m2inventory"
+	{allItems
+		{"Weapon"
+			{weapon_name "hero_werewolf_weapon04"}
+		}
+		{"Armour"
+			{type "boss_werewolf_wolf" 3}
+		}
+	}
+}
+
+;#line 41: entity/units/monsters/beast_greater_werewolf/extenders/inventory.inc END
+
+	{"RPGModule"}
+
+
+;#line 44: 	(include "extenders/prime_cost.inc")
+;#line 44: entity/units/monsters/beast_greater_werewolf/extenders/prime_cost.inc BEGIN
+{"EntityPrimeCost"
+	{Cost 150.0}
+}
+
+;#line 44: entity/units/monsters/beast_greater_werewolf/extenders/prime_cost.inc END
+
+
+;#line 45: 	(include "extenders/safety_emitter.inc")
+;#line 45: entity/units/monsters/beast_greater_werewolf/extenders/safety_emitter.inc BEGIN
+{"safety_emitter"
+	{power 50}
+	{radius 10}
+}
+
+;#line 45: entity/units/monsters/beast_greater_werewolf/extenders/safety_emitter.inc END
+
+
+;#line 46: 	(include "/properties/units/extenders/sound_t.inc")
+;#line 46: properties/units/extenders/sound_t.inc BEGIN
+{"sound"}
+{"snd_props"}
+{".audible"}
+;#line 46: properties/units/extenders/sound_t.inc END
+
+
+;#line 47: 	(include "extenders/default_perks.inc")
+;#line 47: entity/units/monsters/beast_greater_werewolf/extenders/default_perks.inc BEGIN
+{"RPGModule"
+	{perks
+		{perkinstance "perk_imunity2specials"}
+		{perkinstance "perk_regeneration"}
+	}
+}
+;#line 47: entity/units/monsters/beast_greater_werewolf/extenders/default_perks.inc END
+
+
+;#line 48: 	(include "/properties/units/extenders/step_fx_1.inc")
+;#line 48: properties/units/extenders/step_fx_1.inc BEGIN
+{"mover"
+	{footfx {name "unit_water_splash"} {dist 0.4}}
+}
+
+;#line 48: properties/units/extenders/step_fx_1.inc END
+
+	{"simulator" {able 0} {mass 60}}
+	{"Knockback"}
+}

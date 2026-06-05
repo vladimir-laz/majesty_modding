@@ -1,0 +1,260 @@
+{entity
+	{"zones"
+		{ObstacleID "fly_over"}
+		{body {proper body sensible} {permit body}}
+	}
+	{actor}
+	{"placer"}
+
+	{"building" {version 7}}
+	{xform scale 1.45}
+
+	;===================================================
+	;	Общие свойства зданий
+	;===================================================
+
+;#line 15: 	(include "/properties/buildings/extenders/death.inc")
+;#line 15: properties/buildings/extenders/death.inc BEGIN
+{"IDeath.BuildingDeath"
+}
+
+;#line 15: properties/buildings/extenders/death.inc END
+
+
+;#line 16: 	(include "/properties/buildings/extenders/entity_nationality.inc")
+;#line 16: properties/buildings/extenders/entity_nationality.inc BEGIN
+{"EntityNationality"
+}
+
+;#line 16: properties/buildings/extenders/entity_nationality.inc END
+
+{"spawner_extender"
+	{global_spawn_progs "summon_serpent_ghost"}
+}
+;#line 17: 	(include "/properties/buildings/extenders/level.inc")
+;#line 17: properties/buildings/extenders/level.inc BEGIN
+{"Level"
+	{MaxLevel 1}
+	{CurrentLevel 1}
+	{CurrentExperiens 0.0}
+}
+;#line 17: properties/buildings/extenders/level.inc END
+
+
+;#line 18: 	(include "/properties/buildings/extenders/rpg_no_perks.inc")
+;#line 18: properties/buildings/extenders/rpg_no_perks.inc BEGIN
+{"RPGModule" {perks {perkinstance "no_perks_4_building"}}}
+;#line 18: properties/buildings/extenders/rpg_no_perks.inc END
+
+
+;#line 19: 	(include "/properties/buildings/extenders/seller.inc")
+;#line 19: properties/buildings/extenders/seller.inc BEGIN
+{"entity_seller"
+}
+;#line 19: properties/buildings/extenders/seller.inc END
+
+
+
+;#line 21: 	(include "/properties/buildings/sound/destroyable_guild_lizardman.inc")
+;#line 21: properties/buildings/sound/destroyable_guild_lizardman.inc BEGIN
+{"sound"
+	{"destroyable_building"
+		{state "building_one_past_ill" {desc {param}}}
+		{state "building_one_to_full" {desc {param}}}
+		{state "building_destroied" {desc {param {name "buildings/crash/building_crash_3"}{posi}}}}
+		{state "building_is_building" {desc {param {name "buildings/construction/construction"}{looped}{posi}}}}
+		{state "building_building_is_selected" {desc {param {name "interface/building_select/building_building"} }}}
+		{state "building_ready_is_selected" {desc {param {name "interface/building_select/guild_lizardman_select"} }}}
+		{state "building_people_ambient" {desc {param {name "buildings/ambient/guild_lizardman_am"} {looped} {posi}}}}
+		{state "building_25_live" {desc {param {name "buildings/crash/fire_small/fire_big_1"}{looped}{posi} }}}
+		{state "building_50_live" {desc {param {name "buildings/crash/fire_small/fire_med_1"}{looped}{posi} }}}
+		{state "building_75_live" {desc {param {name "buildings/crash/fire_small/fire_small_1"}{looped}{posi} }}}
+	}
+}
+
+;#line 21: properties/buildings/sound/destroyable_guild_lizardman.inc END
+
+
+;#line 22: 	(include "/properties/sound/stone_material_sound.inc")
+;#line 22: properties/sound/stone_material_sound.inc BEGIN
+{"snd_props"
+	{prop {tag "hitprop"}{val "stone"}}
+}
+
+;#line 22: properties/sound/stone_material_sound.inc END
+
+
+	;===================================================
+	;	Индивидуальные свойства здания
+	;===================================================
+	{"FogVisor" {radius 35}}
+	{"Health" {value_new {rpg_building} } }
+	{"Laboratory"}
+
+
+;#line 31: 	(include "extenders/building.inc")
+;#line 31: entity/buildings/logovo_serpent_temple/extenders/building.inc BEGIN
+{"Home"
+}
+{"Building"
+	{stamp "bg_common0455"}
+;	{has_static}
+	{building_value 0.5}	
+	{CashMachine
+		{Base
+			{AcceptableCards
+				{Tax
+					"mks_taxer"
+					"mks_hero_lizardman"
+				}
+				{Personal
+					"mks_hero_lizardman"
+				}
+			}
+		}
+	}
+}
+
+;#line 115: (include "/properties/buildings/visual/mks_guild_lizardman_vis.inc")
+;#line 115: properties/buildings/visual/mks_guild_lizardman_vis.inc BEGIN
+{"visialstatemanager"
+	
+		
+	{desc ;включаем обычная текстура
+		{enable "NO_PEOPLE_INSIDE"} 
+		{name ""} {texmode_whole}
+	}
+	{desc ;включаем текстура со светом в окошках
+		{enable "PEOPLE_INSIDE"} 
+		{name "01"} {texmode_whole}
+	}
+	{desc ; Эффект
+		{enable "IDLE" "BUILDING" "BROKING"}
+		{ref "lizard_temple_L0_"}  {name "mks_guild_lizardman_fx"} {single} {effect} {detachoff} {looped}
+	}
+
+}
+;#line 115: properties/buildings/visual/mks_guild_lizardman_vis.inc END
+
+
+
+;#line 31: entity/buildings/logovo_serpent_temple/extenders/building.inc END
+
+
+;#line 32: 	(include "extenders/entity_classes.inc")
+;#line 32: entity/buildings/logovo_serpent_temple/extenders/entity_classes.inc BEGIN
+{"EntityClasses"
+	"building" "candest"
+	"teg"
+}
+;#line 32: entity/buildings/logovo_serpent_temple/extenders/entity_classes.inc END
+
+	;(include "extenders/guard_point.inc")	;такого экстендера нет и не нужен
+
+;#line 34: 	(include "extenders/inventory.inc")
+;#line 34: entity/buildings/logovo_serpent_temple/extenders/inventory.inc BEGIN
+{"m2inventory"
+}
+
+;#line 34: entity/buildings/logovo_serpent_temple/extenders/inventory.inc END
+
+	;(include "extenders/keep_population.inc")	;такого экстендера нет и не нужен
+
+;#line 36: 	(include "extenders/name.inc")
+;#line 36: entity/buildings/logovo_serpent_temple/extenders/name.inc BEGIN
+{"Name"}
+;#line 36: entity/buildings/logovo_serpent_temple/extenders/name.inc END
+
+
+;#line 37: 	(include "extenders/prime_cost.inc")
+;#line 37: entity/buildings/logovo_serpent_temple/extenders/prime_cost.inc BEGIN
+{"EntityPrimeCost"
+	{Cost 35.0}
+}
+;#line 37: entity/buildings/logovo_serpent_temple/extenders/prime_cost.inc END
+
+
+;#line 38: 	(include "extenders/safety_emitter.inc")
+;#line 38: entity/buildings/logovo_serpent_temple/extenders/safety_emitter.inc BEGIN
+{"safety_emitter"
+	{power  5}
+	{radius 20}
+}
+;#line 38: entity/buildings/logovo_serpent_temple/extenders/safety_emitter.inc END
+
+
+;#line 39: 	(include "extenders/sensor.inc")
+;#line 39: entity/buildings/logovo_serpent_temple/extenders/sensor.inc BEGIN
+{"m2sensor"
+	{ViewRadius 10}
+	{Visors
+		{FellowVisor 20}
+	}
+}
+;#line 39: entity/buildings/logovo_serpent_temple/extenders/sensor.inc END
+
+	;(include "extenders/treasures_generator.inc")	;такого экстендера нет и не нужен
+
+;#line 41: 	(include "extenders/upgrades.inc")
+;#line 41: entity/buildings/logovo_serpent_temple/extenders/upgrades.inc BEGIN
+{"Upgrades"
+	{available
+		{;1й апгрейт
+			{health 500}				;Добавляет хитпоинтов
+			{building_value 0.35}
+			{cost					;Стоимость апргейда
+			"money" 750
+			}
+		}
+	}
+}
+
+;#line 41: entity/buildings/logovo_serpent_temple/extenders/upgrades.inc END
+
+
+	{"structure"
+		{place "dummy_static_1" "mks_guildlizardman_l01"}
+		{place "dummy_static_3" "mks_guildlizardman_l0_nati_1"}
+		{place "dummy_static_2" "mks_guildlizardman_l11"}
+		{place "dummy_static_4" "mks_guildlizardman_l1_nati_1"}
+
+		{place "dummy02" "lizard_temple_01_l0_base_mks_guild_lizardman1"}
+		{place "dummy03" "lizard_temple_02_l0_base_mks_guild_lizardman1"}
+		{place "dummy04" "lizard_temple_03_l0_base_mks_guild_lizardman1"}
+		{place "dummy05" "lizard_temple_04_l0_base_mks_guild_lizardman1"}
+		{place "dummy06" "lizard_temple_05_l0_base_mks_guild_lizardman1"}
+		{place "dummy07" "lizard_temple_06_l0_base_mks_guild_lizardman1"}
+		{place "dummy08" "lizard_temple_07_l0_base_mks_guild_lizardman1"}
+		{place "dummy09" "lizard_temple_08_l0_dust_mks_guild_lizardman1"}
+		{place "dummy10" "lizard_temple_09_l0_base_mks_guild_lizardman1"}
+		{place "dummy11" "lizard_temple_10_l0_base_mks_guild_lizardman1"}
+		{place "dummy12" "lizard_temple_11_l0_dust_mks_guild_lizardman1"}
+		{place "dummy13" "lizard_temple_12_l0_base_mks_guild_lizardman1"}
+		{place "dummy14" "lizard_temple_13_l0_base_mks_guild_lizardman1"}
+		{place "dummy15" "lizard_temple_14_l0_base_mks_guild_lizardman1"}
+		{place "dummy16" "lizard_temple_15_l0_dust_mks_guild_lizardman1"}
+		{place "dummy17" "lizard_temple_16_l0_nati_dust_mks_guild_lizardman1"}
+		{place "dummy18" "lizard_temple_17_l0_nati_base_mks_guild_lizardman1"}
+		{place "dummy19" "lizard_temple_18_l0_nati_base_mks_guild_lizardman1"}
+		{place "dummy20" "lizard_temple_19_l0_nati_base_mks_guild_lizardman1"}
+		{place "dummy21" "lizard_temple_20_l0_nati_dust_mks_guild_lizardman1"}
+		{place "dummy22" "lizard_temple_21_l0_nati_base_mks_guild_lizardman1"}
+		{place "dummy23" "lizard_temple_22_l1_base_mks_guild_lizardman1"}
+		{place "dummy24" "lizard_temple_23_l1_base_mks_guild_lizardman1"}
+		{place "dummy25" "lizard_temple_24_l1_base_mks_guild_lizardman1"}
+		{place "dummy26" "lizard_temple_25_l1_base_mks_guild_lizardman1"}
+		{place "dummy27" "lizard_temple_26_l1_dust_mks_guild_lizardman1"}
+		{place "dummy28" "lizard_temple_27_l1_dust_mks_guild_lizardman1"}
+		{place "dummy29" "lizard_temple_28_l1_base_mks_guild_lizardman1"}
+		{place "dummy30" "lizard_temple_29_l1_base_mks_guild_lizardman1"}
+		{place "dummy31" "lizard_temple_30_l1_nati_base_mks_guild_lizardman1"}
+		{place "dummy32" "lizard_temple_31_l1_nati_base_mks_guild_lizardman1"}
+		{place "dummy33" "lizard_temple_32_l1_nati_base_mks_guild_lizardman1"}
+		{place "dummy34" "lizard_temple_33_l1_nati_dust_mks_guild_lizardman1"}
+		{place "dummy35" "lizard_temple_34_l1_nati_base_mks_guild_lizardman1"}
+		{place "dummy36" "lizard_temple_l0_ground_mks_guild_lizardman1"}
+		{place "dummy37" "lizard_temple_l0_scaffold_mks_guild_lizardman1"}
+		{place "dummy38" "lizard_temple_l1_ground_mks_guild_lizardman1"}
+		{place "dummy39" "lizard_temple_l1_scaffold_mks_guild_lizardman1"}
+	}
+}

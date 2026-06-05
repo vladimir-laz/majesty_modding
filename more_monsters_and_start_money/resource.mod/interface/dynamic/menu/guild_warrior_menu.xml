@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<controlGroups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+	<controlGroup id="guild_warrior_main">
+		<controlsLayout>
+			<rectangularLayout columns="4" offset="3" />
+		</controlsLayout>
+		<Row>
+			<Button_1 action="RecruitHeroAction" stateAction="CheckRecruitAction">
+				<appearance texture="BUT_hire_Warrior" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="hero_warrior" />
+			</Button_1>
+			<Button_2 action="RecruitHeroAction" stateAction="CheckRecruitAction">
+				<appearance texture="BUT_hire_Knight" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="hero_knight" />
+			</Button_2>
+			<Button_3 action="BuildSpellAction" stateAction="CheckBuildSpellAction" stateActionAutoupdate="true">
+				<appearance nextId="2" texture="BUT_order_call_to_arms" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="magic_call_to_arms" />
+				<appearance id="2" texture="BUT_order_call_to_arms" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but"><property name="mouse_down_sound" value="call_to_arms_pl" /></appearance>
+			</Button_3>
+			<Button_4 action="BuildUpgradeAction" stateAction="CheckBuildUpgradebleAction">
+				<appearance texture="BUT_action_upgrade_build" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="guild_warrior" />
+			</Button_4>
+		</Row>
+		<Row>
+			<Button_1 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_warrior_imp_attack" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="warrior_imp_attack" />
+			</Button_1>
+			<Button_2 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_warrior_resistance_buff" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="warrior_resistance_buff" />
+			</Button_2>
+			<Button_3 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_warrior_maim_attack" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="warrior_maim_attack" />
+			</Button_3>
+		</Row>
+		<Row>
+			<Button_1 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_knight_imp_attack" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="knight_imp_attack" />
+			</Button_1>
+			<Button_2 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_knight_resistance_buff" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="knight_resistance_buff" />
+			</Button_2>
+			<Button_3 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_knight_swordmaster_buff" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="knight_swordmaster_buff" />
+			</Button_3>
+			<Button_4 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_knight_gouge" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="knight_gouge" />
+			</Button_4>
+		</Row>
+	</controlGroup>
+</controlGroups>

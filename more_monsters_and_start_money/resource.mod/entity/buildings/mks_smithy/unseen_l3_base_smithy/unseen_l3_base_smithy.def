@@ -1,0 +1,15 @@
+{entity
+	{"volumes"
+		{defaultmaterial "rock"}
+		{"unseen_l3__vol_"
+			{able {visible 0}{obstacle 0}{overlap 1}} {Tags "body"}
+		}
+	}
+	{"zones" {Collider "default"}
+		{ObstacleID "destructable"}
+		{body {permit body}}
+	}
+	{"BuildingPiece"
+		{built 0} {breakable 0}
+	}
+}

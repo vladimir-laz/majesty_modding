@@ -1,0 +1,246 @@
+{entity
+	
+	{"zones"
+		{ObstacleID "fly_over"}
+		{body {proper body sensible} {permit body}}
+	}
+	{actor}
+
+;#line 8: 	(include "/properties/buildings/extenders/level.inc")
+;#line 8: properties/buildings/extenders/level.inc BEGIN
+{"Level"
+	{MaxLevel 1}
+	{CurrentLevel 1}
+	{CurrentExperiens 0.0}
+}
+;#line 8: properties/buildings/extenders/level.inc END
+
+
+;#line 9: 	(include "/properties/buildings/extenders/death.inc")
+;#line 9: properties/buildings/extenders/death.inc BEGIN
+{"IDeath.BuildingDeath"
+}
+
+;#line 9: properties/buildings/extenders/death.inc END
+
+	;(include "/properties/buildings/extenders/seller.inc")
+
+;#line 11: 	(include "/properties/buildings/extenders/entity_nationality.inc")
+;#line 11: properties/buildings/extenders/entity_nationality.inc BEGIN
+{"EntityNationality"
+}
+
+;#line 11: properties/buildings/extenders/entity_nationality.inc END
+
+
+	;===================================================
+	;	Индивидуальные свойства здания
+	;===================================================
+
+
+;#line 17: 	(include "extenders/name.inc")
+;#line 17: entity/buildings/logovo_ogre/extenders/name.inc BEGIN
+{"Name"}
+;#line 17: entity/buildings/logovo_ogre/extenders/name.inc END
+
+
+;#line 18: 	(include "extenders/entity_classes.inc")
+;#line 18: entity/buildings/logovo_ogre/extenders/entity_classes.inc BEGIN
+{"EntityClasses"
+	"building" "candest"
+    "teg"		 
+}
+;#line 18: entity/buildings/logovo_ogre/extenders/entity_classes.inc END
+
+
+;#line 19: 	(include "extenders/spawner_extender.inc")
+;#line 19: entity/buildings/logovo_ogre/extenders/spawner_extender.inc BEGIN
+{"spawner_extender"
+	{global_spawn_progs "giant_ogre"}
+}
+
+
+
+
+;#line 19: entity/buildings/logovo_ogre/extenders/spawner_extender.inc END
+
+
+
+;#line 21: 	(include "/properties/buildings/extenders/rpg_no_perks.inc")
+;#line 21: properties/buildings/extenders/rpg_no_perks.inc BEGIN
+{"RPGModule" {perks {perkinstance "no_perks_4_building"}}}
+;#line 21: properties/buildings/extenders/rpg_no_perks.inc END
+
+	{"Health" {value_new {rpg_building} } }
+
+;#line 23: 	(include "extenders/building.inc")
+;#line 23: entity/buildings/logovo_ogre/extenders/building.inc BEGIN
+
+{"Home"
+}
+{"Building"
+	{stamp "bg_common04"}
+	{has_static}
+	{CashMachine		
+		{Base
+			{AcceptableCards
+				{Tax
+					
+				}
+				{Personal
+				
+				}
+			}
+		}
+		{accounts
+			{tax "money" 0}
+			{personal "money" 250}
+		}
+	}
+}
+
+
+;#line 95: (include "/properties/buildings/visual/logovo_cave_vis.inc")
+;#line 95: properties/buildings/visual/logovo_cave_vis.inc BEGIN
+{"visialstatemanager"
+	{desc
+		{enable "ENTERING_HERO"} 
+		{ref "test_logovo_cave"} {name "oneEnteringSnd"} {effect}
+	}
+
+	{desc
+		{enable "EXITING_HERO"}
+		{ref "test_logovo_cave"} {name "oneExitingSnd"} {effect}
+	}
+}
+
+;#line 95: properties/buildings/visual/logovo_cave_vis.inc END
+
+
+;#line 23: entity/buildings/logovo_ogre/extenders/building.inc END
+
+
+;#line 24: 	(include "extenders/upgrades.inc")
+;#line 24: entity/buildings/logovo_ogre/extenders/upgrades.inc BEGIN
+{"Upgrades"}
+
+;#line 24: entity/buildings/logovo_ogre/extenders/upgrades.inc END
+
+
+
+;#line 26: 	(include "extenders/inventory.inc")
+;#line 26: entity/buildings/logovo_ogre/extenders/inventory.inc BEGIN
+{"m2inventory"
+}
+
+;#line 26: entity/buildings/logovo_ogre/extenders/inventory.inc END
+
+
+;#line 27: 	(include "extenders/guard_point.inc")
+;#line 27: entity/buildings/logovo_ogre/extenders/guard_point.inc BEGIN
+{"guard_point"
+		{ZoneRadius 20.0}
+		{GuardRadius 25.0}
+}
+
+;#line 27: entity/buildings/logovo_ogre/extenders/guard_point.inc END
+
+
+
+
+;#line 30: 	(include "/properties/buildings/sound/destroyable_logovo_ogre.inc")
+;#line 30: properties/buildings/sound/destroyable_logovo_ogre.inc BEGIN
+{"sound"
+	{"destroyable_building"
+		{state "building_one_past_ill" {desc {param}}}
+		{state "building_one_to_full" {desc {param}}}
+		{state "building_destroied" {desc {param {name "buildings/crash/stone_crash_1"}{posi}}}}
+		{state "building_is_building" {desc {param {name "buildings/construction/construction"}{looped}{posi}}}}
+		{state "building_building_is_selected" {desc {param}}}
+		{state "building_ready_is_selected" {desc {param {name "interface/building_select/logovo_ogre_select"} }}}
+		{state "building_people_ambient" {desc {param}}}
+		{state "building_25_live" {desc {param {name "buildings/crash/fire_small/fire_big_1"}{looped}{posi} }}}
+		{state "building_50_live" {desc {param {name "buildings/crash/fire_small/fire_med_1"}{looped}{posi} }}}
+		{state "building_75_live" {desc {param {name "buildings/crash/fire_small/fire_small_1"}{looped}{posi} }}}
+	}
+}
+
+;#line 30: properties/buildings/sound/destroyable_logovo_ogre.inc END
+
+
+;#line 31: 	(include "/properties/sound/stone_material_sound.inc")
+;#line 31: properties/sound/stone_material_sound.inc BEGIN
+{"snd_props"
+	{prop {tag "hitprop"}{val "stone"}}
+}
+
+;#line 31: properties/sound/stone_material_sound.inc END
+
+
+
+;#line 33: 	(include "extenders/safety_emitter.inc")
+;#line 33: entity/buildings/logovo_ogre/extenders/safety_emitter.inc BEGIN
+{"safety_emitter"
+	{power  1}
+	{radius 10}
+}
+;#line 33: entity/buildings/logovo_ogre/extenders/safety_emitter.inc END
+
+
+;#line 34: 	(include "extenders/prime_cost.inc")
+;#line 34: entity/buildings/logovo_ogre/extenders/prime_cost.inc BEGIN
+{"EntityPrimeCost"
+	{Cost 0.1}
+}
+;#line 34: entity/buildings/logovo_ogre/extenders/prime_cost.inc END
+
+	
+	{xform scale 1.7}
+	{"building" {version 23}}
+	{"placer"}
+	{"structure"
+		{place "dummy_static_1" "logovo_ogre_l0"}
+
+
+		{place "dummy02" "lair_ground_logovo_ogre"}
+		{place "dummy03" "lair_piece_01_base_logovo_ogre"}
+		{place "dummy04" "lair_piece_02_base_logovo_ogre"}
+		{place "dummy05" "lair_piece_03_base_logovo_ogre"}
+		{place "dummy06" "lair_piece_04_base_logovo_ogre"}
+		{place "dummy07" "lair_piece_05_base_logovo_ogre"}
+		{place "dummy08" "lair_piece_06_base_logovo_ogre"}
+		{place "dummy09" "lair_piece_07_base_logovo_ogre"}
+		{place "dummy10" "lair_piece_08_base_logovo_ogre"}
+		{place "dummy11" "lair_piece_09_base_logovo_ogre"}
+		{place "dummy12" "lair_piece_10_base_logovo_ogre"}
+		{place "dummy13" "lair_piece_11_base_logovo_ogre"}
+		{place "dummy14" "lair_piece_12_base_logovo_ogre"}
+		{place "dummy15" "lair_piece_13_base_logovo_ogre"}
+		{place "dummy16" "lair_piece_14_base_logovo_ogre"}
+		{place "dummy17" "lair_piece_15_base_logovo_ogre"}
+		{place "dummy18" "lair_piece_16_base_logovo_ogre"}
+		{place "dummy19" "lair_piece_17_base_logovo_ogre"}
+		{place "dummy20" "lair_piece_18_base_logovo_ogre"}
+		{place "dummy21" "lair_piece_19_base_logovo_ogre"}
+		{place "dummy22" "lair_piece_20_base_logovo_ogre"}
+		{place "dummy23" "lair_piece_21_base_logovo_ogre"}
+		{place "dummy24" "lair_piece_22_base_logovo_ogre"}
+		{place "dummy25" "lair_piece_23_base_logovo_ogre"}
+		{place "dummy26" "lair_piece_24_base_logovo_ogre"}
+		{place "dummy27" "lair_piece_25_dust_logovo_ogre"}
+		{place "dummy28" "lair_piece_26_dust_logovo_ogre"}
+		{place "dummy29" "lair_piece_27_dust_logovo_ogre"}
+		{place "dummy30" "lair_piece_28_dust_logovo_ogre"}
+		{place "dummy31" "lair_piece_29_dust_logovo_ogre"}
+		{place "dummy32" "lair_piece_30_dust_logovo_ogre"}
+		{place "dummy33" "lair_piece_31_dust_logovo_ogre"}
+		{place "dummy34" "lair_piece_32_dust_logovo_ogre"}
+		{place "dummy35" "lair_piece_33_dust_logovo_ogre"}
+		{place "dummy36" "lair_piece_34_dust_logovo_ogre"}
+		{place "dummy37" "lair_piece_35_dust_logovo_ogre"}
+		{place "dummy38" "lair_piece_36_base_logovo_ogre"}
+		{place "dummy39" "s_tree_pine_01_base_logovo_ogre"}
+		{place "dummy40" "s_tree_pine_02_base_logovo_ogre"}
+	}
+	{"FogVisor" {radius 20}}
+}

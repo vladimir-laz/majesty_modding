@@ -1,0 +1,275 @@
+{entity
+	{"zones"
+		{ObstacleID "fly_over"}
+		{body {proper body sensible} {permit body}}
+	}
+	{actor}
+	{"placer"}
+
+	{"building" {version 32}}
+	{xform scale 1.2}
+
+	;===================================================
+	;	Общие свойства зданий
+	;===================================================
+
+;#line 15: 	(include "/properties/buildings/extenders/death.inc")
+;#line 15: properties/buildings/extenders/death.inc BEGIN
+{"IDeath.BuildingDeath"
+}
+
+;#line 15: properties/buildings/extenders/death.inc END
+{"spawner_extender"
+	{global_spawn_progs "fantasy_ancient_minotaur fantasy_greater_ancient_minotaur"}
+}
+
+;#line 16: 	(include "/properties/buildings/extenders/entity_nationality.inc")
+;#line 16: properties/buildings/extenders/entity_nationality.inc BEGIN
+{"EntityNationality"
+}
+
+;#line 16: properties/buildings/extenders/entity_nationality.inc END
+
+
+;#line 17: 	(include "/properties/buildings/extenders/level.inc")
+;#line 17: properties/buildings/extenders/level.inc BEGIN
+{"Level"
+	{MaxLevel 1}
+	{CurrentLevel 1}
+	{CurrentExperiens 0.0}
+}
+;#line 17: properties/buildings/extenders/level.inc END
+
+
+;#line 18: 	(include "/properties/buildings/extenders/rpg_no_perks.inc")
+;#line 18: properties/buildings/extenders/rpg_no_perks.inc BEGIN
+{"RPGModule" {perks {perkinstance "no_perks_4_building"}}}
+;#line 18: properties/buildings/extenders/rpg_no_perks.inc END
+
+;	(include "/properties/buildings/extenders/seller.inc")
+
+
+;#line 21: 	(include "/properties/buildings/sound/destroyable_guild_minotaur.inc")
+;#line 21: properties/buildings/sound/destroyable_guild_minotaur.inc BEGIN
+{"sound"
+	{"destroyable_building"
+		{state "building_one_past_ill" {desc {param}}}
+		{state "building_one_to_full" {desc {param}}}
+		{state "building_destroied" {desc {param {name "buildings/crash/stone_crash_1"}{posi}}}}
+		{state "building_is_building" {desc {param {name "buildings/construction/construction"}{looped}{posi}}}}
+		{state "building_building_is_selected" {desc {param}}}
+		{state "building_ready_is_selected" {desc {param {name "interface/building_select/guild_minotaur_select"} }}}
+		{state "building_people_ambient" {desc {param}}}
+		{state "building_25_live" {desc {param {name "buildings/crash/fire_small/fire_big_1"}{looped}{posi} }}}
+		{state "building_50_live" {desc {param {name "buildings/crash/fire_small/fire_med_1"}{looped}{posi} }}}
+		{state "building_75_live" {desc {param {name "buildings/crash/fire_small/fire_small_1"}{looped}{posi} }}}
+	}
+}
+
+;#line 21: properties/buildings/sound/destroyable_guild_minotaur.inc END
+
+
+;#line 22: 	(include "/properties/sound/stone_material_sound.inc")
+;#line 22: properties/sound/stone_material_sound.inc BEGIN
+{"snd_props"
+	{prop {tag "hitprop"}{val "stone"}}
+}
+
+;#line 22: properties/sound/stone_material_sound.inc END
+
+
+	;===================================================
+	;	Индивидуальные свойства здания
+	;===================================================
+	{"FogVisor" {radius 20}}
+	{"Health" {value_new {rpg_building} } }
+
+
+;#line 30: 	(include "extenders/building.inc")
+;#line 30: entity/buildings/guild_minotaur/extenders/building.inc BEGIN
+{"Home"
+}
+{"Building"
+	{stamp "bg_common03"}
+	{has_static}
+	{CashMachine
+		{Base
+			{AcceptableCards
+				{Tax
+					
+				}
+				{Personal
+				
+				}
+			}
+		}
+		{accounts
+			{tax "money" 0}
+			{personal "money" 200}
+		}
+	}
+}
+
+;#line 110: (include "/properties/buildings/visual/guild_minotaur_vis.inc")
+;#line 110: properties/buildings/visual/guild_minotaur_vis.inc BEGIN
+{"visialstatemanager"
+;	{desc 
+;		{enable "IDLE" "BUILDING" "BROKING"}
+;		{ref "point_fx01"}  {name "fire_guild_minotaur"} {single} {effect} {detachoff} {looped}
+;	}
+}
+
+;#line 110: properties/buildings/visual/guild_minotaur_vis.inc END
+
+
+
+;#line 30: entity/buildings/guild_minotaur/extenders/building.inc END
+
+
+;#line 31: 	(include "extenders/entity_classes.inc")
+;#line 31: entity/buildings/guild_minotaur/extenders/entity_classes.inc BEGIN
+{"EntityClasses"
+	"building" "candest"
+	"guild_minotaur"	 
+    "teg"
+}
+;#line 31: entity/buildings/guild_minotaur/extenders/entity_classes.inc END
+
+
+;#line 32: 	(include "extenders/guard_point.inc")
+;#line 32: entity/buildings/guild_minotaur/extenders/guard_point.inc BEGIN
+{"guard_point"
+		{ZoneRadius 20.0}
+		{GuardRadius 25.0}
+}
+
+;#line 32: entity/buildings/guild_minotaur/extenders/guard_point.inc END
+
+
+;#line 33: 	(include "extenders/inventory.inc")
+;#line 33: entity/buildings/guild_minotaur/extenders/inventory.inc BEGIN
+{"m2inventory"
+}
+
+;#line 33: entity/buildings/guild_minotaur/extenders/inventory.inc END
+
+
+;#line 34: 	(include "extenders/name.inc")
+;#line 34: entity/buildings/guild_minotaur/extenders/name.inc BEGIN
+{"Name"}
+;#line 34: entity/buildings/guild_minotaur/extenders/name.inc END
+
+
+;#line 35: 	(include "extenders/prime_cost.inc")
+;#line 35: entity/buildings/guild_minotaur/extenders/prime_cost.inc BEGIN
+{"EntityPrimeCost"
+	{Cost 0.1}
+}
+;#line 35: entity/buildings/guild_minotaur/extenders/prime_cost.inc END
+
+
+;#line 36: 	(include "extenders/safety_emitter.inc")
+;#line 36: entity/buildings/guild_minotaur/extenders/safety_emitter.inc BEGIN
+{"safety_emitter"
+	{power  1}
+	{radius 10}
+}
+;#line 36: entity/buildings/guild_minotaur/extenders/safety_emitter.inc END
+
+
+;#line 37: 	(include "extenders/sensor.inc")
+;#line 37: entity/buildings/guild_minotaur/extenders/sensor.inc BEGIN
+{"m2sensor"
+	{ViewRadius 10}
+	{Visors
+		{FellowVisor 20}
+	}
+}
+;#line 37: entity/buildings/guild_minotaur/extenders/sensor.inc END
+
+
+;#line 38: 	(include "extenders/spawner_extender.inc")
+;#line 38: entity/buildings/guild_minotaur/extenders/spawner_extender.inc BEGIN
+{"spawner_extender"}
+;#line 38: entity/buildings/guild_minotaur/extenders/spawner_extender.inc END
+
+
+;#line 39: 	(include "extenders/upgrades.inc")
+;#line 39: entity/buildings/guild_minotaur/extenders/upgrades.inc BEGIN
+{"Upgrades"
+	{available
+		{;1й апгрейт
+			{health 980}				;Добавляет хитпоинтов
+			{building_value 0.35}
+			{cost					;Стоимость апргейда
+			"money" 1000
+			}
+		}
+	}
+}
+
+;#line 39: entity/buildings/guild_minotaur/extenders/upgrades.inc END
+
+	
+	{"FXAttachment"
+		{defaults "point_fx01" "fire_guild_minotaur"}
+	}
+
+	{"structure"
+		{place "dummy_static_1" "guild_minotaur_l0"}
+		{place "dummy_static_2" "guild_minotaur_l1"}
+		{place "dummy_static_3" "guild_minotaur_l0_nati_"}
+		{place "dummy_static_4" "guild_minotaur_l1_nati_"}
+
+		{place "dummy02" "guild_minotaur_ground_guild_minotaur"}
+		{place "dummy03" "guild_piece_01_base_guild_minotaur"}
+		{place "dummy04" "guild_piece_02_base_guild_minotaur"}
+		{place "dummy05" "guild_piece_03_base_guild_minotaur"}
+		{place "dummy06" "guild_piece_04_base_guild_minotaur"}
+		{place "dummy07" "guild_piece_05_dust_guild_minotaur"}
+		{place "dummy08" "guild_piece_06_base_guild_minotaur"}
+		{place "dummy09" "guild_piece_07_base_guild_minotaur"}
+		{place "dummy10" "guild_piece_08_base_guild_minotaur"}
+		{place "dummy11" "guild_piece_09_dust_guild_minotaur"}
+		{place "dummy12" "guild_piece_10_dust_guild_minotaur"}
+		{place "dummy13" "guild_piece_11_dust_guild_minotaur"}
+		{place "dummy14" "guild_piece_12_base_guild_minotaur"}
+		{place "dummy15" "guild_piece_13_base_guild_minotaur"}
+		{place "dummy16" "guild_piece_14_dust_guild_minotaur"}
+		{place "dummy17" "guild_piece_15_dust_guild_minotaur"}
+		{place "dummy18" "guild_piece_16_base_guild_minotaur"}
+		{place "dummy19" "guild_piece_17_base_guild_minotaur"}
+		{place "dummy20" "guild_piece_18_nati_base_guild_minotaur"}
+		{place "dummy21" "guild_piece_19_nati_base_guild_minotaur"}
+		{place "dummy22" "guild_piece_20_nati_dust_guild_minotaur"}
+		{place "dummy23" "guild_piece_21_nati_base_guild_minotaur"}
+		{place "dummy24" "guild_piece_22_nati_base_guild_minotaur"}
+		{place "dummy25" "guild_piece_23_nati_base_guild_minotaur"}
+		{place "dummy26" "guild_piece_24_nati_base_guild_minotaur"}
+		{place "dummy27" "guild_piece_25_l1_base_guild_minotaur"}
+		{place "dummy28" "guild_piece_26_l1_base_guild_minotaur"}
+		{place "dummy29" "guild_piece_27_l1_base_guild_minotaur"}
+		{place "dummy30" "guild_piece_28_l1_base_guild_minotaur"}
+		{place "dummy31" "guild_piece_29_l1_base_guild_minotaur"}
+		{place "dummy32" "guild_piece_30_l1_dust_guild_minotaur"}
+		{place "dummy33" "guild_piece_31_l1_base_guild_minotaur"}
+		{place "dummy34" "guild_piece_32_l1_base_guild_minotaur"}
+		{place "dummy35" "guild_piece_33_l1_dust_guild_minotaur"}
+		{place "dummy36" "guild_piece_34_l1_base_guild_minotaur"}
+		{place "dummy37" "guild_piece_35_l1_dust_guild_minotaur"}
+		{place "dummy38" "guild_piece_36_nati_l1_base_guild_minotaur"}
+		{place "dummy39" "guild_piece_37_nati_l1_dust_guild_minotaur"}
+		{place "dummy40" "guild_piece_38_nati_l1_base_guild_minotaur"}
+		{place "dummy41" "guild_piece_39_nati_l1_base_guild_minotaur"}
+		{place "dummy42" "guild_piece_40_nati_l1_base_guild_minotaur"}
+		{place "dummy43" "guild_piece_41_nati_l1_base_guild_minotaur"}
+		{place "dummy44" "guild_piece_42_nati_l1_dust_guild_minotaur"}
+		{place "dummy45" "guild_piece_43_nati_l1_base_guild_minotaur"}
+		{place "dummy46" "guild_piece_44_nati_l1_base_guild_minotaur"}
+		{place "dummy47" "guild_piece_45_nati_l1_base_guild_minotaur"}
+		{place "dummy48" "guild_piece_46_nati_l1_base_guild_minotaur"}
+		{place "dummy49" "guild_piece_47_nati_l1_base_guild_minotaur"}
+		{place "dummy50" "scaffold_l0_scaffold__guild_minotaur"}
+		{place "dummy51" "scaffold_l1_scaffold__guild_minotaur"}
+	}
+}

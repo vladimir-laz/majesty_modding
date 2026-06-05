@@ -1,0 +1,145 @@
+{fx
+	{particle_flow "leafs_up_down"
+		{birth
+			{limit 20}
+			{speed 15}
+			{## time_to_live 2}
+		}
+		{init
+			{## "position.sphere" 0.2
+				{hollow}
+			}
+			{## "position.cylinder" 0.3
+				{hollow}
+			}
+			{"effect.move"
+				{x 0}
+				{y 0}
+				{z -0.4}
+			}
+		}
+		{common
+			{"shape.sprite"
+				{sprite "$/flares/_flare02_n"}
+				{orientation billboard}
+				{target scene }
+				{blend_mode ADD}
+				{center_axis}
+				{layer alpha}
+			}
+			{"effect.scale_xy" 0.075 0.025}
+			{split
+				{branch
+					{"effect.color" 0xff008cd4}
+					{## "effect.acc_z" -1.25 -0.25}
+					{"effect.acc" local_cs
+						{x 0}
+						{y -1.25 -0.25}
+						{z 0}
+					}
+				}
+				{branch
+					{"effect.color" 0xff008ee8}
+					{## "effect.acc_z" 1.25 0.25}
+					{"effect.acc" local_cs
+						{x 0}
+						{y 1.25 0.25}
+						{z 0}
+					}
+				}
+			}
+			{animate 1.2
+				{"effect.brightness"
+					{to 1}
+					{## power 5}
+					{from 0}
+					{peak}
+				}
+				{"effect.rotate_z"
+					{to 0 -60}
+				}
+				{on_end
+					{delete}
+				}
+			}
+			{"effect.prerotate_z" 0 -180}
+			{## "effect.move"
+				{x 0 0.5}
+				{y 0 0.5}
+				{z -2 -0.5}
+			}
+			{"force.attraction" 0.25
+				{application origin}
+			}
+		}
+		{## axis_z}
+		{local_cs}
+	}
+	{particle_flow
+		{birth
+			{limit 10}
+			{speed 10}
+			{## time_to_live 2}
+		}
+		{init
+			{## "position.sphere" 0.4
+				{hollow}
+			}
+			{## "position.cylinder" 0.3
+				{## height 0}
+				{hollow}
+			}
+			{"effect.move"
+				{x 0}
+				{y 0 0.1}
+				{z 0.25 0.25}
+			}
+		}
+		{common
+			{"shape.sprite"
+				{sprite "$/flares/_flare02_n"}
+				{orientation billboard}
+				{target scene glow }
+				{blend_mode ADD}
+				{center_axis}
+				{layer alpha}
+			}
+			{"effect.scale_xy" 0.075 0.015}
+			{split
+				{branch
+					{"effect.color" 0xff00c0fe}
+					{## "effect.acc_z" -1.5 -0.5}
+				}
+				{branch
+					{"effect.color" 0xff00aff6}
+					{## "effect.acc_z" 1.5 0.5}
+				}
+			}
+			{animate 1
+				{"effect.brightness"
+					{to 1}
+					{## power 5}
+					{from 0}
+					{peak}
+				}
+				{"effect.rotate_z"
+					{to 0 -60}
+				}
+				{on_end
+					{delete}
+				}
+			}
+			{"effect.prerotate_z" 0 -180}
+			{## "effect.move"
+				{x 0 0.5}
+				{y 0 0.5}
+				{z -2 -0.5}
+			}
+			{"force.attraction" 0.1
+				{application origin}
+			}
+		}
+		{## axis_z}
+		{local_cs}
+	}
+}
