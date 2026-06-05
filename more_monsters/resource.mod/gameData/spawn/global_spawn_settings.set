@@ -26,7 +26,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 260}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"insect_cockroach_hell"
 	{"spawn type" units}
@@ -41,7 +41,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 180}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"fantasy_elemental_water"
 	{"spawn type" units}
@@ -56,7 +56,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 180}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"fantasy_elemental_crystal"
 	{"spawn type" units}
@@ -71,7 +71,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 180}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"boss_elemental_crystal"
 	{"spawn type" units}
@@ -116,7 +116,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 150}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"beast_warg_snow"
 	{"spawn type" units}
@@ -131,7 +131,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 60}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"beast_bearman_polar"
 	{"spawn type" units}
@@ -146,7 +146,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 200}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"beast_wolfman_polar"
 	{"spawn type" units}
@@ -161,7 +161,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 200}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"beast_wolf_polar"
 	{"spawn type" units}
@@ -191,7 +191,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 260}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"beast_bear_cave"
 	{"spawn type" units}
@@ -206,7 +206,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 260}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"boss_ice_queen"
 	{"spawn type" units}
@@ -221,7 +221,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 260}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"phantom_archers"
 	{"spawn type" units}
@@ -236,7 +236,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 90}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"summon_serpent_ghost"
 	{"spawn type" units}
@@ -281,7 +281,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 90}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"fantasy_ancient_minotaur"
 	{"spawn type" units}
@@ -348,7 +348,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 30}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"demon_imp"
 	{"spawn type" units}
@@ -378,7 +378,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 20}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"fantasy_serpent"
 	{"spawn type" units}
@@ -408,7 +408,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 15}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"undead_archer_skeleton"
 	{"spawn type" units}
@@ -423,7 +423,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 15}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"undead_sniper_skeleton"
 	{"spawn type" units}
@@ -438,7 +438,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 25}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"undead_guard_skeleton"
 	{"spawn type" units}
@@ -453,7 +453,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 30}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"beast_wolf"
 	{"spawn type" units}
@@ -483,7 +483,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 20}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"undead_zombie"
 	{"spawn type" units}
@@ -528,7 +528,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 30}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"fantasy_minotaur"
 	{"spawn type" units}
@@ -558,7 +558,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 35}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"giant_ogre"
 	{"spawn type" units}
@@ -588,7 +588,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 40}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"beast_bearman"
 	{"spawn type" units}
@@ -603,7 +603,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 135}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"beast_wolfman"
 	{"spawn type" units}
@@ -618,7 +618,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 135}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"fantasy_dragon"
 	{"spawn type" units}
@@ -633,7 +633,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 40}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"fantasy_elemental_earth"
 	{"spawn type" units}
@@ -648,7 +648,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 40}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"fantasy_elemental_fire"
 	{"spawn type" units}
@@ -663,7 +663,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 40}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"fantasy_dragon_shadow"
 	{"spawn type" units}
@@ -685,7 +685,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 180}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"fantasy_dragon_red"
 	{"spawn type" units}
@@ -707,7 +707,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 150}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"boss_elemental_earth"
 	{"spawn type" units}
@@ -729,7 +729,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 150}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"boss_elemental_fire"
 	{"spawn type" units}
@@ -751,7 +751,7 @@
 	{gold 0}
 	{count "3 3"}
 	{"spawn time" 150}
-	{"max count" 2}
+	{"max count" 3}
 }
 {"und_male"
 	{"spawn type" units}
