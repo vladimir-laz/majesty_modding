@@ -1,4 +1,0 @@
-{simple "monster_undead_lich_diffuse_items"
-	{diffuse "$/items/hero/mks_hero_lich_items_diffuse"}
-	{blend none}
-}

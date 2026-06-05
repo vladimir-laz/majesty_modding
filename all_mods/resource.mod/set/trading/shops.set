@@ -8154,7 +8154,6 @@
 			{Entity mks_smithy}
 			{"Max count" 100}
 			{"Max upgrade" 3}
-			{"Max upgrade" 4}
 			{Prerequesities
 				{gold 0}
 				{"heroes count" 0}
@@ -8164,9 +8163,6 @@
 					{buildings mks_castle_2}
 				}
 				{"2"
-					{buildings mks_castle_3}
-				}
-				{"3"
 					{buildings mks_castle_3}
 				}
 			}
@@ -8993,15 +8989,6 @@
 				}
 			}
 		}
-		{"mks_swords_4"
-			{version original}
-			{invention mks_swords_4}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
 		{"mks_bows_1"
 			{version original}
 			{invention mks_bows_1}
@@ -9023,15 +9010,6 @@
 		{"mks_bows_3"
 			{version original}
 			{invention mks_bows_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"mks_bows_4"
-			{version original}
-			{invention mks_bows_4}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
@@ -9065,15 +9043,6 @@
 				}
 			}
 		}
-		{"mks_staffs_4"
-			{version original}
-			{invention mks_staffs_4}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
 		{"mks_plate_1"
 			{version original}
 			{invention mks_plate_1}
@@ -9095,15 +9064,6 @@
 		{"mks_plate_3"
 			{version original}
 			{invention mks_plate_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"mks_plate_4"
-			{version original}
-			{invention mks_plate_4}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
@@ -9137,15 +9097,6 @@
 				}
 			}
 		}
-		{"mks_leather_4"
-			{version original}
-			{invention mks_leather_4}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
 		{"mks_cloth_1"
 			{version original}
 			{invention mks_cloth_1}
@@ -9167,15 +9118,6 @@
 		{"mks_cloth_3"
 			{version original}
 			{invention mks_cloth_3}
-			{prerequsity
-				{"Buildings count"
-					{count 0}
-				}
-			}
-		}
-		{"mks_cloth_4"
-			{version original}
-			{invention mks_cloth_4}
 			{prerequsity
 				{"Buildings count"
 					{count 0}
@@ -9208,14 +9150,6 @@
 				{invention mks_swords_3}
 			}
 		}
-		{"mks_spear_sword_4"
-			{version original}
-			{Weapon "mks_goblin_spear_weapon/mks_goblin_spear_weapon05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_swords_4}
-			}
-		}
 		{"mks_archer_bow_1"
 			{version original}
 			{Weapon "mks_goblin_archer_bow/mks_goblin_archer_bow02"}
@@ -9238,14 +9172,6 @@
 			{"Production time" 0}
 			{Prerequesities
 				{invention mks_bows_3}
-			}
-		}
-		{"mks_archer_bow_4"
-			{version original}
-			{Weapon "mks_goblin_archer_bow/mks_goblin_archer_bow05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_bows_4}
 			}
 		}
 		{"mks_ratman_sword_1"
@@ -9272,14 +9198,6 @@
 				{invention mks_swords_3}
 			}
 		}
-		{"mks_ratman_sword_4"
-			{version original}
-			{Weapon "mks_hero_ratman_weapons/mks_hero_ratman_weapon05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_swords_4}
-			}
-		}
 		{"mks_lich_staff_1"
 			{version original}
 			{Weapon "mks_hero_lich_weapons/mks_hero_lich_weapon02"}
@@ -9302,14 +9220,6 @@
 			{"Production time" 0}
 			{Prerequesities
 				{invention mks_staffs_3}
-			}
-		}
-		{"mks_lich_staff_4"
-			{version original}
-			{Weapon "mks_hero_lich_weapons/mks_hero_lich_weapon05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_staffs_4}
 			}
 		}
 		{"mks_werewolf_sword_1"
@@ -9336,14 +9246,6 @@
 				{invention mks_swords_3}
 			}
 		}
-		{"mks_werewolf_sword_4"
-			{version original}
-			{Weapon "mks_hero_werewolf_weapon/mks_hero_werewolf_weapon05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_swords_4}
-			}
-		}
 		{"mks_lizardman_bow_1"
 			{version original}
 			{Weapon "mks_lizardman_bow/mks_hero_lizardman_bow02"}
@@ -9366,14 +9268,6 @@
 			{"Production time" 0}
 			{Prerequesities
 				{invention mks_bows_3}
-			}
-		}
-		{"mks_lizardman_bow_4"
-			{version original}
-			{Weapon "mks_lizardman_bow/mks_hero_lizardman_bow05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_bows_4}
 			}
 		}
 		{"mks_minotaur_sword_1"
@@ -9400,14 +9294,6 @@
 				{invention mks_swords_3}
 			}
 		}
-		{"mks_minoraur_sword_4"
-			{version original}
-			{Weapon "mks_ancient_minotaur_weapon/mks_ancient_minotaur_weapon05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_swords_4}
-			}
-		}
 		{"mks_shaman_staff_1"
 			{version original}
 			{Weapon "mks_hero_goblin_shaman_staff/mks_goblin_shaman_weapon02"}
@@ -9430,14 +9316,6 @@
 			{"Production time" 0}
 			{Prerequesities
 				{invention mks_staffs_3}
-			}
-		}
-		{"mks_shaman_staff_4"
-			{version original}
-			{Weapon "mks_hero_goblin_shaman_staff/mks_goblin_shaman_weapon05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_staffs_4}
 			}
 		}
 		{"mks_ratman_paladin_sword_1"
@@ -9464,14 +9342,6 @@
 				{invention mks_swords_3}
 			}
 		}
-		{"mks_ratman_paladin_sword_4"
-			{version original}
-			{Weapon "mks_ratman_paladin_weapons/mks_ratman_paladin_weapon05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_swords_4}
-			}
-		}
 		{"mks_champion_bow_1"
 			{version original}
 			{Weapon "mks_goblin_champion_bow/mks_goblin_champion_bow02"}
@@ -9494,14 +9364,6 @@
 			{"Production time" 0}
 			{Prerequesities
 				{invention mks_bows_3}
-			}
-		}
-		{"mks_champion_bow_4"
-			{version original}
-			{Weapon "mks_goblin_champion_bow/mks_goblin_champion_bow05"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_bows_4}
 			}
 		}
 	}
@@ -9530,14 +9392,6 @@
 				{invention mks_plate_3}
 			}
 		}
-		{"mks_spear_plate_4"
-			{version original}
-			{Armour "mks_hero_goblin_spear/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_plate_4}
-			}
-		}
 		{"mks_archer_leather_1"
 			{version original}
 			{Armour "mks_hero_goblin_archer/1"}
@@ -9560,14 +9414,6 @@
 			{"Production time" 0}
 			{Prerequesities
 				{invention mks_leather_3}
-			}
-		}
-		{"mks_archer_leather_4"
-			{version original}
-			{Armour "mks_hero_goblin_archer/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_leather_4}
 			}
 		}
 		{"mks_ratman_leather_1"
@@ -9594,14 +9440,6 @@
 				{invention mks_leather_3}
 			}
 		}
-		{"mks_ratman_leather_4"
-			{version original}
-			{Armour "mks_hero_ratman/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_leather_4}
-			}
-		}
 		{"mks_lich_cloth_1"
 			{version original}
 			{Armour "mks_hero_lich/1"}
@@ -9624,14 +9462,6 @@
 			{"Production time" 0}
 			{Prerequesities
 				{invention mks_cloth_3}
-			}
-		}
-		{"mks_lich_cloth_4"
-			{version original}
-			{Armour "mks_hero_lich/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_cloth_4}
 			}
 		}
 		{"mks_werewolf_leather_1"
@@ -9658,14 +9488,6 @@
 				{invention mks_leather_3}
 			}
 		}
-		{"mks_werewolf_leather_4"
-			{version original}
-			{Armour "mks_hero_werewolf/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_leather_4}
-			}
-		}
 		{"mks_lizardman_leather_1"
 			{version original}
 			{Armour "mks_hero_lizardman/1"}
@@ -9688,14 +9510,6 @@
 			{"Production time" 0}
 			{Prerequesities
 				{invention mks_leather_3}
-			}
-		}
-		{"mks_lizardman_leather_4"
-			{version original}
-			{Armour "mks_hero_lizardman/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_leather_4}
 			}
 		}
 		{"mks_minotaur_plate_1"
@@ -9722,14 +9536,6 @@
 				{invention mks_plate_3}
 			}
 		}
-		{"mks_minotaur_plate_4"
-			{version original}
-			{Armour "mks_hero_minotaur/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_plate_4}
-			}
-		}
 		{"mks_shaman_cloth_1"
 			{version original}
 			{Armour "mks_hero_goblin_shaman/1"}
@@ -9752,14 +9558,6 @@
 			{"Production time" 0}
 			{Prerequesities
 				{invention mks_cloth_3}
-			}
-		}
-		{"mks_shaman_cloth_4"
-			{version original}
-			{Armour "mks_hero_goblin_shaman/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_cloth_4}
 			}
 		}
 		{"mks_paladin_plate_1"
@@ -9786,14 +9584,6 @@
 				{invention mks_plate_3}
 			}
 		}
-		{"mks_paladin_plate_4"
-			{version original}
-			{Armour "mks_hero_ratman_paladin/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_plate_4}
-			}
-		}
 		{"mks_champion_plate_1"
 			{version original}
 			{Armour "mks_hero_goblin_champion/1"}
@@ -9816,14 +9606,6 @@
 			{"Production time" 0}
 			{Prerequesities
 				{invention mks_plate_3}
-			}
-		}
-		{"mks_champion_plate_4"
-			{version original}
-			{Armour "mks_hero_goblin_champion/4"}
-			{"Production time" 0}
-			{Prerequesities
-				{invention mks_plate_4}
 			}
 		}
 	}
