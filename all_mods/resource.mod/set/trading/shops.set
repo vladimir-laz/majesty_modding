@@ -20,9 +20,24 @@
 				{"count money" 550}
 			}
 			{Entity guild_warrior}
-			{"Max count" 30}
+			{"Max count" 2147483647}
 			{"Max upgrade" 3}
 			{Prerequesities
+				{gold 0}
+				{"heroes count" 0}
+			}
+		}
+		{"mks_guild_werewolf"
+			{version original}
+			{Cost
+				{money}
+				{"count money" 2500}
+			}
+			{Entity mks_guild_werewolf}
+			{"Max count" 2147483647}
+			{"Max upgrade" 2}
+			{Prerequesities
+				{buildings "castle_2"}
 				{gold 0}
 				{"heroes count" 0}
 			}
@@ -53,7 +68,7 @@
 				{"count money" 2500}
 			}
 			{Entity guild_minotaur}
-			{"Max count" 1}
+			{"Max count" 2147483647}
 			{"Max upgrade" 1}
 			{Prerequesities
 				{buildings castle_3}
@@ -510,7 +525,7 @@
 				{"count money" 450}
 			}
 			{Entity guild_hunter}
-			{"Max count" 30}
+			{"Max count" 2147483647}
 			{"Max upgrade" 3}
 			{Prerequesities
 				{gold 0}
@@ -524,7 +539,7 @@
 				{"count money" 450}
 			}
 			{Entity guild_hunter_freedom}
-			{"Max count" 3}
+			{"Max count" 2147483647}
 			{"Max upgrade" 3}
 			{Prerequesities
 				{gold 0}
@@ -596,7 +611,7 @@
 				{"count money" 1000}
 			}
 			{Entity guild_mage}
-			{"Max count" 30}
+			{"Max count" 2147483647}
 			{"Max upgrade" 3}
 			{Prerequesities
 				{gold 0}
@@ -625,7 +640,7 @@
 				{"count money" 450}
 			}
 			{Entity guild_rogue}
-			{"Max count" 30}
+			{"Max count" 2147483647}
 			{"Max upgrade" 3}
 			{Prerequesities
 				{gold 0}
@@ -639,7 +654,7 @@
 				{"count money" 700}
 			}
 			{Entity guild_cleric}
-			{"Max count" 30}
+			{"Max count" 2147483647}
 			{"Max upgrade" 3}
 			{Prerequesities
 				{gold 0}
@@ -653,7 +668,7 @@
 				{"count money" 3000}
 			}
 			{Entity guild_blademaster}
-			{"Max count" 30}
+			{"Max count" 2147483647}
 			{"Max upgrade" 1}
 			{Prerequesities
 				{buildings "castle_3 guild_warrior_1"}
@@ -668,7 +683,7 @@
 				{"count money" 3000}
 			}
 			{Entity guild_paladin}
-			{"Max count" 30}
+			{"Max count" 2147483647}
 			{"Max upgrade" 1}
 			{Prerequesities
 				{buildings "castle_3 guild_warrior_1"}
@@ -683,7 +698,7 @@
 				{"count money" 3000}
 			}
 			{Entity guild_marksman}
-			{"Max count" 30}
+			{"Max count" 2147483647}
 			{"Max upgrade" 1}
 			{Prerequesities
 				{buildings "castle_3 guild_hunter_1"}
@@ -698,7 +713,7 @@
 				{"count money" 2500}
 			}
 			{Entity guild_elf}
-			{"Max count" 30}
+			{"Max count" 2147483647}
 			{"Max upgrade" 2}
 			{Prerequesities
 				{buildings "castle_2 market_2"}
@@ -713,7 +728,7 @@
 				{"count money" 2000}
 			}
 			{Entity guild_dwarf}
-			{"Max count" 30}
+			{"Max count" 2147483647}
 			{"Max upgrade" 2}
 			{Prerequesities
 				{buildings "castle_2 smithy_2"}
@@ -728,7 +743,7 @@
 				{"count money" 3000}
 			}
 			{Entity guild_beastmaster}
-			{"Max count" 30}
+			{"Max count" 2147483647}
 			{"Max upgrade" 1}
 			{Prerequesities
 				{buildings "castle_3 guild_hunter_1"}
@@ -743,7 +758,7 @@
 				{"count money" 3000}
 			}
 			{Entity guild_priest}
-			{"Max count" 30}
+			{"Max count" 2147483647}
 			{"Max upgrade" 1}
 			{Prerequesities
 				{buildings "castle_3 guild_cleric_1"}
@@ -773,7 +788,7 @@
 				{"count money" 3000}
 			}
 			{Entity guild_darkpriest}
-			{"Max count" 30}
+			{"Max count" 2147483647}
 			{"Max upgrade" 1}
 			{Prerequesities
 				{buildings "castle_3 guild_cleric_1"}
@@ -876,7 +891,7 @@
 				{"count money" 3000}
 			}
 			{Entity guild_ice_magea}
-			{"Max count" 30}
+			{"Max count" 2147483647}
 			{"Max upgrade" 1}
 			{Prerequesities
 				{buildings "castle_3 guild_mage_1"}
@@ -891,7 +906,7 @@
 				{"count money" 3000}
 			}
 			{Entity guild_death_knight}
-			{"Max count" 30}
+			{"Max count" 2147483647}
 			{"Max upgrade" 1}
 			{Prerequesities
 				{buildings "castle_3 guild_rogue_1"}
@@ -906,7 +921,7 @@
 				{"count money" 3000}
 			}
 			{Entity guild_fire_mage}
-			{"Max count" 3}
+			{"Max count" 2147483647}
 			{"Max upgrade" 1}
 			{Prerequesities
 				{buildings "castle_3 guild_mage_1"}
@@ -5656,7 +5671,7 @@
 				{"count money" 2500}
 			}
 			{Entity guild_minotaur}
-			{"Max count" 1}
+			{"Max count" 2147483647}
 			{"Max upgrade" 1}
 			{Prerequesities
 				{buildings mks_castle_3}
@@ -6216,7 +6231,7 @@
 				{"count money" 1000}
 			}
 			{Entity mks_guild_lich}
-			{"Max count" 3}
+			{"Max count" 2147483647}
 			{"Max upgrade" 3}
 			{Prerequesities
 				{buildings mks_castle_1}
@@ -6231,7 +6246,7 @@
 				{"count money" 450}
 			}
 			{Entity mks_guild_goblin_archer}
-			{"Max count" 3}
+			{"Max count" 2147483647}
 			{"Max upgrade" 3}
 			{Prerequesities
 				{buildings mks_castle_1}
@@ -6281,7 +6296,7 @@
 				{"count money" 1500}
 			}
 			{Entity mks_guild_lizardman}
-			{"Max count" 3}
+			{"Max count" 2147483647}
 			{"Max upgrade" 2}
 			{Prerequesities
 				{buildings "mks_castle_2 mks_guild_minotaur_1"}
@@ -6296,7 +6311,7 @@
 				{"count money" 500}
 			}
 			{Entity mks_guild_goblin_spear}
-			{"Max count" 3}
+			{"Max count" 2147483647}
 			{"Max upgrade" 3}
 			{Prerequesities
 				{buildings mks_castle_1}
@@ -6316,7 +6331,7 @@
 				{"count money" 2000}
 			}
 			{Entity mks_guild_minotaur}
-			{"Max count" 3}
+			{"Max count" 2147483647}
 			{"Max upgrade" 2}
 			{Prerequesities
 				{buildings "mks_castle_2 mks_smithy_1"}
@@ -6331,7 +6346,7 @@
 				{"count money" 2500}
 			}
 			{Entity mks_guild_werewolf}
-			{"Max count" 3}
+			{"Max count" 2147483647}
 			{"Max upgrade" 2}
 			{Prerequesities
 				{buildings "mks_castle_2 mks_tavern_2"}
@@ -6346,7 +6361,7 @@
 				{"count money" 450}
 			}
 			{Entity mks_guild_ratman}
-			{"Max count" 3}
+			{"Max count" 2147483647}
 			{"Max upgrade" 3}
 			{Prerequesities
 				{buildings mks_castle_1}
@@ -8571,7 +8586,7 @@
 				{"count money" 1500}
 			}
 			{Entity mks_hero_werewolf}
-			{"Max count" 1}
+			{"Max count" 2}
 			{"Production time" 15}
 		}
 	}
@@ -9355,7 +9370,7 @@
 				{"count money" 550}
 			}
 			{Entity und_guild_ghosts}
-			{"Max count" 4}
+			{"Max count" 2147483647}
 			{"Max upgrade" 3}
 			{Prerequesities
 				{gold 0}
@@ -9377,7 +9392,7 @@
 				{"count money" 1000}
 			}
 			{Entity und_guild_necromant}
-			{"Max count" 3}
+			{"Max count" 2147483647}
 			{"Max upgrade" 2}
 			{Prerequesities
 				{buildings "und_guild_lich_1"}
@@ -9412,7 +9427,7 @@
 				{"count money" 550}
 			}
 			{Entity und_guild_skeleton}
-			{"Max count" 4}
+			{"Max count" 2147483647}
 			{"Max upgrade" 3}
 			{Prerequesities
 				{gold 0}
@@ -9434,7 +9449,7 @@
 				{"count money" 700}
 			}
 			{Entity und_guild_lich}
-			{"Max count" 4}
+			{"Max count" 2147483647}
 			{"Max upgrade" 3}
 			{Prerequesities
 				{gold 0}
@@ -9456,7 +9471,7 @@
 				{"count money" 600}
 			}
 			{Entity und_guild_zombies}
-			{"Max count" 3}
+			{"Max count" 2147483647}
 			{"Max upgrade" 3}
 			{Prerequesities
 				{gold 0}
@@ -9478,7 +9493,7 @@
 				{"count money" 2000}
 			}
 			{Entity und_guild_vampire}
-			{"Max count" 3}
+			{"Max count" 2147483647}
 			{"Max upgrade" 3}
 			{Prerequesities
 				{buildings und_tavern_2 und_castle_2}
