@@ -1,0 +1,70 @@
+{fx
+	{particle_flow
+		{birth
+			{limit 14}
+			{speed 14}
+			{## time_to_live 2}
+		}
+		{init
+			{## "position.sphere" 0.65
+				{hollow}
+			}
+			{"position.cylinder" 0.65
+				{## height 0}
+				{hollow}
+			}
+			{"effect.move" local_cs
+				{x 0}
+				{y 0}
+				{z 0.1 0.4}
+			}
+		}
+		{common
+			{"shape.sprite"
+				{sprite "$/flares/_flare02_n"}
+				{orientation billboard}
+				{target scene glow }
+				{blend_mode ADD}
+				{center_axis}
+				{layer alpha}
+			}
+			{"effect.scale_xy" 0.06 0.02}
+			{split
+				{branch
+					{"effect.color" 0xff00d9ed}
+					{## "effect.acc_z" -1.5 -0.5}
+				}
+				{branch
+					{"effect.color" 0xff04da00}
+					{## "effect.acc_z" 1.5 0.5}
+				}
+			}
+			{animate 1
+				{"effect.brightness"
+					{to 1}
+					{## power 5}
+					{from 0}
+					{peak}
+				}
+				{"effect.rotate_z"
+					{to 0 -60}
+				}
+				{on_end
+					{delete}
+				}
+			}
+			{"effect.prerotate_z" 0 -180}
+			{## "effect.move"
+				{x 0 0.5}
+				{y 0 0.5}
+				{z -2 -0.5}
+			}
+			{"force.attraction" 0.1
+				{application origin}
+			}
+			{"effect.acc_z" 0 -0.5}
+		}
+		{axis_z}
+		{local_cs}
+	}
+}

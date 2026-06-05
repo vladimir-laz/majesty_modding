@@ -1,0 +1,205 @@
+{entity
+	{"zones"
+		{ObstacleID "fly_over"}
+		{body {proper body sensible} {permit body}}
+	}
+	{actor}
+	{xform scale 1.4}
+	{"building" {version 29}}
+	{"placer"}
+	
+	;===================================================
+	;	Общие свойства зданий
+	;===================================================
+		
+
+;#line 15: 	(include "/properties/buildings/extenders/level.inc")
+;#line 15: properties/buildings/extenders/level.inc BEGIN
+{"Level"
+	{MaxLevel 1}
+	{CurrentLevel 1}
+	{CurrentExperiens 0.0}
+}
+;#line 15: properties/buildings/extenders/level.inc END
+
+
+;#line 16: 	(include "/properties/buildings/extenders/death.inc")
+;#line 16: properties/buildings/extenders/death.inc BEGIN
+{"IDeath.BuildingDeath"
+}
+
+;#line 16: properties/buildings/extenders/death.inc END
+
+	;(include "/properties/buildings/extenders/seller.inc")
+
+;#line 18: 	(include "/properties/buildings/extenders/entity_nationality.inc")
+;#line 18: properties/buildings/extenders/entity_nationality.inc BEGIN
+{"EntityNationality"
+}
+
+;#line 18: properties/buildings/extenders/entity_nationality.inc END
+
+
+	;===================================================
+	;	Индивидуальные свойства здания
+	;===================================================
+
+
+;#line 24: 	(include "extenders/name.inc")
+;#line 24: entity/buildings/logovo_minotaur/extenders/name.inc BEGIN
+{"Name"}
+;#line 24: entity/buildings/logovo_minotaur/extenders/name.inc END
+
+
+;#line 25: 	(include "extenders/entity_classes.inc")
+;#line 25: entity/buildings/logovo_minotaur/extenders/entity_classes.inc BEGIN
+{"EntityClasses"
+	"building" "candest"
+    "teg"		 
+}
+;#line 25: entity/buildings/logovo_minotaur/extenders/entity_classes.inc END
+
+
+
+;#line 27: 	(include "/properties/buildings/extenders/rpg_no_perks.inc")
+;#line 27: properties/buildings/extenders/rpg_no_perks.inc BEGIN
+{"RPGModule" {perks {perkinstance "no_perks_4_building"}}}
+;#line 27: properties/buildings/extenders/rpg_no_perks.inc END
+
+	{"Health" {value_new {rpg_building} } }
+
+;#line 29: 	(include "extenders/building.inc")
+;#line 29: entity/buildings/logovo_minotaur/extenders/building.inc BEGIN
+{"Home"
+}
+{"Building"
+	{stamp "bg_common04"}
+	{has_static}
+	{CashMachine
+		{Base
+			{AcceptableCards
+				{Tax
+					
+				}
+				{Personal
+				
+				}
+			}
+		}
+		{accounts
+			{tax "money" 0}
+			{personal "money" 200}
+		}
+	}
+}
+
+
+;#line 29: entity/buildings/logovo_minotaur/extenders/building.inc END
+
+
+;#line 30: 	(include "extenders/upgrades.inc")
+;#line 30: entity/buildings/logovo_minotaur/extenders/upgrades.inc BEGIN
+{"Upgrades"}
+
+;#line 30: entity/buildings/logovo_minotaur/extenders/upgrades.inc END
+
+
+;#line 31: 	(include "extenders/inventory.inc")
+;#line 31: entity/buildings/logovo_minotaur/extenders/inventory.inc BEGIN
+{"m2inventory"
+}
+
+;#line 31: entity/buildings/logovo_minotaur/extenders/inventory.inc END
+
+
+
+;#line 33: 	(include "extenders/guard_point.inc")
+;#line 33: entity/buildings/logovo_minotaur/extenders/guard_point.inc BEGIN
+{"guard_point"
+		{ZoneRadius 20.0}
+		{GuardRadius 25.0}
+}
+
+;#line 33: entity/buildings/logovo_minotaur/extenders/guard_point.inc END
+
+
+;#line 34: 	(include "extenders/spawner_extender.inc")
+;#line 34: entity/buildings/logovo_minotaur/extenders/spawner_extender.inc BEGIN
+{"spawner_extender"
+	{global_spawn_progs "fantasy_minotaur fantasy_minotaur_black"}
+}
+
+
+
+
+;#line 34: entity/buildings/logovo_minotaur/extenders/spawner_extender.inc END
+
+	
+
+;#line 36: 	(include "/properties/buildings/sound/destroyable_logovo_minotaur.inc")
+;#line 36: properties/buildings/sound/destroyable_logovo_minotaur.inc BEGIN
+{"sound"
+	{"destroyable_building"
+		{state "building_one_past_ill" {desc {param}}}
+		{state "building_one_to_full" {desc {param}}}
+		{state "building_destroied" {desc {param {name "buildings/crash/stone_crash_1"}{posi}}}}
+		{state "building_is_building" {desc {param {name "buildings/construction/construction"}{looped}{posi}}}}
+		{state "building_building_is_selected" {desc {param}}}
+		{state "building_ready_is_selected" {desc {param {name "interface/building_select/logovo_minotaur_select"} }}}
+		{state "building_people_ambient" {desc {param}}}
+		{state "building_25_live" {desc {param {name "buildings/crash/fire_small/fire_big_1"}{looped}{posi} }}}
+		{state "building_50_live" {desc {param {name "buildings/crash/fire_small/fire_med_1"}{looped}{posi} }}}
+		{state "building_75_live" {desc {param {name "buildings/crash/fire_small/fire_small_1"}{looped}{posi} }}}
+	}
+}
+
+;#line 36: properties/buildings/sound/destroyable_logovo_minotaur.inc END
+
+
+;#line 37: 	(include "/properties/sound/stone_material_sound.inc")
+;#line 37: properties/sound/stone_material_sound.inc BEGIN
+{"snd_props"
+	{prop {tag "hitprop"}{val "stone"}}
+}
+
+;#line 37: properties/sound/stone_material_sound.inc END
+
+
+
+;#line 39: 	(include "extenders/safety_emitter.inc")
+;#line 39: entity/buildings/logovo_minotaur/extenders/safety_emitter.inc BEGIN
+{"safety_emitter"
+	{power  1}
+	{radius 10}
+}
+;#line 39: entity/buildings/logovo_minotaur/extenders/safety_emitter.inc END
+
+
+;#line 40: 	(include "extenders/prime_cost.inc")
+;#line 40: entity/buildings/logovo_minotaur/extenders/prime_cost.inc BEGIN
+{"EntityPrimeCost"
+	{Cost 0.1}
+}
+;#line 40: entity/buildings/logovo_minotaur/extenders/prime_cost.inc END
+
+
+		{"structure"
+		{place "dummy_static_1" "logovo_minotaur_l0"}
+
+		
+		{place "dummy02" "object01_ground_logovo_minotaur"}
+		{place "dummy03" "object02_dust_logovo_minotaur"}
+		{place "dummy04" "object03_base_logovo_minotaur"}
+		{place "dummy05" "object04_base_logovo_minotaur"}
+		{place "dummy06" "object05_base_logovo_minotaur"}
+		{place "dummy07" "object06_base_logovo_minotaur"}
+		{place "dummy08" "object07_dust_logovo_minotaur"}
+		{place "dummy09" "object08_dust_logovo_minotaur"}
+		{place "dummy10" "object09_dust_logovo_minotaur"}
+		{place "dummy11" "object10_dust_logovo_minotaur"}
+		{place "dummy12" "object11_dust_logovo_minotaur"}
+		{place "dummy13" "object12_dust_logovo_minotaur"}
+		{place "dummy14" "object13_dust_logovo_minotaur"}
+	}
+	{"FogVisor" {radius 20}}
+}

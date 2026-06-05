@@ -1,0 +1,286 @@
+{entity
+	
+
+	{"zones"
+		{ObstacleID "fly_over"}
+		{body {proper body sensible} {permit body}}
+	}
+	{actor}
+	{xform scale 1.0}
+
+;#line 10: 	(include "/properties/buildings/extenders/level.inc")
+;#line 10: properties/buildings/extenders/level.inc BEGIN
+{"Level"
+	{MaxLevel 1}
+	{CurrentLevel 1}
+	{CurrentExperiens 0.0}
+}
+;#line 10: properties/buildings/extenders/level.inc END
+
+
+;#line 11: 	(include "/properties/buildings/extenders/death.inc")
+;#line 11: properties/buildings/extenders/death.inc BEGIN
+{"IDeath.BuildingDeath"
+}
+
+;#line 11: properties/buildings/extenders/death.inc END
+
+
+;#line 12: 	(include "/properties/buildings/extenders/seller.inc")
+;#line 12: properties/buildings/extenders/seller.inc BEGIN
+{"entity_seller"
+}
+;#line 12: properties/buildings/extenders/seller.inc END
+{"spawner_extender"
+	{global_spawn_progs "snow_maiden"}
+}
+
+;#line 13: 	(include "/properties/buildings/extenders/entity_nationality.inc")
+;#line 13: properties/buildings/extenders/entity_nationality.inc BEGIN
+{"EntityNationality"
+}
+
+;#line 13: properties/buildings/extenders/entity_nationality.inc END
+
+
+;#line 14: 	(include "/properties/buildings/sound/destroyable_guild_elves.inc")
+;#line 14: properties/buildings/sound/destroyable_guild_elves.inc BEGIN
+{"sound"
+	{"destroyable_building"
+		{state "building_one_past_ill" {desc {param}}}
+		{state "building_one_to_full" {desc {param}}}
+		{state "building_destroied" {desc {param {name "buildings/crash/building_crash_3"}{posi}}}}
+		{state "building_is_building" {desc {param {name "buildings/construction/construction"}{looped}{posi}}}}
+		{state "building_building_is_selected" {desc {param {name "interface/building_select/building_building"} }}}
+		{state "building_ready_is_selected" {desc {param {name "interface/building_select/guild_elves_select"} }}}
+		{state "building_people_ambient" {desc {param {name "buildings/ambient/guild_elves_am"} {looped} {posi}}}}
+		{state "building_25_live" {desc {param {name "buildings/crash/fire_small/fire_big_1"}{looped}{posi} }}}
+		{state "building_50_live" {desc {param {name "buildings/crash/fire_small/fire_med_1"}{looped}{posi} }}}
+		{state "building_75_live" {desc {param {name "buildings/crash/fire_small/fire_small_1"}{looped}{posi} }}}
+	}
+}
+
+;#line 14: properties/buildings/sound/destroyable_guild_elves.inc END
+
+
+;#line 15: 	(include "/properties/sound/stone_material_sound.inc")
+;#line 15: properties/sound/stone_material_sound.inc BEGIN
+{"snd_props"
+	{prop {tag "hitprop"}{val "stone"}}
+}
+
+;#line 15: properties/sound/stone_material_sound.inc END
+
+
+	;===================================================
+	;	Индивидуальные свойства здания
+	;===================================================
+
+
+;#line 21: 	(include "extenders/name.inc")
+;#line 21: entity/buildings/logovo_snow_maiden/extenders/name.inc BEGIN
+{"Name"}
+;#line 21: entity/buildings/logovo_snow_maiden/extenders/name.inc END
+
+
+;#line 22: 	(include "extenders/entity_classes.inc")
+;#line 22: entity/buildings/logovo_snow_maiden/extenders/entity_classes.inc BEGIN
+{"EntityClasses"
+	"building" "candest"
+}
+;#line 22: entity/buildings/logovo_snow_maiden/extenders/entity_classes.inc END
+
+
+
+;#line 24: 	(include "/properties/buildings/extenders/rpg_no_perks.inc")
+;#line 24: properties/buildings/extenders/rpg_no_perks.inc BEGIN
+{"RPGModule" {perks {perkinstance "no_perks_4_building"}}}
+;#line 24: properties/buildings/extenders/rpg_no_perks.inc END
+
+	{"Health" {value_new {rpg_building} } }
+
+;#line 26: 	(include "extenders/building.inc")
+;#line 26: entity/buildings/logovo_snow_maiden/extenders/building.inc BEGIN
+{"Home"
+}
+{"Building"
+		{stamp "bg_guild_elf1"}
+		{has_static}
+		{building_value 0.5}
+	{CashMachine
+		{Base
+			{AcceptableCards
+				{Tax
+					"citizen_taxer"
+					"hero_elf"
+				}
+				{Personal
+					"hero_elf"
+				}
+			}
+		}
+	}
+}
+
+;#line 124: (include "/properties/buildings/visual/guild_elf_vis.inc")
+;#line 124: properties/buildings/visual/guild_elf_vis.inc BEGIN
+{"visialstatemanager"
+	{desc ;включаем обычная текстура
+		{enable "NO_PEOPLE_INSIDE"} 
+		{name ""} {texmode_whole}
+	}
+	{desc ;включаем текстура со светом в окошках
+		{enable "PEOPLE_INSIDE"} 
+		{name "01"} {texmode_whole}
+	}
+	{desc 
+		{enable "IDLE" "BUILDING" "BROKING"}
+		{ref "fx_fontan"}  {name "guild_elf_flow"} {single} {effect} {detachoff} {looped}
+	}
+}
+
+;#line 124: properties/buildings/visual/guild_elf_vis.inc END
+
+
+;#line 26: entity/buildings/logovo_snow_maiden/extenders/building.inc END
+
+
+;#line 27: 	(include "extenders/upgrades.inc")
+;#line 27: entity/buildings/logovo_snow_maiden/extenders/upgrades.inc BEGIN
+{"Upgrades"
+	{available
+		{;1й апгрейт
+			{health 980}				;Добавляет хитпоинтов
+			{building_value 0.35}
+			{cost					;Стоимость апргейда
+			"money" 1000
+			}
+		}
+	}
+}
+
+;#line 27: entity/buildings/logovo_snow_maiden/extenders/upgrades.inc END
+
+
+;#line 28: 	(include "extenders/safety_emitter.inc")
+;#line 28: entity/buildings/logovo_snow_maiden/extenders/safety_emitter.inc BEGIN
+{"safety_emitter"
+	{power  5}
+	{radius 20}
+}
+;#line 28: entity/buildings/logovo_snow_maiden/extenders/safety_emitter.inc END
+
+	
+
+;#line 30: 	(include "extenders/sensor.inc")
+;#line 30: entity/buildings/logovo_snow_maiden/extenders/sensor.inc BEGIN
+{"m2sensor"
+	{ViewRadius 10}
+	{Visors
+		{FellowVisor 15}
+	}
+}
+;#line 30: entity/buildings/logovo_snow_maiden/extenders/sensor.inc END
+
+
+;#line 31: 	(include "extenders/inventory.inc")
+;#line 31: entity/buildings/logovo_snow_maiden/extenders/inventory.inc BEGIN
+{"m2inventory"
+}
+
+;#line 31: entity/buildings/logovo_snow_maiden/extenders/inventory.inc END
+
+	
+
+;#line 33: 	(include "extenders/prime_cost.inc")
+;#line 33: entity/buildings/logovo_snow_maiden/extenders/prime_cost.inc BEGIN
+{"EntityPrimeCost"
+	{Cost 35.0}
+}
+;#line 33: entity/buildings/logovo_snow_maiden/extenders/prime_cost.inc END
+
+
+;#line 34: 	(include "extenders/fogvisor.inc")
+;#line 34: entity/buildings/logovo_snow_maiden/extenders/fogvisor.inc BEGIN
+{"FogVisor"}
+;#line 34: entity/buildings/logovo_snow_maiden/extenders/fogvisor.inc END
+
+
+	{"building" {version 29}}
+	{"placer"}
+	{"structure"
+		{place "dummy_static_1" "guild_elf_l01"}
+		{place "dummy_static_2" "guild_elf_l0_nati_1"}
+		{place "dummy_static_3" "guild_elf_l11"}
+
+		{place "dummy02" "object01_l0_base_guild_elf1"}
+		{place "dummy03" "object02_l0_ground_guild_elf1"}
+		{place "dummy04" "object03_l1_base_guild_elf1"}
+		{place "dummy05" "object04_l0_base_guild_elf1"}
+		{place "dummy06" "object05_l0_dust_guild_elf1"}
+		{place "dummy07" "object06_l0_dust_guild_elf1"}
+		{place "dummy08" "object07_l0_nati_base_guild_elf1"}
+		{place "dummy09" "object08_l0_base_guild_elf1"}
+		{place "dummy10" "object09_l0_base_guild_elf1"}
+		{place "dummy11" "object10_l0_base_guild_elf1"}
+		{place "dummy12" "object11_l0_dust_guild_elf1"}
+		{place "dummy13" "object12_l0_dust_guild_elf1"}
+		{place "dummy14" "object13_l0_base_guild_elf1"}
+		{place "dummy15" "object14_l0_nati_base_guild_elf1"}
+		{place "dummy16" "object15_l0_dust_guild_elf1"}
+		{place "dummy17" "object16_l0_nati_base_guild_elf1"}
+		{place "dummy18" "object17_l0_dust_guild_elf1"}
+		{place "dummy19" "object18_l0_base_guild_elf1"}
+		{place "dummy20" "object19_l0_base_guild_elf1"}
+		{place "dummy21" "object20_l0_base_guild_elf1"}
+		{place "dummy22" "object21_l0_base_guild_elf1"}
+		{place "dummy23" "object22_l0_base_guild_elf1"}
+		{place "dummy24" "object23_l0_base_guild_elf1"}
+		{place "dummy25" "object24_l0_base_guild_elf1"}
+		{place "dummy26" "object25_l0_dust_guild_elf1"}
+		{place "dummy27" "object27_l0_base_guild_elf1"}
+		{place "dummy28" "object28_l0_base_guild_elf1"}
+		{place "dummy29" "object30_l0_base_guild_elf1"}
+		{place "dummy30" "object31_l0_base_guild_elf1"}
+		{place "dummy31" "object32_l0_base_guild_elf1"}
+		{place "dummy32" "object33_l0_base_guild_elf1"}
+		{place "dummy33" "object34_l0_dust_guild_elf1"}
+		{place "dummy34" "object35_l0_base_guild_elf1"}
+		{place "dummy35" "object36_l0_base_guild_elf1"}
+		{place "dummy36" "object37_l0_dust_guild_elf1"}
+		{place "dummy37" "object38_l0_dust_guild_elf1"}
+		{place "dummy38" "object39_l0_dust_guild_elf1"}
+		{place "dummy39" "object40_l0_nati_base_guild_elf1"}
+		{place "dummy40" "object41_l0_nati_dust_guild_elf1"}
+		{place "dummy41" "object42_l0_nati_dust_guild_elf1"}
+		{place "dummy42" "object43_l0_nati_base_guild_elf1"}
+		{place "dummy43" "object44_l0_nati_base_guild_elf1"}
+		{place "dummy44" "object46_l0_nati_dust_guild_elf1"}
+		{place "dummy45" "object47_l0_nati_dust_guild_elf1"}
+		{place "dummy46" "object48_l0_nati_dust_guild_elf1"}
+		{place "dummy47" "object49_l0_nati_dust_guild_elf1"}
+		{place "dummy48" "object50_l0_nati_base_guild_elf1"}
+		{place "dummy49" "object51_l1_dust_guild_elf1"}
+		{place "dummy50" "object52_l1_dust_guild_elf1"}
+		{place "dummy51" "object53_l1_dust_guild_elf1"}
+		{place "dummy52" "object54_l1_base_guild_elf1"}
+		{place "dummy53" "object55_l1_base_guild_elf1"}
+		{place "dummy54" "object56_l1_base_guild_elf1"}
+		{place "dummy55" "object57_l1_base_guild_elf1"}
+		{place "dummy56" "object58_l1_dust_guild_elf1"}
+		{place "dummy57" "object59_l1_dust_guild_elf1"}
+		{place "dummy58" "object60_l0_dust_guild_elf1"}
+		{place "dummy59" "object61_l0_base_guild_elf1"}
+		{place "dummy60" "object62_l0_base_guild_elf1"}
+		{place "dummy61" "object63_l0_dust_guild_elf1"}
+		{place "dummy62" "object64_l0_base_guild_elf1"}
+		{place "dummy63" "object65_l0_base_guild_elf1"}
+		{place "dummy64" "object66_l0_base_guild_elf1"}
+		{place "dummy65" "object67_l0_dust_guild_elf1"}
+		{place "dummy66" "object68_l0_base_guild_elf1"}
+		{place "dummy67" "object69_l0_base_guild_elf1"}
+		{place "dummy68" "scaffold_l0__scaffold__guild_elf1"}
+		{place "dummy72" "scaffold_l1__scaffold__guild_elf1"}
+	}
+	{"Laboratory"}
+}

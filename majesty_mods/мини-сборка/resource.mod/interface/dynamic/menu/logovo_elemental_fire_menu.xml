@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<controlGroups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+	<controlGroup id="logovo_elemental_fire_main">
+		<controlsLayout>
+			<rectangularLayout columns="4" offset="3" />
+		</controlsLayout>
+		<Row>
+			<Button_4 action="BuildUpgradeAction" stateAction="CheckBuildUpgradebleAction">
+				<appearance texture="BUT_action_upgrade_build" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="logovo_elemental_fire" />
+			</Button_4>
+		</Row>
+		<Row>
+		</Row>
+		<Row>
+		</Row>
+	</controlGroup>
+</controlGroups>

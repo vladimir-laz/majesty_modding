@@ -1,0 +1,23 @@
+;Exported by:	 katarina
+;Date:			 Mon Sep 28 16:12:37 2009
+;File:			 E:\Art_group\Majesty2_mp\MP2\units\hero_lizardman\hero_lizard_items_to_export.max
+{skeleton
+	{bone "root_transformed"
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "weap_4"
+			{view poly "weap_4"}
+		    	{bone "weapon_fx_1"
+					{matrix34
+						1 	 0 	 0
+						0 	 -0 	 1
+						0 	 -1 	 -0
+						0 	 0 	 0
+					}
+				}
+		}
+	}
+}

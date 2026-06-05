@@ -1,0 +1,6 @@
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# локальный конфиг Claude Code
+.claude/settings.local.json

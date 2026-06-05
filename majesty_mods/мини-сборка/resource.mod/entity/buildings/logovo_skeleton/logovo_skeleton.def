@@ -1,0 +1,218 @@
+{entity
+	
+	{"zones"
+		{ObstacleID "fly_over"}
+		{body {proper body sensible} {permit body}}
+	}
+	{actor}
+
+;#line 8: 	(include "/properties/buildings/extenders/level.inc")
+;#line 8: properties/buildings/extenders/level.inc BEGIN
+{"Level"
+	{MaxLevel 1}
+	{CurrentLevel 1}
+	{CurrentExperiens 0.0}
+}
+;#line 8: properties/buildings/extenders/level.inc END
+
+
+;#line 9: 	(include "/properties/buildings/extenders/death.inc")
+;#line 9: properties/buildings/extenders/death.inc BEGIN
+{"IDeath.BuildingDeath"
+}
+
+;#line 9: properties/buildings/extenders/death.inc END
+
+
+;#line 10: 	(include "/properties/buildings/extenders/entity_nationality.inc")
+;#line 10: properties/buildings/extenders/entity_nationality.inc BEGIN
+{"EntityNationality"
+}
+
+;#line 10: properties/buildings/extenders/entity_nationality.inc END
+
+
+	;===================================================
+	;	Индивидуальные свойства здания
+	;===================================================
+
+
+;#line 16: 	(include "extenders/name.inc")
+;#line 16: entity/buildings/logovo_skeleton/extenders/name.inc BEGIN
+{"Name"}
+;#line 16: entity/buildings/logovo_skeleton/extenders/name.inc END
+
+
+;#line 17: 	(include "extenders/entity_classes.inc")
+;#line 17: entity/buildings/logovo_skeleton/extenders/entity_classes.inc BEGIN
+{"EntityClasses"
+	"building" "candest"
+	"undead_building" ; loot relations зданий для паладина
+    "teg"		 
+}
+;#line 17: entity/buildings/logovo_skeleton/extenders/entity_classes.inc END
+
+
+;#line 18: 	(include "extenders/spawner_extender.inc")
+;#line 18: entity/buildings/logovo_skeleton/extenders/spawner_extender.inc BEGIN
+{"spawner_extender"
+	{global_spawn_progs "undead_skeleton undead_archer_skeleton undead_sniper_skeleton undead_guard_skeleton"}
+}
+
+
+
+
+;#line 18: entity/buildings/logovo_skeleton/extenders/spawner_extender.inc END
+
+
+
+;#line 20: 	(include "/properties/buildings/extenders/rpg_no_perks.inc")
+;#line 20: properties/buildings/extenders/rpg_no_perks.inc BEGIN
+{"RPGModule" {perks {perkinstance "no_perks_4_building"}}}
+;#line 20: properties/buildings/extenders/rpg_no_perks.inc END
+
+	{"Health" {value_new {rpg_building} } }
+
+;#line 22: 	(include "extenders/building.inc")
+;#line 22: entity/buildings/logovo_skeleton/extenders/building.inc BEGIN
+{"Home"
+}
+{"Building"
+	{stamp "bg_common03_2"}
+	{has_static}
+	{CashMachine
+		{Base
+			{AcceptableCards
+				{Tax
+					
+				}
+				{Personal
+				
+				}
+			}
+		}
+		{accounts
+			{tax "money" 0}
+			{personal "money" 200}
+		}
+	}
+}
+
+
+;#line 94: (include "/properties/buildings/visual/logovo_cave_vis.inc")
+;#line 94: properties/buildings/visual/logovo_cave_vis.inc BEGIN
+{"visialstatemanager"
+	{desc
+		{enable "ENTERING_HERO"} 
+		{ref "test_logovo_cave"} {name "oneEnteringSnd"} {effect}
+	}
+
+	{desc
+		{enable "EXITING_HERO"}
+		{ref "test_logovo_cave"} {name "oneExitingSnd"} {effect}
+	}
+}
+
+;#line 94: properties/buildings/visual/logovo_cave_vis.inc END
+
+
+;#line 22: entity/buildings/logovo_skeleton/extenders/building.inc END
+
+
+;#line 23: 	(include "extenders/upgrades.inc")
+;#line 23: entity/buildings/logovo_skeleton/extenders/upgrades.inc BEGIN
+{"Upgrades"}
+
+;#line 23: entity/buildings/logovo_skeleton/extenders/upgrades.inc END
+
+
+
+;#line 25: 	(include "extenders/inventory.inc")
+;#line 25: entity/buildings/logovo_skeleton/extenders/inventory.inc BEGIN
+{"m2inventory"
+}
+
+;#line 25: entity/buildings/logovo_skeleton/extenders/inventory.inc END
+
+
+
+;#line 27: 	(include "extenders/guard_point.inc")
+;#line 27: entity/buildings/logovo_skeleton/extenders/guard_point.inc BEGIN
+{"guard_point"
+		{ZoneRadius 20.0}
+		{GuardRadius 25.0}
+}
+
+;#line 27: entity/buildings/logovo_skeleton/extenders/guard_point.inc END
+
+
+;#line 28: 	(include "/properties/buildings/sound/destroyable_logovo_skeleton.inc")
+;#line 28: properties/buildings/sound/destroyable_logovo_skeleton.inc BEGIN
+{"sound"
+	{"destroyable_building"
+		{state "building_one_past_ill" {desc {param}}}
+		{state "building_one_to_full" {desc {param}}}
+		{state "building_destroied" {desc {param {name "buildings/crash/stone_crash_2"}{posi}}}}
+		{state "building_is_building" {desc {param {name "buildings/construction/construction"}{looped}{posi}}}}
+		{state "building_building_is_selected" {desc {param}}}
+		{state "building_ready_is_selected" {desc {param {name "interface/building_select/logovo_skeleton_select"} }}}
+		{state "building_people_ambient" {desc {param}}}
+		{state "building_25_live" {desc {param {name "buildings/crash/fire_small/fire_big_1"}{looped}{posi} }}}
+		{state "building_50_live" {desc {param {name "buildings/crash/fire_small/fire_med_1"}{looped}{posi} }}}
+		{state "building_75_live" {desc {param {name "buildings/crash/fire_small/fire_small_1"}{looped}{posi} }}}
+	}
+}
+
+;#line 28: properties/buildings/sound/destroyable_logovo_skeleton.inc END
+
+
+;#line 29: 	(include "/properties/sound/stone_material_sound.inc")
+;#line 29: properties/sound/stone_material_sound.inc BEGIN
+{"snd_props"
+	{prop {tag "hitprop"}{val "stone"}}
+}
+
+;#line 29: properties/sound/stone_material_sound.inc END
+
+
+
+;#line 31: 	(include "extenders/safety_emitter.inc")
+;#line 31: entity/buildings/logovo_skeleton/extenders/safety_emitter.inc BEGIN
+{"safety_emitter"
+	{power  1}
+	{radius 10}
+}
+;#line 31: entity/buildings/logovo_skeleton/extenders/safety_emitter.inc END
+
+
+;#line 32: 	(include "extenders/prime_cost.inc")
+;#line 32: entity/buildings/logovo_skeleton/extenders/prime_cost.inc BEGIN
+{"EntityPrimeCost"
+	{Cost 0.1}
+}
+;#line 32: entity/buildings/logovo_skeleton/extenders/prime_cost.inc END
+
+	
+	{"building" {version 23}}
+	{"placer"}
+	{xform scale 1.7}
+	{"structure"
+		{place "dummy_static_1" "logovo_skeleton_l0"}
+
+		{place "dummy02" "ground_grass_ground_logovo_skeleton"}
+		{place "dummy03" "logovo_skeleton_ground_logovo_skeleton"}
+		{place "dummy04" "object01_base_logovo_skeleton"}
+		{place "dummy05" "object02_base_logovo_skeleton"}
+		{place "dummy06" "object03_base_logovo_skeleton"}
+		{place "dummy07" "object04_base_logovo_skeleton"}
+		{place "dummy08" "object05_dust_logovo_skeleton"}
+		{place "dummy09" "object06_dust_logovo_skeleton"}
+		{place "dummy10" "object07_dust_logovo_skeleton"}
+		{place "dummy11" "object08_dust_logovo_skeleton"}
+		{place "dummy12" "object09_dust_logovo_skeleton"}
+	}
+	{"FXAttachment"
+	{defaults "dummy01" "logovo_skeleton_fx"}
+	}
+	{"FogVisor" {radius 20}}
+}

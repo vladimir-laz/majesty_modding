@@ -1,0 +1,22 @@
+;Exported by:	 letin
+;Date:			 Thu Nov 12 16:08:01 2009
+;File:			 D:\Projects\Letin_MAJESTY 2\MODELLING\Buildings\smithy_animate_before_prepare_edit_obstacle_dec02(fire).max
+{skeleton
+	{bone "unseen_l3_"
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{view poly "unseen_l3_" {lod 0}
+		}
+		{bone "smithy_point_fx_l3"}
+	}
+}
+{"volumes"
+	{"unseen_l3__vol_"
+		{cylinder 0.160149 0.5375}
+		{bone "unseen_l3_"}
+		{Position 0 	 0 	 -2.4188}
+	}
+}

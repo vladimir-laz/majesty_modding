@@ -1,0 +1,2390 @@
+{"peasant_male"
+	{"spawn type" units}
+	{raw peasant_male}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 5}
+	{"max count" 1}
+}
+{"und_lich_prot"
+	{"spawn type" units}
+	{raw und_lich_prot}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn_i 0}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 150}
+	{"max count" 3}
+}
+{"und_male"
+	{"spawn type" units}
+	{raw und_male}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 5}
+	{"max count" 1}
+}
+{"peasant_female"
+	{"spawn type" units}
+	{raw peasant_female}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 5}
+	{"max count" 1}
+}
+{"rat"
+	{"spawn type" units}
+	{raw beast_rat}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 2"}
+	{"spawn time" 60}
+	{"max count" 2}
+}
+{"ratman"
+	{"spawn type" units}
+	{raw beast_ratman}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 2"}
+	{"spawn time" 45}
+	{"max count" 2}
+}
+{"grave_yard"
+	{"spawn type" buildings}
+	{Prerequsities_list dead_heroes}
+	{Prerequsities
+		{dead_heroes
+			{Min_dead_heroes 1}
+			{Max_dead_heroes 999}
+		}
+	}
+	{raw graveyard}
+	{"Rand turn" 0}
+	{Nationality Same}
+	{Remoutness 8}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 1}
+	{"max count" 1}
+	{"First wave"}
+}
+{"graveyard_skellies"
+	{"spawn type" units}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 1}
+			{Max_city_summ 5}
+		}
+	}
+	{raw undead_skeleton}
+	{Nationality Enemy}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 2"}
+	{"spawn time" 45}
+	{"max count" 2}
+}
+{"graveyard_zombies"
+	{"spawn type" units}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 8}
+			{Max_city_summ 999}
+		}
+	}
+	{raw undead_zombie}
+	{Nationality Enemy}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 120}
+	{"max count" 1}
+}
+{"graveyard_imp_skellies"
+	{"spawn type" units}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 5}
+			{Max_city_summ 10}
+		}
+	}
+	{raw undead_skeleton}
+	{Nationality Enemy}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 2"}
+	{"spawn time" 45}
+	{"max count" 2}
+}
+{"graveyard_imp_zombies"
+	{"spawn type" units}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 15}
+			{Max_city_summ 999}
+		}
+	}
+	{raw undead_zombie}
+	{Nationality Enemy}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 2"}
+	{"spawn time" 120}
+	{"max count" 2}
+}
+{"graveyard_archers"
+	{"spawn type" units}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 5}
+			{Max_city_summ 999}
+		}
+	}
+	{raw undead_archer_skeleton}
+	{Nationality Enemy}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 120}
+	{"max count" 1}
+}
+{"graveyard_guard_skellies"
+	{"spawn type" units}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 15}
+			{Max_city_summ 50}
+		}
+	}
+	{raw undead_guard_skeleton}
+	{Nationality Enemy}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 2"}
+	{"spawn time" 60}
+	{"max count" 2}
+}
+{"guard_in_tower_spawner"
+	{"spawn type" units}
+	{raw guard}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 15}
+	{"max count" 1}
+}
+{"guard_in_tower_spawner2"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 2}
+		}
+	}
+	{raw guard}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 15}
+	{"max count" 1}
+}
+{"peasant_house_spawner1"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 1}
+			{Max_city_summ 999}
+		}
+	}
+	{raw peasant_house1}
+	{"Rand turn" 50}
+	{Nationality Same}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 35}
+	{"max count" 1}
+}
+{"peasant_house_spawner2"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 3}
+			{Max_city_summ 999}
+		}
+	}
+	{raw peasant_house1}
+	{"Rand turn" 50}
+	{Nationality Same}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 35}
+	{"max count" 1}
+}
+{"peasant_house2_spawner3"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 3}
+			{Max_city_summ 999}
+		}
+	}
+	{raw peasant_house2}
+	{"Rand turn" 35}
+	{Nationality Same}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 35}
+	{"max count" 1}
+}
+{"peasant_house_spawner4"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 5}
+			{Max_city_summ 999}
+		}
+	}
+	{raw peasant_house1}
+	{"Rand turn" 35}
+	{Nationality Same}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 35}
+	{"max count" 1}
+}
+{"peasant_house2_spawner5"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 5}
+			{Max_city_summ 999}
+		}
+	}
+	{raw peasant_house2}
+	{"Rand turn" 35}
+	{Nationality Same}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 35}
+	{"max count" 1}
+}
+{"peasant_mill_spawner6"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 8}
+			{Max_city_summ 12}
+		}
+	}
+	{raw mill}
+	{"Rand turn" 50}
+	{Nationality Same}
+	{Remoutness 20}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 45}
+	{"max count" 1}
+}
+{"peasant_mill_spawner7"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 12}
+			{Max_city_summ 999}
+		}
+	}
+	{raw mill}
+	{"Rand turn" 50}
+	{Nationality Same}
+	{Remoutness 20}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 45}
+	{"max count" 1}
+}
+{"sewers_spawner1"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 1}
+			{Max_city_summ 999}
+		}
+	}
+	{raw sewers_l1}
+	{"Rand turn" 50}
+	{Nationality Enemy}
+	{Remoutness 10}
+	{gold 0}
+	{"spawn time" 20}
+	{"max count" 1}
+}
+{"sewers_spawner2"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 3}
+			{Max_city_summ 999}
+		}
+	}
+	{raw sewers_l1}
+	{"Rand turn" 50}
+	{Nationality Enemy}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 20}
+	{"max count" 1}
+}
+{"sewers_spawner3"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 7}
+			{Max_city_summ 999}
+		}
+	}
+	{raw sewers_collector}
+	{"Rand turn" 50}
+	{Nationality Enemy}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 20}
+	{"max count" 1}
+}
+{"sewers_spawner4"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 5}
+			{Max_city_summ 999}
+		}
+	}
+	{raw sewers_l1}
+	{"Rand turn" 50}
+	{Nationality Enemy}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 20}
+	{"max count" 1}
+}
+{"sewers_spawner5"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 10}
+			{Max_city_summ 999}
+		}
+	}
+	{raw sewers_l1}
+	{"Rand turn" 50}
+	{Nationality Enemy}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 20}
+	{"max count" 1}
+}
+{"sewers_spawner6"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 12}
+			{Max_city_summ 999}
+		}
+	}
+	{raw sewers_collector}
+	{"Rand turn" 50}
+	{Nationality Enemy}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 20}
+	{"max count" 1}
+}
+{"greater_rat"
+	{"spawn type" units}
+	{raw beast_greater_rat}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 60}
+	{"max count" 1}
+}
+{"taxer_spawner1"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 1}
+		}
+	}
+	{raw taxer}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 10}
+	{"max count" 2}
+	{"First wave"}
+}
+{"taxer_spawner2"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 2}
+		}
+	}
+	{raw taxer}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 10}
+	{"max count" 2}
+}
+{"taxer_spawner3"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 3}
+		}
+	}
+	{raw taxer}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 10}
+	{"max count" 2}
+}
+{"guard_spawner1"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 1}
+		}
+	}
+	{raw guard_veteran}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 10}
+	{"max count" 1}
+	{"First wave"}
+}
+{"guard_spawner2"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 2}
+		}
+	}
+	{raw guard_veteran}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 10}
+	{"max count" 1}
+}
+{"guard_spawner3"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 3}
+		}
+	}
+	{raw guard_veteran}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 10}
+	{"max count" 1}
+}
+{"peasant_spawner"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation "=="}
+			{Level 1}
+		}
+	}
+	{raw peasant_female}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 10}
+	{"max count" 2}
+	{"First wave"}
+}
+{"sewers_spawner7"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 12}
+			{Max_city_summ 999}
+		}
+	}
+	{raw sewers_collector}
+	{"Rand turn" 50}
+	{Nationality Enemy}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 20}
+	{"max count" 1}
+}
+{"gnomes_house1"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 1}
+			{Max_city_summ 999}
+		}
+	}
+	{raw mks_gnomes_house1}
+	{"Rand turn" 45}
+	{Nationality Same}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 35}
+	{"max count" 1}
+}
+{"gnomes_house2"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 3}
+			{Max_city_summ 999}
+		}
+	}
+	{raw mks_gnomes_house1}
+	{"Rand turn" 45}
+	{Nationality Same}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 35}
+	{"max count" 1}
+}
+{"gnomes_house3"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 3}
+			{Max_city_summ 999}
+		}
+	}
+	{raw mks_gnomes_house2}
+	{"Rand turn" 45}
+	{Nationality Same}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 35}
+	{"max count" 1}
+}
+{"gnomes_house4"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 5}
+			{Max_city_summ 999}
+		}
+	}
+	{raw mks_gnomes_house1}
+	{"Rand turn" 45}
+	{Nationality Same}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 35}
+	{"max count" 1}
+}
+{"gnomes_house5"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 5}
+			{Max_city_summ 999}
+		}
+	}
+	{raw mks_gnomes_house2}
+	{"Rand turn" 45}
+	{Nationality Same}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 35}
+	{"max count" 1}
+}
+{"mks_laystall1"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 1}
+			{Max_city_summ 999}
+		}
+	}
+	{raw mks_laystall_small}
+	{"Rand turn" 50}
+	{Nationality Enemy}
+	{Remoutness 10}
+	{gold 0}
+	{"spawn time" 20}
+	{"max count" 1}
+}
+{"mks_laystall2"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 3}
+			{Max_city_summ 999}
+		}
+	}
+	{raw mks_laystall_small}
+	{"Rand turn" 50}
+	{Nationality Enemy}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 20}
+	{"max count" 1}
+}
+{"mks_laystall3"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 7}
+			{Max_city_summ 999}
+		}
+	}
+	{raw mks_laystall_big}
+	{"Rand turn" 50}
+	{Nationality Enemy}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 20}
+	{"max count" 1}
+}
+{"mks_laystall4"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 5}
+			{Max_city_summ 999}
+		}
+	}
+	{raw mks_laystall_small}
+	{"Rand turn" 50}
+	{Nationality Enemy}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 20}
+	{"max count" 1}
+}
+{"mks_laystall5"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 10}
+			{Max_city_summ 999}
+		}
+	}
+	{raw mks_laystall_small}
+	{"Rand turn" 50}
+	{Nationality Enemy}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 20}
+	{"max count" 1}
+}
+{"mks_laystall6"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 12}
+			{Max_city_summ 999}
+		}
+	}
+	{raw mks_laystall_big}
+	{"Rand turn" 50}
+	{Nationality Enemy}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 20}
+	{"max count" 1}
+}
+{"mks_taxer1"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 1}
+		}
+	}
+	{raw mks_taxer}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 10}
+	{"max count" 2}
+	{"First wave"}
+}
+{"mks_taxer2"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 2}
+		}
+	}
+	{raw mks_taxer}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 10}
+	{"max count" 2}
+}
+{"mks_taxer3"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 3}
+		}
+	}
+	{raw mks_taxer}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 10}
+	{"max count" 2}
+}
+{"mks_guard1"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 1}
+		}
+	}
+	{raw mks_guard}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 10}
+	{"max count" 1}
+	{"First wave"}
+}
+{"mks_guard2"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 2}
+		}
+	}
+	{raw mks_guard}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 10}
+	{"max count" 1}
+}
+{"mks_guard3"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 3}
+		}
+	}
+	{raw mks_guard}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 10}
+	{"max count" 1}
+}
+{"gnomes"
+	{"spawn type" units}
+	{raw mks_gnomes}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 5}
+	{"max count" 2}
+}
+{"gnomes_spawner_exp2"
+	{"spawn type" units}
+	{raw gnomes}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 5}
+	{"max count" 2}
+}
+{"insect_cockroach"
+	{"spawn type" units}
+	{raw insect_cockroach}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 2"}
+	{"spawn time" 60}
+	{"max count" 2}
+}
+{"insect_greater_cockroach"
+	{"spawn type" units}
+	{raw insect_greater_cockroach}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 60}
+	{"max count" 1}
+}
+{"gnomes_spawner_1"
+	{"spawn type" units}
+	{raw mks_gnomes}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 5}
+	{"max count" 1}
+}
+{"gnomes_spawner_2"
+	{"spawn type" units}
+	{raw mks_gnomes2}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 5}
+	{"max count" 1}
+}
+{"gnomes_spawner_1_und"
+	{"spawn type" units}
+	{raw und_gnomes}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 5}
+	{"max count" 1}
+}
+{"gnomes_spawner_2_und"
+	{"spawn type" units}
+	{raw und_gnomes2}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 5}
+	{"max count" 1}
+}
+{"graveyard_imp_1"
+	{"spawn type" units}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 1}
+			{Max_city_summ 5}
+		}
+	}
+	{raw demon_imp}
+	{Nationality Enemy}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 45}
+	{"max count" 1}
+}
+{"graveyard_greater_imp_1"
+	{"spawn type" units}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 8}
+			{Max_city_summ 999}
+		}
+	}
+	{raw demon_greater_imp}
+	{Nationality Enemy}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 120}
+	{"max count" 1}
+}
+{"graveyard_imp_2"
+	{"spawn type" units}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 5}
+			{Max_city_summ 10}
+		}
+	}
+	{raw demon_imp}
+	{Nationality Enemy}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 45}
+	{"max count" 1}
+}
+{"graveyard_greater_imp_2"
+	{"spawn type" units}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 15}
+			{Max_city_summ 50}
+		}
+	}
+	{raw demon_greater_imp}
+	{Nationality Enemy}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 2"}
+	{"spawn time" 60}
+	{"max count" 2}
+}
+{"insect_spider"
+	{"spawn type" units}
+	{raw insect_spider}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 2"}
+	{"spawn time" 60}
+	{"max count" 2}
+}
+{"insect_greater_spider"
+	{"spawn type" units}
+	{raw insect_greater_spider}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 60}
+	{"max count" 1}
+}
+{"graveyard_exp3"
+	{"spawn type" buildings}
+	{Prerequsities_list dead_heroes}
+	{Prerequsities
+		{dead_heroes
+			{Min_dead_heroes 1}
+			{Max_dead_heroes 999}
+		}
+	}
+	{raw mks_graveyard}
+	{"Rand turn" 0}
+	{Nationality Same}
+	{Remoutness 8}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 1}
+	{"max count" 1}
+	{"First wave"}
+}
+{"dragon_attacker"
+	{"spawn type" units}
+	{raw fantasy_dragon}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 320}
+	{"max count" 1}
+}
+{"dragon_attacker_02"
+	{"spawn type" units}
+	{raw fantasy_dragon}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way2}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 320}
+	{"max count" 1}
+}
+{"dragon_attacker_03"
+	{"spawn type" units}
+	{raw fantasy_dragon}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way3}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 320}
+	{"max count" 1}
+}
+{"dragon_attacker_04"
+	{"spawn type" units}
+	{raw fantasy_dragon}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way4}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 320}
+	{"max count" 1}
+}
+{"ogre_attacker"
+	{"spawn type" units}
+	{raw giant_ogre}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 270}
+	{"max count" 1}
+}
+{"ogre_attacker_02"
+	{"spawn type" units}
+	{raw giant_ogre}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way2}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 270}
+	{"max count" 1}
+}
+{"ogre_attacker_03"
+	{"spawn type" units}
+	{raw giant_ogre}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way2}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 270}
+	{"max count" 1}
+}
+{"bearman_attacker"
+	{"spawn type" units}
+	{raw beast_bearman}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 180}
+	{"max count" 1}
+}
+{"earth_attacker"
+	{"spawn type" units}
+	{raw fantasy_elemental_earth}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 360}
+	{"max count" 1}
+}
+{"earth_attacker_02"
+	{"spawn type" units}
+	{raw fantasy_elemental_earth}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way2}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 360}
+	{"max count" 1}
+}
+{"earth_attacker_03"
+	{"spawn type" units}
+	{raw fantasy_elemental_earth}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way3}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 360}
+	{"max count" 1}
+}
+{"earth_attacker_04"
+	{"spawn type" units}
+	{raw fantasy_elemental_earth}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way4}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 360}
+	{"max count" 1}
+}
+{"vampire_attacker"
+	{"spawn type" units}
+	{raw undead_vampire}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 360}
+	{"max count" 1}
+}
+{"vampire_attacker_02"
+	{"spawn type" units}
+	{raw undead_vampire}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way2}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 360}
+	{"max count" 1}
+}
+{"vampire_attacker_03"
+	{"spawn type" units}
+	{raw undead_vampire}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way3}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 360}
+	{"max count" 1}
+}
+{"wolfman_attacker"
+	{"spawn type" units}
+	{raw beast_wolfman}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 180}
+	{"max count" 1}
+}
+{"wolfman_attacker_02"
+	{"spawn type" units}
+	{raw beast_wolfman}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way2}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 180}
+	{"max count" 1}
+}
+{"wolfman_attacker_03"
+	{"spawn type" units}
+	{raw beast_wolfman}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way3}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 180}
+	{"max count" 1}
+}
+{"boss_earth_attacker"
+	{"spawn type" units}
+	{raw boss_elemental_earth}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 360}
+	{"max count" 1}
+}
+{"boss_fire_attacker"
+	{"spawn type" units}
+	{raw boss_elemental_fire}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 360}
+	{"max count" 1}
+}
+{"fire_attacker"
+	{"spawn type" units}
+	{raw fantasy_elemental_earth_child}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 360}
+	{"max count" 1}
+}
+{"fire_attacker_02"
+	{"spawn type" units}
+	{raw fantasy_elemental_earth_child}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way2}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 360}
+	{"max count" 1}
+}
+{"fire_attacker_03"
+	{"spawn type" units}
+	{raw fantasy_elemental_earth_child}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way3}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 360}
+	{"max count" 1}
+}
+{"fire_attacker_04"
+	{"spawn type" units}
+	{raw fantasy_elemental_earth_child}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task waypoints}
+		{type berserk_agressive}
+		{waypoint monster_way4}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 360}
+	{"max count" 1}
+}
+{"mill_house_1"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 8}
+			{Max_city_summ 12}
+		}
+	}
+	{raw mks_mill}
+	{"Rand turn" 50}
+	{Nationality Same}
+	{Remoutness 20}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 45}
+	{"max count" 1}
+}
+{"mill_house_2"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 12}
+			{Max_city_summ 999}
+		}
+	}
+	{raw mks_mill}
+	{"Rand turn" 50}
+	{Nationality Same}
+	{Remoutness 20}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 45}
+	{"max count" 1}
+}
+{"mks_guard_spawner"
+	{"spawn type" units}
+	{raw mks_guard}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 15}
+	{"max count" 1}
+}
+{"mks_guard_spawner2"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 2}
+		}
+	}
+	{raw mks_guard}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 15}
+	{"max count" 1}
+}
+{"peasant_house_spawner_undead1"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 1}
+			{Max_city_summ 999}
+		}
+	}
+	{raw und_house}
+	{"Rand turn" 50}
+	{Nationality Same}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 35}
+	{"max count" 1}
+}
+{"peasant_house_spawner_undead2"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 3}
+			{Max_city_summ 999}
+		}
+	}
+	{raw und_house}
+	{"Rand turn" 50}
+	{Nationality Same}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 35}
+	{"max count" 1}
+}
+{"peasant_house2_spawner_undead3"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 3}
+			{Max_city_summ 999}
+		}
+	}
+	{raw und_house}
+	{"Rand turn" 35}
+	{Nationality Same}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 35}
+	{"max count" 1}
+}
+{"peasant_house_spawner_undead4"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 5}
+			{Max_city_summ 999}
+		}
+	}
+	{raw und_house}
+	{"Rand turn" 35}
+	{Nationality Same}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 35}
+	{"max count" 1}
+}
+{"peasant_house2_spawner_undead5"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 5}
+			{Max_city_summ 999}
+		}
+	}
+	{raw und_house}
+	{"Rand turn" 35}
+	{Nationality Same}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 35}
+	{"max count" 1}
+}
+{"peasant_mill_spawner_undead6"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 8}
+			{Max_city_summ 12}
+		}
+	}
+	{raw und_mill}
+	{"Rand turn" 50}
+	{Nationality Same}
+	{Remoutness 20}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 45}
+	{"max count" 1}
+}
+{"peasant_mill_spawner_undead7"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 12}
+			{Max_city_summ 999}
+		}
+	}
+	{raw und_mill}
+	{"Rand turn" 50}
+	{Nationality Same}
+	{Remoutness 20}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 45}
+	{"max count" 1}
+}
+{"sewers_spawner_undead1"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 6}
+			{Max_city_summ 999}
+		}
+	}
+	{raw und_peast_imp}
+	{"Rand turn" 50}
+	{Nationality Enemy}
+	{Remoutness 10}
+	{gold 0}
+	{"spawn time" 20}
+	{"max count" 1}
+}
+{"sewers_spawner_undead2"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 9}
+			{Max_city_summ 999}
+		}
+	}
+	{raw und_laystall}
+	{"Rand turn" 50}
+	{Nationality Enemy}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 20}
+	{"max count" 1}
+}
+{"sewers_spawner_undead3"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 15}
+			{Max_city_summ 999}
+		}
+	}
+	{raw und_peast_imp}
+	{"Rand turn" 50}
+	{Nationality Enemy}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 20}
+	{"max count" 1}
+}
+{"sewers_spawner_undead4"
+	{"spawn type" buildings}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 20}
+			{Max_city_summ 999}
+		}
+	}
+	{raw und_laystall}
+	{"Rand turn" 50}
+	{Nationality Enemy}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 20}
+	{"max count" 1}
+}
+{"taxer_spawner_undead1"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 1}
+		}
+	}
+	{raw und_taxer}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 10}
+	{"max count" 2}
+	{"First wave"}
+}
+{"taxer_spawner_undead2"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 2}
+		}
+	}
+	{raw und_taxer}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 10}
+	{"max count" 2}
+}
+{"taxer_spawner_undead3"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 3}
+		}
+	}
+	{raw und_taxer}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 10}
+	{"max count" 2}
+}
+{"guard_spawner_undead1"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 1}
+		}
+	}
+	{raw und_grave_guard}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 10}
+	{"max count" 1}
+	{"First wave"}
+}
+{"guard_spawner_undead2"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 2}
+		}
+	}
+	{raw und_grave_guard}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 10}
+	{"max count" 1}
+}
+{"guard_spawner_undead3"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 3}
+		}
+	}
+	{raw und_grave_guard}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 10}
+	{"max count" 1}
+}
+{"peasant_spawner_undead"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation "=="}
+			{Level 1}
+		}
+	}
+	{raw uns_gnomes}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 10}
+	{"max count" 2}
+	{"First wave"}
+}
+{"graveyard_undead_cockroach"
+	{"spawn type" units}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 1}
+			{Max_city_summ 5}
+		}
+	}
+	{raw insect_cockroach}
+	{Nationality Enemy}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 2"}
+	{"spawn time" 45}
+	{"max count" 2}
+}
+{"graveyard_und_spider_bone"
+	{"spawn type" units}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 8}
+			{Max_city_summ 999}
+		}
+	}
+	{raw insect_spider}
+	{Nationality Enemy}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 120}
+	{"max count" 1}
+}
+{"graveyard_undead_imp_cockroach"
+	{"spawn type" units}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 5}
+			{Max_city_summ 10}
+		}
+	}
+	{raw insect_cockroach}
+	{Nationality Enemy}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 2"}
+	{"spawn time" 45}
+	{"max count" 2}
+}
+{"graveyard_undead_imp_spider"
+	{"spawn type" units}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 15}
+			{Max_city_summ 999}
+		}
+	}
+	{raw insect_spider}
+	{Nationality Enemy}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 2"}
+	{"spawn time" 120}
+	{"max count" 2}
+}
+{"graveyard_undead_greater_cockroach"
+	{"spawn type" units}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 5}
+			{Max_city_summ 999}
+		}
+	}
+	{raw insect_greater_cockroach}
+	{Nationality Enemy}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 120}
+	{"max count" 1}
+}
+{"graveyard_undead_greater_spider"
+	{"spawn type" units}
+	{Prerequsities_list city_value}
+	{Prerequsities
+		{city_value
+			{Min_city_summ 15}
+			{Max_city_summ 50}
+		}
+	}
+	{raw insect_greater_spider}
+	{Nationality Enemy}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 2"}
+	{"spawn time" 60}
+	{"max count" 2}
+}
+{"spawns_skeletons"
+	{"spawn type" units}
+	{raw undead_guard_skeleton}
+	{"Rand turn" 50}
+	{Nationality Same}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 2}
+	{"max count" 2}
+}
+{"grave_skelet"
+	{"spawn type" units}
+	{raw undead_skeleton}
+	{"Rand turn" 50}
+	{Nationality Same}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 4}
+	{"max count" 6}
+}
+{"grave_skelet_arch"
+	{"spawn type" units}
+	{raw undead_archer_skeleton}
+	{"Rand turn" 50}
+	{Nationality Same}
+	{Remoutness 10}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 4}
+	{"max count" 6}
+}
+{"grave_yard_undead"
+	{"spawn type" buildings}
+	{Prerequsities_list dead_heroes}
+	{Prerequsities
+		{dead_heroes
+			{Min_dead_heroes 1}
+			{Max_dead_heroes 999}
+		}
+	}
+	{raw und_graveyard}
+	{"Rand turn" 0}
+	{Nationality Same}
+	{Remoutness 8}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 1}
+	{"max count" 1}
+	{"First wave"}
+}
+{"undead_imp"
+	{"spawn type" units}
+	{raw demon_imp}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1"}
+	{"spawn time" 45}
+	{"max count" 1}
+}
+{"und_spider_bone"
+	{"spawn type" units}
+	{raw und_spider_bone}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1"}
+	{"spawn time" 45}
+	{"max count" 1}
+}
+{"und_guard_spawner"
+	{"spawn type" units}
+	{raw und_ghost_guard}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 15}
+	{"max count" 1}
+}
+{"und_summon_knight_trade"
+	{"spawn type" units}
+	{Prerequsities_list building_level}
+	{Prerequsities
+		{building_level
+			{Operation ">="}
+			{Level 3}
+		}
+	}
+	{raw und_summon_knight}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn_i 0}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 50}
+	{"max count" 1}
+	{"First wave"}
+}
+{"und_summon_knight"
+	{"spawn type" units}
+	{raw und_summon_knight}
+	{Nationality Same}
+	{level 0}
+	{"AI task"
+		{task none}
+	}
+	{postspawn}
+	{postspawn_i 1}
+	{gold 0}
+	{count "1 1"}
+	{"spawn time" 50}
+	{"max count" 1}
+	{"First wave"}
+}

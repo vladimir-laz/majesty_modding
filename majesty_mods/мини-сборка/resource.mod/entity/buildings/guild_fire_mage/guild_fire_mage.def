@@ -1,0 +1,265 @@
+{entity
+
+		{Flags "need_special_zone"}
+	
+
+;#line 4: 	(include "/properties/buildings/extenders/level.inc")
+;#line 4: /properties/buildings/extenders/level.inc BEGIN
+{"Level"
+	{MaxLevel 1}
+	{CurrentLevel 1}
+	{CurrentExperiens 0.0}
+}
+;#line 4: /properties/buildings/extenders/level.inc END
+
+
+;#line 5: 	(include "/properties/buildings/extenders/death.inc")
+;#line 5: /properties/buildings/extenders/death.inc BEGIN
+{"IDeath.BuildingDeath"
+}
+
+;#line 5: /properties/buildings/extenders/death.inc END
+
+
+;#line 6: 	(include "/properties/buildings/extenders/seller.inc")
+;#line 6: /properties/buildings/extenders/seller.inc BEGIN
+{"entity_seller"
+}
+;#line 6: /properties/buildings/extenders/seller.inc END
+
+
+;#line 7: 	(include "/properties/buildings/extenders/entity_nationality.inc")
+;#line 7: /properties/buildings/extenders/entity_nationality.inc BEGIN
+{"EntityNationality"
+}
+
+;#line 7: /properties/buildings/extenders/entity_nationality.inc END
+
+	;===================================================
+	;	Индивидуальные свойства здания
+	;===================================================
+
+
+;#line 12: 	(include "extenders/name.inc")
+;#line 12: /entity/buildings/guild_fire_mage/extenders/name.inc BEGIN
+{"Name"}
+;#line 12: /entity/buildings/guild_fire_mage/extenders/name.inc END
+
+
+;#line 13: 	(include "extenders/entity_classes.inc")
+;#line 13: /entity/buildings/guild_fire_mage/extenders/entity_classes.inc BEGIN
+{"EntityClasses"
+	"building" "candest"
+	"guild_fire_mage"	; используется для настройки магазинов
+	"guild"		; используется для настройки привлекательности	
+	"magic_building"	; требуется для ретранслятора заклинаний игрока гильдии магов
+	"magic_construction"
+}
+;#line 13: /entity/buildings/guild_fire_mage/extenders/entity_classes.inc END
+
+
+
+;#line 15: 	(include "/properties/buildings/extenders/rpg_no_perks.inc")
+;#line 15: /properties/buildings/extenders/rpg_no_perks.inc BEGIN
+{"RPGModule" {perks {perkinstance "no_perks_4_building"}}}
+;#line 15: /properties/buildings/extenders/rpg_no_perks.inc END
+
+	{"Health" {value_new {rpg_building} } }
+
+;#line 17: 	(include "extenders/building.inc")
+;#line 17: /entity/buildings/guild_fire_mage/extenders/building.inc BEGIN
+{"Home"
+}
+{"Building"
+	{stamp "bg_common04"}
+	{has_static}
+	{building_value 0.5}
+	{CashMachine
+		{Base
+			{AcceptableCards
+				{Tax
+					"citizen_taxer"
+
+					"hero_fire_mage"
+					
+				}
+				{Personal
+								
+					"hero_fire_mage"
+							
+					
+				}
+			}
+		}
+	}
+}
+
+;#line 95: (include "/properties/buildings/visual/guild_fire_mage_vis.inc")
+;#line 95: /properties/buildings/visual/guild_fire_mage_vis.inc BEGIN
+
+;#line 95: /properties/buildings/visual/guild_fire_mage_vis.inc END
+
+
+;#line 17: /entity/buildings/guild_fire_mage/extenders/building.inc END
+
+
+;#line 18: 	(include "extenders/upgrades.inc")
+;#line 18: /entity/buildings/guild_fire_mage/extenders/upgrades.inc BEGIN
+{"Upgrades"
+	{available
+		{;1й апгрейд
+			{health 500}				;Добавляет хитпоинтов
+			{building_value 0.35}
+			{cost					;Стоимость апргейда
+			"money" 400
+			}
+		}
+		{;2й апгрейд
+			{health 500} ;Добавляет хитпоинтов	
+			{building_value 0.35}		
+			{cost					;Стоимость апргейда
+			"money" 1000
+			}
+		}
+	}
+}
+
+;#line 18: /entity/buildings/guild_fire_mage/extenders/upgrades.inc END
+
+
+
+;#line 20: 	(include "extenders/inventory.inc")
+;#line 20: /entity/buildings/guild_fire_mage/extenders/inventory.inc BEGIN
+{"m2inventory"
+}
+
+;#line 20: /entity/buildings/guild_fire_mage/extenders/inventory.inc END
+
+
+;#line 21: 	(include "extenders/safety_emitter.inc")
+;#line 21: /entity/buildings/guild_fire_mage/extenders/safety_emitter.inc BEGIN
+{"safety_emitter"
+	{power  5}
+	{radius 20}
+}
+;#line 21: /entity/buildings/guild_fire_mage/extenders/safety_emitter.inc END
+
+	;(include "extenders/guard_point.inc")
+	;(include "extenders/keep_population.inc")
+	;(include "extenders/treasures_generator.inc")
+
+;#line 25: 	(include "extenders/prime_cost.inc")
+;#line 25: /entity/buildings/guild_fire_mage/extenders/prime_cost.inc BEGIN
+{"EntityPrimeCost"
+	{Cost 35.0}
+}
+;#line 25: /entity/buildings/guild_fire_mage/extenders/prime_cost.inc END
+
+	
+
+
+;#line 28: 	(include "/properties/buildings/sound/destroyable_guild_magic.inc")
+;#line 28: /properties/buildings/sound/destroyable_guild_magic.inc BEGIN
+{"sound"
+	{"destroyable_building"
+		{state "building_one_past_ill" {desc {param}}}
+		{state "building_one_to_full" {desc {param}}}
+		{state "building_destroied" {desc {param {name "buildings/crash/building_crash_3"}{posi}}}}
+		{state "building_is_building" {desc {param {name "buildings/construction/magic_build"}{looped}{posi}}}}
+		{state "building_building_is_selected" {desc {param {name "interface/building_select/building_building"} }}}
+		{state "building_ready_is_selected" {desc {param {name "interface/building_select/guild_fire_mage_select"} }}}
+		{state "building_people_ambient" {desc {param {name "buildings/ambient/guild_fire_mage_am"} {looped} {posi}}}}
+		{state "building_25_live" {desc {param {name "buildings/crash/fire_small/fire_big_1"}{looped}{posi} }}}
+		{state "building_50_live" {desc {param {name "buildings/crash/fire_small/fire_med_1"}{looped}{posi} }}}
+		{state "building_75_live" {desc {param {name "buildings/crash/fire_small/fire_small_1"}{looped}{posi} }}}
+	}
+}
+
+;#line 28: /properties/buildings/sound/destroyable_guild_magic.inc END
+
+
+;#line 29: 	(include "/properties/sound/stone_material_sound.inc")
+;#line 29: /properties/sound/stone_material_sound.inc BEGIN
+{"snd_props"
+	{prop {tag "hitprop"}{val "stone"}}
+}
+
+;#line 29: /properties/sound/stone_material_sound.inc END
+
+
+	{"zones"
+		{ObstacleID "fly_over"}
+		{body {proper body sensible} {permit body}}
+	}
+	{actor}
+	{xform scale 0.7}
+	{"building" {version 23}}
+	{"placer"}
+	{"structure"
+		{place "dummy002" "guild_fire_mage_l0"}
+		{place "dummy003" "guild_fire_mage_l0_nati_"}
+		{place "dummy004" "object01_l0_ground_guild_fire_mage"}
+		{place "dummy005" "object02_l0_base_guild_fire_mage"}
+		{place "dummy006" "object03_l0_dust_guild_fire_mage"}
+		{place "dummy007" "object04_l0_base_guild_fire_mage"}
+		{place "dummy008" "object05_l0_base_guild_fire_mage"}
+		{place "dummy009" "object06_l0_base_guild_fire_mage"}
+		{place "dummy010" "object071_l0_nati_dust_guild_fire_mage"}
+		{place "dummy011" "object07_l0_base_guild_fire_mage"}
+		{place "dummy012" "object08_l0_base_guild_fire_mage"}
+		{place "dummy013" "object09_l0_base_guild_fire_mage"}
+		{place "dummy014" "object10_l0_base_guild_fire_mage"}
+		{place "dummy015" "object11_l0_base_guild_fire_mage"}
+		{place "dummy016" "object12_l0_base_guild_fire_mage"}
+		{place "dummy017" "object13_l0_base_guild_fire_mage"}
+		{place "dummy018" "object14_l0_base_guild_fire_mage"}
+		{place "dummy019" "object15_l0_base_guild_fire_mage"}
+		{place "dummy020" "object16_l0_base_guild_fire_mage"}
+		{place "dummy021" "object17_l0_nati_base_guild_fire_mage"}
+		{place "dummy022" "object18_l0_nati_dust_guild_fire_mage"}
+		{place "dummy023" "object19_l0_nati_dust_guild_fire_mage"}
+		{place "dummy024" "object20_l0_dust_guild_fire_mage"}
+		{place "dummy025" "object22_l0_dust_guild_fire_mage"}
+		{place "dummy026" "object23_l0_dust_guild_fire_mage"}
+		{place "dummy027" "object24_l0_dust_guild_fire_mage"}
+		{place "dummy028" "object25_l0_dust_guild_fire_mage"}
+		{place "dummy029" "object26_l0_dust_guild_fire_mage"}
+		{place "dummy030" "object27_l0_dust_guild_fire_mage"}
+		{place "dummy031" "object28_l0_nati_dust_guild_fire_mage"}
+		{place "dummy032" "object29_l0_dust_guild_fire_mage"}
+	}
+	
+		{"FXAttachment"
+			{defaults "dummy001" "magic_guild_fx_fire"}
+		}
+	{"FogVisor"
+	{radius 8}
+	}
+	{"Laboratory"}
+
+
+;#line 102: 	(include "/properties/units/extenders/selection_box2.inc")	
+;#line 102: /properties/units/extenders/selection_box2.inc BEGIN
+{"volumes"
+	{"selection_box1"
+		{able
+			{visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}
+			{blast 0}{hole 0}{holed 0}{touch 0}{float 0}{window 0}
+			{select 1}
+		}
+	}
+	{"selection_box2"
+		{able
+			{visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}
+			{blast 0}{hole 0}{holed 0}{touch 0}{float 0}{window 0}
+			{select 1}
+		}
+	}
+}
+
+{"zones"
+	{Collider "can_stir"}
+}
+;#line 102: /properties/units/extenders/selection_box2.inc END
+
+}
