@@ -1,0 +1,23 @@
+;Exported by:	 katarina
+;Date:			 Fri Jul 10 15:32:51 2009
+;File:			 E:\Art_group\Majesty2_mp\MP1\M2_Mp1_models(resource)\entity\units\monsters\goblin_champion\GoblinArcherChampion_items.max
+{skeleton
+	{bone "root_transformed"
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "bow_lv4"
+			{view poly "bow_lv4"}
+			    {bone "weapon_fx_1"
+					{matrix34
+						1 	 0 	 0
+						0 	 -0 	 1
+						0 	 -1 	 -0
+						0 	 0 	 0
+					}
+				}
+		}
+	}
+}

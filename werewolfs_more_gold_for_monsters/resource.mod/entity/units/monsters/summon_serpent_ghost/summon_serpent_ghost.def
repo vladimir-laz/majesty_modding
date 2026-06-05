@@ -1,0 +1,74 @@
+{entity
+	
+	{"zones"
+		{body {proper body sensible} {permit 	body}}
+		{Collider "default"}
+	}
+	{"ItemsAttachment"
+		{defaults "summon_point" "summon_runes"}
+	}
+	{actor}
+
+	(include "anim.inc")		; описание анимаций
+	(include "fsm.inc")			; описание конечного автомата
+	{xform scale 1.0}
+
+	;===================================================
+	;	Общие свойства юнитов
+	;===================================================
+
+	(include "/properties/units/extenders/tex_mod_manager.inc")
+	(include "/properties/units/extenders/entity_nationality.inc")
+	(include "/properties/units/extenders/selection_box6.inc")
+	(include "/properties/units/extenders/items_attachment.inc")
+	(include "/properties/sound/flesh_material_sound.inc")
+
+	;===================================================
+	;	Индивидуальные свойства юнита
+	;===================================================
+	(include "extenders/death.inc")
+	(include "extenders/name.inc")
+	(include "extenders/entity_classes.inc")
+
+	(include "extenders/unit.inc")
+	(include "extenders/level.inc")
+	(include "extenders/health.inc")
+
+	;#line 48: entity/units/monsters/summon_serpent_ghost/extenders/actions.inc BEGIN
+{"ActionManager"
+	{actions
+		{action
+			{name "fire_mage_basic_attack"}
+		}
+	}
+}
+
+;#line 48: entity/units/monsters/summon_serpent_ghost/extenders/actions.inc END
+		
+	(include "extenders/ai.inc")
+	(include "extenders/mover.inc")
+	(include "extenders/sensor.inc")
+
+	{"Attacker"}
+	(include "extenders/inventory.inc")
+	{"RPGModule"}
+
+	(include "extenders/prime_cost.inc")
+	(include "extenders/safety_emitter.inc")
+	(include "/properties/units/extenders/sound_t.inc")
+
+
+	;#line 1: 	(include "extenders/fog_visor.inc")
+;#line 1: /entity/units/monsters/summon_serpent_ghost/extenders/fog_visor.inc BEGIN
+{"FogVisor"
+	{radius 4}
+}
+;#line 1: /entity/units/monsters/summon_serpent_ghost/extenders/fog_visor.inc END
+
+}
+{entity
+	{Skeleton
+		{"materials/luminosity/color" yellow}
+		{"materials/luminosity/glow"}
+	}
+}

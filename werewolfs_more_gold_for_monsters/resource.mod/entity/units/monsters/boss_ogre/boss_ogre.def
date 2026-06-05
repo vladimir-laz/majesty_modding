@@ -1,0 +1,927 @@
+{entity
+	
+
+	{actor}
+
+
+;#line 6: 	(include "anim.inc")			
+;#line 6: entity/units/monsters/boss_ogre/anim.inc BEGIN
+{Skeleton
+	{animation
+		{blend "pose_to_lazy_idle_lay_down"{pose "lazy_idle_lay_down" begin}}
+		{binary "lazy_idle_lay_down"{speed 0.6}}
+		{blend "pose_to_lazy_idle"{pose "lazy_idle" begin}}
+		{binary "lazy_idle"{speed 0.6}}
+		{binary "lazy_idle_rand01"{speed 0.6}}
+		{blend "pose_to_lazy_idle_stand_up"{pose "lazy_idle_stand_up" begin}}
+		{binary "lazy_idle_stand_up"{speed 0.6}}
+		{blend "pose_to_blow"{pose "blow" begin}}
+		{binary "blow"{speed 0.6}}
+		{binary "blow_02"{speed 0.6}}
+		{blend "pose_to_idle"{pose "idle" begin}}
+		{binary "idle"{speed 0.6}}
+		{blend "pose_to_walk"{pose "walk" begin}}
+		{binary "walk"{speed 0.6}}
+		{blend "pose_to_blow_02"{pose "blow_02" begin}}
+		{binary "idle_rand_01"{speed 0.6}}
+		{binary "idle_rand_02"{speed 0.6}}
+		{binary "idle_rand_03"{speed 0.6}}
+		{blend "pose_to_death"{pose "death" begin}}
+		{binary "death"{speed 0.6}}
+		{binary "death_02"{speed 0.6}}
+		{blend "pose_from_idle"{pose "idle" end}}
+		{blend "pose_to_stun"{pose "stun" begin}}
+		{binary "stun"{speed 0.6}}
+	}
+}
+;#line 6: entity/units/monsters/boss_ogre/anim.inc END
+
+
+;#line 7: 	(include "fsm.inc")		
+;#line 7: entity/units/monsters/boss_ogre/fsm.inc BEGIN
+{"FSM.AnimationsFSM"
+
+;********************************************************************
+; Requests
+;********************************************************************
+	{AnimRequest "idle" {System "PRE_IDLE"}}
+
+	{AnimRequest "move" {System "PRE_MOVE"}}
+
+	{AnimRequest "rotate" {System "PRE_ROTATE_LEFT"}}
+
+	{AnimRequest "rotate" {System "PRE_ROTATE_RIGHT"}}
+
+	{AnimRequest "attack" {System "PRE_MELEE_ATTACK"}}
+
+	{AnimRequest "death" {System "PRE_DEATH"}}
+
+;********************************************************************
+; States
+;********************************************************************
+{State "pose_to_sleep_down"
+	;transations
+	{from "from_default"}
+	{from "from_panic"}
+	{from "from_fight"}
+}
+{StateWork "pose_to_sleep_down"
+	{pose}
+	{AnimName "pose_to_lazy_idle_lay_down" {speed 0.25} }
+}
+
+{State "sleep_down"
+	;transations
+	{from "pose_to_sleep_down"}
+	;tags
+	{tag "sleep_down"}
+}
+{StateWork "sleep_down"
+	{SyncNotifyStart "SLEEP_DOWN"}
+	{SyncNotifyFinish "SLEEP_DOWN"}
+	{AnimName "lazy_idle_lay_down" {speed 1.3} {frame 3 "OGRE_FALLS_ASLEEP_SND"} }
+}
+
+{State "pose_to_sleep"
+	;transations
+	{from "sleep_down"}
+}
+{StateWork "pose_to_sleep"
+	{pose}
+	{AnimName "pose_to_lazy_idle" {speed 0.25} }
+}
+
+{State "sleep"
+	;transations
+	{from "pose_to_sleep"}
+	;tags
+	{tag "sleep"}
+}
+{StateWork "sleep"
+	{SyncNotifyStart "SLEEP"}
+	{SyncNotifyFinish "SLEEP"}
+	{looped}
+	{random}
+	{AnimName "lazy_idle" {speed 1} {count 3} {frame 1 "OGRE_SNORE_SND"} }
+	{AnimName "lazy_idle_rand01" {speed 1} {frame 1 "OGRE_SNORE_SHORT_SND"} }
+}
+
+{State "pose_to_sleep_up"
+	;transations
+	{from "sleep"}
+	{from "pose_to_sleep"}
+}
+{StateWork "pose_to_sleep_up"
+	{pose}
+	{AnimName "pose_to_lazy_idle_stand_up" {speed 0.25} }
+}
+
+{State "sleep_up"
+	;transations
+	{from "pose_to_sleep_up"}
+	;tags
+	{tag "sleep_up"}
+}
+{StateWork "sleep_up"
+	{SyncNotifyStart "SLEEP_UP"}
+	{SyncNotifyFinish "SLEEP_UP"}
+	{AnimName "lazy_idle_stand_up" {speed 1.3} {frame 1 "OGRE_AWAKES_SND"} }
+}
+
+{State "pose_to_attack_fight"
+	;transations
+	{from "idle_fight"}
+	{from "move_fight"}
+	{from "from_fight"}
+	{from "imp_attack01_fight"}
+	{from "pose_to_idle_fight"}
+	{from "pose_to_move_fight"}
+	{from "pose_to_imp_attack01_fight"}
+}
+{StateWork "pose_to_attack_fight"
+	{pose}
+	{AnimName "pose_to_blow" {speed 0.1} }
+}
+
+{State "attack_fight"
+	;transations
+	{from "pose_to_attack_fight"}
+	;tags
+	{tag "attack"}
+	{tag "fight"}
+}
+{StateWork "attack_fight"
+	{SyncNotifyStart "ATTACK"}
+	{SyncNotifyFinish "ATTACK"}
+	{random}
+	{AnimName "blow" {speed 1} {count 3} {frame 25 "OGRE_ATTACK_SND"} {frame 30 "WHOOSH_SLOW_SND"} {frame 35 "ATTACK"} {frame -1 "ATTACK"} }
+	{AnimName "blow_02" {speed 1.2} {frame 52 "OGRE_ATTACK_SND"} {frame 56 "WHOOSH_SLOW_SND"} {frame 91 "ATTACK"} {frame -1 "ATTACK"} }
+}
+
+{State "pose_to_idle_fight"
+	;transations
+	{from "attack_fight"}
+	{from "move_fight"}
+	{from "from_fight"}
+	{from "imp_attack01_fight"}
+	{from "pose_to_attack_fight"}
+	{from "pose_to_move_fight"}
+	{from "pose_to_imp_attack01_fight"}
+}
+{StateWork "pose_to_idle_fight"
+	{pose}
+	{AnimName "pose_to_idle" {speed 0.25} }
+}
+
+{State "idle_fight"
+	;transations
+	{from "pose_to_idle_fight"}
+	;tags
+	{tag "idle"}
+	{tag "fight"}
+}
+{StateWork "idle_fight"
+	{SyncNotifyStart "MOVE_PAUSE"}
+	{looped}
+	{AnimName "idle" {speed 1} }
+}
+
+{State "pose_to_move_fight"
+	;transations
+	{from "idle_fight"}
+	{from "attack_fight"}
+	{from "from_fight"}
+	{from "imp_attack01_fight"}
+	{from "pose_to_attack_fight"}
+	{from "pose_to_idle_fight"}
+	{from "pose_to_imp_attack01_fight"}
+}
+{StateWork "pose_to_move_fight"
+	{pose}
+	{AnimName "pose_to_walk" {speed 0.25} }
+}
+
+{State "move_fight"
+	;transations
+	{from "pose_to_move_fight"}
+	;tags
+	{tag "move"}
+	{tag "fight"}
+}
+{StateWork "move_fight"
+	{SyncNotifyStart "MOVE_RESUME"}
+	{SyncNotifyFinish "MOVE_PAUSE"}
+	{looped}
+	{AnimName "walk" {speed 0.8} {frame 2 "HEAVY_STEP_SND"} {frame 17 "HEAVY_STEP_SND"} }
+}
+
+{State "pose_to_imp_attack01_fight"
+	;transations
+	{from "idle_fight"}
+	{from "attack_fight"}
+	{from "move_fight"}
+	{from "from_fight"}
+	{from "pose_to_attack_fight"}
+	{from "pose_to_idle_fight"}
+	{from "pose_to_move_fight"}
+}
+{StateWork "pose_to_imp_attack01_fight"
+	{pose}
+	{AnimName "pose_to_blow_02" {speed 0.1} }
+}
+
+{State "imp_attack01_fight"
+	;transations
+	{from "pose_to_imp_attack01_fight"}
+	;tags
+	{tag "imp_attack01"}
+	{tag "fight"}
+}
+{StateWork "imp_attack01_fight"
+	{SyncNotifyStart "ATTACK"}
+	{SyncNotifyFinish "ATTACK"}
+	{AnimName "blow_02" {speed 1.3} {frame 28 "OGRE_ATTACK_SND"} {frame 56 "WHOOSH_SLOW_SND"} {frame 91 "ATTACK"} {frame -1 "ATTACK"} }
+}
+
+{State "pose_to_move_default"
+	;transations
+	{from "from_default"}
+	{from "idle_default"}
+	{from "pose_to_idle_default"}
+}
+{StateWork "pose_to_move_default"
+	{pose}
+	{AnimName "pose_to_walk" {speed 0.25} }
+}
+
+{State "move_default"
+	;transations
+	{from "pose_to_move_default"}
+	;tags
+	{tag "move"}
+	{tag "default"}
+}
+{StateWork "move_default"
+	{SyncNotifyStart "MOVE_RESUME"}
+	{SyncNotifyFinish "MOVE_PAUSE"}
+	{looped}
+	{AnimName "walk" {speed 0.7} {frame 2 "HEAVY_STEP_SND"} {frame 17 "HEAVY_STEP_SND"} }
+}
+
+{State "pose_to_idle_default"
+	;transations
+	{from "move_default"}
+	{from "from_default"}
+	{from "pose_to_move_default"}
+}
+{StateWork "pose_to_idle_default"
+	{pose}
+	{AnimName "pose_to_idle" {speed 0.25} }
+}
+
+{State "idle_default"
+	;transations
+	{from "pose_to_idle_default"}
+	;tags
+	{tag "idle"}
+	{tag "default"}
+}
+{StateWork "idle_default"
+	{SyncNotifyStart "MOVE_PAUSE"}
+	{looped}
+	{random}
+	{AnimName "idle" {speed 1} {count 5} }
+	{AnimName "idle_rand_01" {speed 1} }
+	{AnimName "idle_rand_02" {speed 1} }
+	{AnimName "idle_rand_03" {speed 1} }
+}
+
+{State "pose_to_idle_panic"
+	;transations
+	{from "from_panic"}
+	{from "move_panic"}
+	{from "pose_to_move_panic"}
+}
+{StateWork "pose_to_idle_panic"
+	{pose}
+	{AnimName "pose_to_idle" {speed 0.25} }
+}
+
+{State "idle_panic"
+	;transations
+	{from "pose_to_idle_panic"}
+	;tags
+	{tag "idle"}
+	{tag "panic"}
+}
+{StateWork "idle_panic"
+	{SyncNotifyStart "MOVE_PAUSE"}
+	{looped}
+	{AnimName "idle" {speed 1} }
+}
+
+{State "pose_to_move_panic"
+	;transations
+	{from "from_panic"}
+	{from "idle_panic"}
+	{from "pose_to_idle_panic"}
+}
+{StateWork "pose_to_move_panic"
+	{pose}
+	{AnimName "pose_to_walk" {speed 0.25} }
+}
+
+{State "move_panic"
+	;transations
+	{from "pose_to_move_panic"}
+	;tags
+	{tag "move"}
+	{tag "panic"}
+}
+{StateWork "move_panic"
+	{SyncNotifyStart "MOVE_RESUME"}
+	{SyncNotifyFinish "MOVE_PAUSE"}
+	{looped}
+	{AnimName "walk" {speed 0.8} {frame 2 "HEAVY_STEP_SND"} {frame 17 "HEAVY_STEP_SND"} }
+}
+
+{State "to_death"
+	;transations
+	{from "blank04"}
+}
+{StateWork "to_death"
+	{SyncNotifyStart "DEATH"}
+	{pose}
+	{AnimName "pose_to_death" {speed 0.15} }
+}
+
+{State "death"
+	;transations
+	{from "to_death"}
+	;tags
+	{tag "death"}
+}
+{StateWork "death"
+	{SyncNotifyFinish "DEATH"}
+	{random}
+	{AnimName "death" {speed 1} {frame 10 "OGRE_DEATH_SHORT_SND"} {frame 65 "BODYFALL_LIGHT_SND"} {frame 113 "BODYFALL_HEAVY_SND"} {frame -1 "DEATH"} }
+	{AnimName "death_02" {speed 1} {frame 30 "OGRE_DEATH_LONG_SND"} {frame 50 "HEAVY_STEP_SND"} {frame 59 "HEAVY_STEP_SND"} {frame 71 "HEAVY_STEP_SND"} {frame 94 "HEAVY_STEP_SND"} {frame 102 "HEAVY_STEP_SND"} {frame 143 "BODYFALL_LIGHT_SND"} {frame 198 "BODYFALL_HEAVY_SND"} {frame -1 "DEATH"} }
+}
+
+{State "blank01"
+	;transations
+	{from "pose_to_sleep_down"}
+	{from "sleep_down"}
+	{from "pose_to_sleep"}
+	{from "sleep"}
+	{from "pose_to_sleep_up"}
+	{from "sleep_up"}
+	{from "pose_to_attack_fight"}
+	{from "attack_fight"}
+	{from "pose_to_idle_fight"}
+	{from "idle_fight"}
+	{from "pose_to_move_fight"}
+	{from "move_fight"}
+	{from "pose_to_imp_attack01_fight"}
+	{from "imp_attack01_fight"}
+	{from "pose_to_move_default"}
+	{from "move_default"}
+	{from "pose_to_idle_default"}
+	{from "idle_default"}
+	{from "pose_to_idle_panic"}
+	{from "idle_panic"}
+	{from "pose_to_move_panic"}
+	{from "move_panic"}
+	{from "from_default"}
+	{from "from_panic"}
+	{from "from_fight"}
+}
+{StateWork "blank01"
+}
+
+{State "blank02"
+	;transations
+	{from "blank01"}
+}
+{StateWork "blank02"
+}
+
+{State "blank03"
+	;transations
+	{from "blank02"}
+}
+{StateWork "blank03"
+}
+
+{State "blank04"
+	;transations
+	{from "blank03"}
+}
+{StateWork "blank04"
+}
+
+{State "freeze"
+	;transations
+	{from "stun"}
+	{from "dummy00"}
+	{from "pose_to_stun"}
+	;tags
+	{tag "freeze"}
+}
+{StateWork "freeze"
+	{pose}
+	{AnimName "pose_from_idle" {speed 0.1} }
+}
+
+{State "pose_to_stun"
+	;transations
+	{from "freeze"}
+	{from "dummy00"}
+}
+{StateWork "pose_to_stun"
+	{pose}
+	{AnimName "pose_to_stun" {speed 0.1} }
+}
+
+{State "stun"
+	;transations
+	{from "pose_to_stun"}
+	;tags
+	{tag "stun"}
+}
+{StateWork "stun"
+	{looped}
+	{AnimName "stun" {speed 1} }
+}
+
+{State "from_unmoved_1"
+	;transations
+	{from "stun"}
+	{from "freeze"}
+	{from "pose_to_stun"}
+}
+{StateWork "from_unmoved_1"
+}
+
+{State "from_unmoved_2"
+	;transations
+	{from "from_unmoved_1"}
+}
+{StateWork "from_unmoved_2"
+}
+
+{State "dummy00"
+	;transations
+	{from "dummy04"}
+}
+{StateWork "dummy00"
+}
+
+{State "dummy01"
+	;transations
+	{from "pose_to_sleep_down"}
+	{from "sleep_down"}
+	{from "pose_to_sleep"}
+	{from "sleep"}
+	{from "pose_to_sleep_up"}
+	{from "sleep_up"}
+	{from "pose_to_attack_fight"}
+	{from "attack_fight"}
+	{from "pose_to_idle_fight"}
+	{from "idle_fight"}
+	{from "pose_to_move_fight"}
+	{from "move_fight"}
+	{from "pose_to_imp_attack01_fight"}
+	{from "imp_attack01_fight"}
+	{from "pose_to_move_default"}
+	{from "move_default"}
+	{from "pose_to_idle_default"}
+	{from "idle_default"}
+	{from "pose_to_idle_panic"}
+	{from "idle_panic"}
+	{from "pose_to_move_panic"}
+	{from "move_panic"}
+	{from "from_default"}
+	{from "from_panic"}
+	{from "from_fight"}
+}
+{StateWork "dummy01"
+}
+
+{State "dummy04"
+	;transations
+	{from "dummy01"}
+}
+{StateWork "dummy04"
+}
+
+{State "from_default"
+	;transations
+	{from "move_default"}
+	{from "idle_default"}
+	{from "from_panic"}
+	{from "from_fight"}
+	{from "death"}
+	{from "from_unmoved_2"}
+	{from "sleep_up"}
+	{from "pose_to_move_default"}
+	{from "pose_to_idle_default"}
+}
+{StateWork "from_default"
+	{SyncNotifyStart "MOVE_PAUSE"}
+}
+
+{State "from_panic"
+	;transations
+	{from "idle_panic"}
+	{from "move_panic"}
+	{from "from_default"}
+	{from "from_fight"}
+	{from "death"}
+	{from "from_unmoved_2"}
+	{from "sleep_up"}
+	{from "pose_to_idle_panic"}
+	{from "pose_to_move_panic"}
+}
+{StateWork "from_panic"
+	{SyncNotifyStart "MOVE_PAUSE"}
+	{pose}
+	{AnimName "pose_to_idle" {speed 0.1} }
+}
+
+{State "from_fight"
+	;transations
+	{from "move_fight"}
+	{from "attack_fight"}
+	{from "idle_fight"}
+	{from "from_default"}
+	{from "from_panic"}
+	{from "imp_attack01_fight"}
+	{from "death"}
+	{from "from_unmoved_2"}
+	{from "sleep_up"}
+	{from "pose_to_attack_fight"}
+	{from "pose_to_idle_fight"}
+	{from "pose_to_move_fight"}
+	{from "pose_to_imp_attack01_fight"}
+}
+{StateWork "from_fight"
+	{SyncNotifyStart "MOVE_PAUSE"}
+}
+
+;********************************************************************
+; Subsets
+;********************************************************************
+{subset "fight"
+	{enable "fight"}
+	{disable "default"}
+	{disable "panic"}
+}
+
+{subset "default"
+	{disable "fight"}
+	{enable "default"}
+	{disable "panic"}
+}
+
+{subset "panic"
+	{disable "fight"}
+	{disable "default"}
+	{enable "panic"}
+}
+
+;********************************************************************
+; Start state \ subset
+;********************************************************************
+	{Start "idle_default"}
+
+	{WorkSubset "default"}
+
+}
+
+;#line 7: entity/units/monsters/boss_ogre/fsm.inc END
+
+	{xform scale 1.8}	
+
+	;===================================================
+	;	Общие свойства юнитов
+	;===================================================
+
+
+;#line 14: 	(include "/properties/units/extenders/tex_mod_manager.inc")
+;#line 14: properties/units/extenders/tex_mod_manager.inc BEGIN
+	{"M2TexModManager"}
+;#line 14: properties/units/extenders/tex_mod_manager.inc END
+
+
+;#line 15: 	(include "/properties/units/extenders/entity_nationality.inc")
+;#line 15: properties/units/extenders/entity_nationality.inc BEGIN
+{"EntityNationality"
+}
+
+;#line 15: properties/units/extenders/entity_nationality.inc END
+
+
+;#line 16: 	(include "/properties/units/extenders/selection_box6.inc")
+;#line 16: properties/units/extenders/selection_box6.inc BEGIN
+{"volumes"
+	{"selection_box1"
+		{able
+			{visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}
+			{blast 0}{hole 0}{holed 0}{touch 0}{float 0}{window 0}
+			{select 1}
+		}
+	}
+	{"selection_box2"
+		{able
+			{visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}
+			{blast 0}{hole 0}{holed 0}{touch 0}{float 0}{window 0}
+			{select 1}
+		}
+	}
+	{"selection_box3"
+		{able
+			{visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}
+			{blast 0}{hole 0}{holed 0}{touch 0}{float 0}{window 0}
+			{select 1}
+		}
+	}
+	{"selection_box4"
+		{able
+			{visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}
+			{blast 0}{hole 0}{holed 0}{touch 0}{float 0}{window 0}
+			{select 1}
+		}
+	}
+	{"selection_box5"
+		{able
+			{visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}
+			{blast 0}{hole 0}{holed 0}{touch 0}{float 0}{window 0}
+			{select 1}
+		}
+	}
+	{"selection_box6"
+		{able
+			{visible 0}{bullet 0}{overlap 1}{obstacle 0}{contact 0}{contact_ground 0}
+			{blast 0}{hole 0}{holed 0}{touch 0}{float 0}{window 0}
+			{select 1}
+		}
+	}
+}
+
+{"zones"
+	{Collider "can_stir"}
+}
+;#line 16: properties/units/extenders/selection_box6.inc END
+
+
+;#line 17: 	(include "/properties/units/extenders/items_attachment.inc")
+;#line 17: properties/units/extenders/items_attachment.inc BEGIN
+{"ItemsAttachment"
+}
+
+;#line 17: properties/units/extenders/items_attachment.inc END
+
+
+;#line 18: 	(include "/properties/sound/flesh_material_sound.inc")
+;#line 18: properties/sound/flesh_material_sound.inc BEGIN
+{"snd_props"
+	{prop {tag "hitprop"}{val "flesh"}}
+}
+
+;#line 18: properties/sound/flesh_material_sound.inc END
+
+
+	;===================================================
+	;	Индивидуальные свойства юнита
+	;===================================================
+
+;#line 23: 	(include "extenders/death.inc")
+;#line 23: entity/units/monsters/boss_ogre/extenders/death.inc BEGIN
+{"IDeath.UnitDeath"
+	{grave_name ""}
+	{long_phases
+		"unit_putrefaction"		15   ; время тления трупа юнита... 
+		"unit_resurrection"		1.5   ; время воскрешения
+
+		"grave_alive"		20.0		; время в течение которого живет могилка
+		"grave_putrefaction"	2.5		; время исчезновения могилки	
+		"grave_resurrection"	2.5		; время появления могилки
+	}
+}
+;#line 23: entity/units/monsters/boss_ogre/extenders/death.inc END
+
+
+;#line 24: 	(include "extenders/name.inc")
+;#line 24: entity/units/monsters/boss_ogre/extenders/name.inc BEGIN
+{"Name"
+}
+
+;#line 24: entity/units/monsters/boss_ogre/extenders/name.inc END
+
+
+;#line 25: 	(include "extenders/entity_classes.inc")
+;#line 25: entity/units/monsters/boss_ogre/extenders/entity_classes.inc BEGIN
+{"EntityClasses"
+	"unit"
+	"monster"
+	"blood_splash"
+	"magical"
+}
+
+;#line 25: entity/units/monsters/boss_ogre/extenders/entity_classes.inc END
+
+
+
+;#line 27: 	(include "extenders/unit.inc")
+;#line 27: entity/units/monsters/boss_ogre/extenders/unit.inc BEGIN
+{"Unit"
+	{PersonalCashCard
+		{Classes
+			"monster"
+		}
+		{TreasureKeeper
+			"money" 800
+		}
+	}
+}
+
+
+;#line 27: entity/units/monsters/boss_ogre/extenders/unit.inc END
+
+
+;#line 28: 	(include "extenders/level.inc")
+;#line 28: entity/units/monsters/boss_ogre/extenders/level.inc BEGIN
+{"Level"
+	{MaxLevel 30}
+	{CurrentLevel 30}
+	{CurrentExperiens 0.0}
+}
+
+;#line 28: entity/units/monsters/boss_ogre/extenders/level.inc END
+
+
+;#line 29: 	(include "extenders/health.inc")
+;#line 29: entity/units/monsters/boss_ogre/extenders/health.inc BEGIN
+
+{"Health"
+	{value {			;Начальные данные - не важны (затираются при применении дизайнерских формул)
+			value 1
+			usemin 1
+			min 0
+			usemax 1
+			max 1
+		}
+	}
+}
+
+
+;#line 29: entity/units/monsters/boss_ogre/extenders/health.inc END
+
+
+
+;#line 31: 	(include "extenders/ai.inc")
+;#line 31: entity/units/monsters/boss_ogre/extenders/ai.inc BEGIN
+{"Behaviour.HeroMonsterBehaviour"
+	{HeroMonsterTargetManager
+		{AllureFactors
+		}
+		{"relations"
+			"citizen" -20
+		}
+	}
+}
+{"Motivator"
+	{max_tasks
+		{work 3}
+		{relaxation 1}
+	}
+}
+{".black_out"
+	{time 5.0}
+}
+;#line 31: entity/units/monsters/boss_ogre/extenders/ai.inc END
+
+
+;#line 32: 	(include "extenders/mover.inc")
+;#line 32: entity/units/monsters/boss_ogre/extenders/mover.inc BEGIN
+{"Mover.FootMover"
+
+;#line 809: 	(include "/properties/destroyer_15.mover")
+;#line 809: properties/destroyer_15.mover BEGIN
+{pathprofile "DESTROYER_1_5"
+}
+
+;#line 809: properties/destroyer_15.mover END
+
+	{stepLength 2}
+	{speed 4 4 4}
+	{angleSpeed 300}
+}
+{".speed_property"
+}
+
+;#line 32: entity/units/monsters/boss_ogre/extenders/mover.inc END
+
+
+;#line 33: 	(include "extenders/sensor.inc")
+;#line 33: entity/units/monsters/boss_ogre/extenders/sensor.inc BEGIN
+{"m2sensor"
+	{ViewRadius 30}
+	{Visors
+		{EnemyVisor}
+	}
+}
+
+;#line 33: entity/units/monsters/boss_ogre/extenders/sensor.inc END
+
+
+
+;#line 35: 	(include "extenders/actions.inc")		
+;#line 35: entity/units/monsters/boss_ogre/extenders/actions.inc BEGIN
+{"ActionManager"
+	{actions
+		{action
+			{name "boss_ogre_basic_attack"}
+		}
+		{action
+			{name "boss_ogre_aoe_knock_attack"}
+		}
+	}
+}
+
+;#line 35: entity/units/monsters/boss_ogre/extenders/actions.inc END
+
+	{"Attacker"}
+
+;#line 37: 	(include "extenders/inventory.inc")
+;#line 37: entity/units/monsters/boss_ogre/extenders/inventory.inc BEGIN
+{"m2inventory"
+	{allItems
+		{"Weapon"
+			{weapon_name "monster_boss_ogre_weapon_01"}
+		}
+	}
+}
+;#line 37: entity/units/monsters/boss_ogre/extenders/inventory.inc END
+
+	{"RPGModule"}
+
+
+;#line 40: 	(include "extenders/prime_cost.inc")
+;#line 40: entity/units/monsters/boss_ogre/extenders/prime_cost.inc BEGIN
+{"EntityPrimeCost"
+	{Cost 300.0}
+}
+
+;#line 40: entity/units/monsters/boss_ogre/extenders/prime_cost.inc END
+
+
+;#line 41: 	(include "extenders/safety_emitter.inc")
+;#line 41: entity/units/monsters/boss_ogre/extenders/safety_emitter.inc BEGIN
+{"safety_emitter"
+	{power 30}
+	{radius 10}
+}
+
+;#line 41: entity/units/monsters/boss_ogre/extenders/safety_emitter.inc END
+
+
+;#line 42: 	(include "/properties/units/extenders/sound_t.inc")
+;#line 42: properties/units/extenders/sound_t.inc BEGIN
+{"sound"}
+{"snd_props"}
+{".audible"}
+;#line 42: properties/units/extenders/sound_t.inc END
+
+
+;#line 43: 	(include "extenders/default_perks.inc")
+;#line 43: entity/units/monsters/boss_ogre/extenders/default_perks.inc BEGIN
+{"RPGModule"
+	{perks
+		{perkinstance "perk_boss"}
+	}
+}
+;#line 43: entity/units/monsters/boss_ogre/extenders/default_perks.inc END
+
+
+;#line 44: 	(include "/properties/units/extenders/step_fx_1.inc")
+;#line 44: properties/units/extenders/step_fx_1.inc BEGIN
+{"mover"
+	{footfx {name "unit_water_splash"} {dist 0.4}}
+}
+
+;#line 44: properties/units/extenders/step_fx_1.inc END
+
+	
+	{"volumes" {defaultMaterial "rock"}
+		{"*"
+			{able {visible 0}{obstacle 0}{overlap 1}{contact 1}} {Tags  "body"}
+		}
+	}
+
+        {"zones"
+		{body {proper body sensible} {permit body}}
+		{Collider "destroyer"}
+	}
+}
