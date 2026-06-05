@@ -310,8 +310,8 @@
 <!--forRaceUndead-->
 	<texture>
 		<s_name>und_smithy</s_name>
-		<s_tex_file>textures\und_smithy.dds</s_tex_file>
-		<s_tuv_file>textures\und_smithy.tuv</s_tuv_file>
+		<s_tex_file>textures\m2_gui.dds</s_tex_file>
+		<s_tuv_file>textures\m2_gui.tuv</s_tuv_file>
 	</texture>
 	<texture>
 		<s_name>m2_cards_und</s_name>
@@ -345,7 +345,7 @@
 	</texture>
 	<texture>
 		<s_name>und_clone_vamp</s_name>
-		<s_tex_file>textures\und_clone_vamp.dds</s_tex_file>
-		<s_tuv_file>textures\und_clone_vamp.tuv</s_tuv_file>
+		<s_tex_file>textures\m2_gui.dds</s_tex_file>
+		<s_tuv_file>textures\m2_gui.tuv</s_tuv_file>
 	</texture>
 </Textures>

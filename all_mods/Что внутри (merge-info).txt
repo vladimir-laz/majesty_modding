@@ -17,8 +17,13 @@
 "10x скорости". Конфликтующие файлы объединены вручную:
   - gameData/spawn/global_spawn_settings.set + спавнеры стражников башен
   - localization/M2_mod.loctable.xml         + строки рыцаря (лист Knights)
-shops.set, texture_units.xml и textures.xml оставлены как в "мини-сборке"
+shops.set и texture_units.xml оставлены как в "мини-сборке"
 (Рыцарь и Элитные башни в ней уже учтены).
+
+ФИКС ТЕКСТУР: в textures.xml атласы und_smithy и und_clone_vamp
+перенаправлены на существующий m2_gui — их .dds/.tuv нет в игре, и
+редактор GEM (грузит всё сразу) падал "File not found und_smithy.tuv".
+Иконки кузницы нежити могут отображаться неродными, но краша нет.
 
 УСТАНОВКА: переместите папку resource.mod в папку с игрой.
 УДАЛЕНИЕ: удалите папку resource.mod.
