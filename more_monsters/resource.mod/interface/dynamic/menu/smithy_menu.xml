@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<controlGroups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+	<controlGroup id="smithy_main">
+		<controlsLayout>
+			<rectangularLayout columns="4" offset="3" />
+		</controlsLayout>
+		<Row>
+			<Button_1 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_sell_plate_1" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Plate_1" /><appearance texture="BUT_sell_plate_2" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Plate_2" /><appearance texture="BUT_sell_plate_3" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Plate_3" /><!--#pragma begin(pp_03)--><appearance texture="BUT_sell_plate_4" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Plate_4" /><!--#pragma end(pp_03)-->
+			</Button_1>
+			<Button_2 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_sell_leather_1" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Leather_1" /><appearance texture="BUT_sell_leather_2" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Leather_2" /><appearance texture="BUT_sell_leather_3" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Leather_3" /><!--#pragma begin(pp_03)--><appearance texture="BUT_sell_leather_4" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Leather_4" /><!--#pragma end(pp_03)-->
+			</Button_2>
+			<Button_3 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_sell_cloth_1" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Cloth_1" /><appearance texture="BUT_sell_cloth_2" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Cloth_2" /><appearance texture="BUT_sell_cloth_3" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Cloth_3" /><!--#pragma begin(pp_03)--><appearance texture="BUT_sell_cloth_4" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Cloth_4" /><!--#pragma end(pp_03)-->
+			</Button_3>
+			<Button_4 action="BuildUpgradeAction" stateAction="CheckBuildUpgradebleActionSmithy">
+				<appearance texture="BUT_action_upgrade_build" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="smithy" />
+			</Button_4>
+		</Row>
+		<Row>
+			<Button_1 transition="sell_swords_1" hideGroupOnDeactivate="true" nextGroupAtActiveElement="false">
+				<appearance texture="but_inv_swords" autoTexture="TEX_MASK" autoHint="true" propertyBlock="action_but" />
+			</Button_1>
+			<Button_2 transition="sell_bows_1" hideGroupOnDeactivate="true" nextGroupAtActiveElement="false">
+				<appearance texture="but_inv_bows" autoTexture="TEX_MASK" autoHint="true" propertyBlock="action_but" />
+			</Button_2>
+			<Button_3 transition="sell_staffs_1" hideGroupOnDeactivate="true" nextGroupAtActiveElement="false">
+				<appearance texture="but_inv_staffs" autoTexture="TEX_MASK" autoHint="true" propertyBlock="action_but" />
+			</Button_3>
+		</Row>
+		<Row>
+		</Row>
+	</controlGroup>
+	<controlGroup id="sell_swords_1">
+		<controlsLayout>
+			<rectangularLayout columns="4" offset="3" />
+		</controlsLayout>
+		<Row>
+	    	<Button_1 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_sell_swords_1" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_1_war" /><appearance texture="BUT_sell_swords_2" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_2_war" /><appearance texture="BUT_sell_swords_3" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_3_war" /><!--#pragma begin(pp_03)--><appearance texture="BUT_sell_swords_4" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_4_war" /><!--#pragma end(pp_03)-->
+			</Button_1>
+			<Button_2 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_sell_swords_1_dw" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_1_dw" /><appearance texture="BUT_sell_swords_2_dw" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_2_dw" /><appearance texture="BUT_sell_swords_3_dw" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_3_dw" /><!--#pragma begin(pp_03)--><appearance texture="BUT_sell_swords_4_dw" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_4_dw" /><!--#pragma end(pp_03)-->
+			</Button_2>
+			<Button_3 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_sell_swords_1_rog" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_1_rog" /><appearance texture="BUT_sell_swords_2_rog" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_2_rog" /><appearance texture="BUT_sell_swords_3_rog" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_3_rog" /><!--#pragma begin(pp_03)--><appearance texture="BUT_sell_swords_4_rog" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_4_rog" /><!--#pragma end(pp_03)-->
+			</Button_3>
+			<Button_4 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_sell_swords_1_kni" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_1_kni" /><appearance texture="BUT_sell_swords_2_kni" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_2_kni" /><appearance texture="BUT_sell_swords_3_kni" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_3_kni" /><!--#pragma begin(pp_03)--><appearance texture="BUT_sell_swords_4_kni" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_4_kni" /><!--#pragma end(pp_03)-->
+			</Button_4>
+		</Row>
+		<Row>
+	    	<Button_1 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_sell_swords_1_kr" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_1_kr" /><appearance texture="BUT_sell_swords_2_kr" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_2_kr" /><appearance texture="BUT_sell_swords_3_kr" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_3_kr" /><!--#pragma begin(pp_03)--><appearance texture="BUT_sell_swords_4_kr" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_4_kr" /><!--#pragma end(pp_03)-->
+			</Button_1>
+	    	<Button_2 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_sell_swords_1_pal" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_1_pal" /><appearance texture="BUT_sell_swords_2_pal" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_2_pal" /><appearance texture="BUT_sell_swords_3_pal" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_3_pal" /><!--#pragma begin(pp_03)--><appearance texture="BUT_sell_swords_4_pal" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_4_pal" /><!--#pragma end(pp_03)-->
+			</Button_2>
+	    	<Button_3 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_sell_swords_1_dk" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_1_dk" /><appearance texture="BUT_sell_swords_2_dk" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_2_dk" /><appearance texture="BUT_sell_swords_3_dk" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_3_dk" /><!--#pragma begin(pp_03)--><appearance texture="BUT_sell_swords_4_dk" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Swords_4_dk" /><!--#pragma end(pp_03)-->
+			</Button_3>
+		</Row>
+		<Row>
+	    	<Button_4 transition="smithy_main" hideGroupOnDeactivate="true" nextGroupAtActiveElement="true">
+				<appearance texture="BUT_action_back" autoTexture="TEX_MASK" autoHint="true" propertyBlock="action_but" />
+			</Button_4>
+		</Row>
+	</controlGroup>
+	<controlGroup id="sell_bows_1">
+		<controlsLayout>
+			<rectangularLayout columns="4" offset="3" />
+		</controlsLayout>
+		<Row>
+	    	<Button_1 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_sell_bows_1" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Bows_1_hun" /><appearance texture="BUT_sell_bows_2" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Bows_2_hun" /><appearance texture="BUT_sell_bows_3" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Bows_3_hun" /><!--#pragma begin(pp_03)--><appearance texture="BUT_sell_bows_4" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Bows_4_hun" /><!--#pragma end(pp_03)-->
+			</Button_1>
+			<Button_2 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_sell_bows_1_elf" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Bows_1_elf" /><appearance texture="BUT_sell_bows_2_elf" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Bows_2_elf" /><appearance texture="BUT_sell_bows_3_elf" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Bows_3_elf" /><!--#pragma begin(pp_03)--><appearance texture="BUT_sell_bows_4_elf" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Bows_4_elf" /><!--#pragma end(pp_03)-->
+			</Button_2>
+		</Row>
+		<Row>
+	    	<Button_1 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_sell_bows_1_mm" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Bows_1_mm" /><appearance texture="BUT_sell_bows_2_mm" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Bows_2_mm" /><appearance texture="BUT_sell_bows_3_mm" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Bows_3_mm" /><!--#pragma begin(pp_03)--><appearance texture="BUT_sell_bows_4_mm" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Bows_4_mm" /><!--#pragma end(pp_03)-->
+			</Button_1>
+			<Button_2 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_sell_bows_1_bm" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Bows_1_bm" /><appearance texture="BUT_sell_bows_2_bm" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Bows_2_bm" /><appearance texture="BUT_sell_bows_3_bm" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Bows_3_bm" /><!--#pragma begin(pp_03)--><appearance texture="BUT_sell_bows_4_bm" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Bows_4_bm" /><!--#pragma end(pp_03)-->
+			</Button_2>
+		</Row>
+		<Row>
+	    	<Button_4 transition="smithy_main" hideGroupOnDeactivate="true" nextGroupAtActiveElement="true">
+				<appearance texture="BUT_action_back" autoTexture="TEX_MASK" autoHint="true" propertyBlock="action_but" />
+			</Button_4>
+		</Row>
+	</controlGroup>
+	<controlGroup id="sell_staffs_1">
+		<controlsLayout>
+			<rectangularLayout columns="4" offset="3" />
+		</controlsLayout>
+		<Row>
+    		<Button_1 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_sell_staffs_1_cl" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_1_cl" /><appearance texture="BUT_sell_staffs_2_cl" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_2_cl" /><appearance texture="BUT_sell_staffs_3_cl" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_3_cl" /><!--#pragma begin(pp_03)--><appearance texture="BUT_sell_staffs_4_cl" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_4_cl" /><!--#pragma end(pp_03)-->
+			</Button_1>
+			<Button_2 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_sell_staffs_1_pr" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_1_pr" /><appearance texture="BUT_sell_staffs_2_pr" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_2_pr" /><appearance texture="BUT_sell_staffs_3_pr" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_3_pr" /><!--#pragma begin(pp_03)--><appearance texture="BUT_sell_staffs_4_pr" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_4_pr" /><!--#pragma end(pp_03)-->
+			</Button_2>
+			<Button_3 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_sell_staffs_1_dpr" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_1_dpr" /><appearance texture="BUT_sell_staffs_2_dpr" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_2_dpr" /><appearance texture="BUT_sell_staffs_3_dpr" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_3_dpr" /><!--#pragma begin(pp_03)--><appearance texture="BUT_sell_staffs_4_dpr" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_4_dpr" /><!--#pragma end(pp_03)-->
+			</Button_3>
+		</Row>
+		<Row>
+	    	<Button_1 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_sell_staffs_1_mage" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_1_mage" /><appearance texture="BUT_sell_staffs_2_mage" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_2_mage" /><appearance texture="BUT_sell_staffs_3_mage" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_3_mage" /><!--#pragma begin(pp_03)--><appearance texture="BUT_sell_staffs_4_mage" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_4_mage" /><!--#pragma end(pp_03)-->
+			</Button_1>
+			<Button_2 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_sell_staffs_1_imag" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_1_imag" /><appearance texture="BUT_sell_staffs_2_imag" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_2_imag" /><appearance texture="BUT_sell_staffs_3_imag" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_3_imag" /><!--#pragma begin(pp_03)--><appearance texture="BUT_sell_staffs_4_imag" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_4_imag" /><!--#pragma end(pp_03)-->
+			</Button_2>
+			<Button_3 action="InventAction" stateAction="CheckInventionAction">
+				<appearance texture="BUT_sell_staffs_1_fi" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_1_fi" /><appearance texture="BUT_sell_staffs_2_fi" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_2_fi" /><appearance texture="BUT_sell_staffs_3_fi" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_3_fi" /><!--#pragma begin(pp_03)--><appearance texture="BUT_sell_staffs_4_fi" autoTexture="TEX_MASK" autoHint="false" propertyBlock="action_but" userdata="Staffs_4_fi" /><!--#pragma end(pp_03)-->
+			</Button_3>
+		</Row>
+		<Row>
+	    	<Button_4 transition="smithy_main" hideGroupOnDeactivate="true" nextGroupAtActiveElement="true">
+				<appearance texture="BUT_action_back" autoTexture="TEX_MASK" autoHint="true" propertyBlock="action_but" />
+			</Button_4>
+		</Row>
+	</controlGroup>
+</controlGroups>

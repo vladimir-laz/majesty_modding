@@ -1,0 +1,229 @@
+
+{entity
+	
+	{"zones"
+		{ObstacleID "fly_over"}
+		{body {proper body sensible} {permit body}}
+	}
+	{actor}
+	{xform scale 1.7}
+	
+	
+	;===================================================
+	;	Общие свойства зданий
+	;===================================================
+		
+
+;#line 16: 	(include "/properties/buildings/extenders/level.inc")
+;#line 16: properties/buildings/extenders/level.inc BEGIN
+{"Level"
+	{MaxLevel 1}
+	{CurrentLevel 1}
+	{CurrentExperiens 0.0}
+}
+;#line 16: properties/buildings/extenders/level.inc END
+
+
+;#line 17: 	(include "/properties/buildings/extenders/death.inc")
+;#line 17: properties/buildings/extenders/death.inc BEGIN
+{"IDeath.BuildingDeath"
+}
+
+;#line 17: properties/buildings/extenders/death.inc END
+{"spawner_extender"
+	{global_spawn_progs "beast_bearman_polar"}
+}
+
+;#line 18: 	(include "/properties/buildings/extenders/entity_nationality.inc")
+;#line 18: properties/buildings/extenders/entity_nationality.inc BEGIN
+{"EntityNationality"
+}
+
+;#line 18: properties/buildings/extenders/entity_nationality.inc END
+
+
+	;===================================================
+	;	Индивидуальные свойства здания
+	;===================================================
+
+	
+
+;#line 25: 	(include "extenders/spawner_extender.inc")
+;#line 25: entity/buildings/logovo_bear_polar/extenders/spawner_extender.inc BEGIN
+{"spawner_extender"}
+;#line 25: entity/buildings/logovo_bear_polar/extenders/spawner_extender.inc END
+
+
+;#line 26: 	(include "extenders/name.inc")
+;#line 26: entity/buildings/logovo_bear_polar/extenders/name.inc BEGIN
+{"Name"}
+;#line 26: entity/buildings/logovo_bear_polar/extenders/name.inc END
+
+
+;#line 27: 	(include "extenders/entity_classes.inc")
+;#line 27: entity/buildings/logovo_bear_polar/extenders/entity_classes.inc BEGIN
+{"EntityClasses"
+	"building" "candest"
+	"teg"
+}
+;#line 27: entity/buildings/logovo_bear_polar/extenders/entity_classes.inc END
+
+
+;#line 28: 	(include "extenders/guard_point.inc")
+;#line 28: entity/buildings/logovo_bear_polar/extenders/guard_point.inc BEGIN
+{"guard_point"
+	{ZoneRadius 15.0}
+	{GuardRadius 20.0}
+}
+;#line 28: entity/buildings/logovo_bear_polar/extenders/guard_point.inc END
+
+
+
+;#line 30: 	(include "/properties/buildings/extenders/rpg_no_perks.inc")
+;#line 30: properties/buildings/extenders/rpg_no_perks.inc BEGIN
+{"RPGModule" {perks {perkinstance "no_perks_4_building"}}}
+;#line 30: properties/buildings/extenders/rpg_no_perks.inc END
+
+	{"Health" {value_new {rpg_building} } }
+
+;#line 32: 	(include "extenders/building.inc")
+;#line 32: entity/buildings/logovo_bear_polar/extenders/building.inc BEGIN
+{"Home"
+}
+{"Building"
+	{stamp "bg_common04_21"}
+	{has_static}
+	{CashMachine
+		{Base
+			{AcceptableCards
+				{Tax
+					
+				}
+				{Personal
+				
+				}
+			}
+		}
+		{accounts
+			{tax "money" 0}
+			{personal "money" 200}
+		}
+	}
+}
+
+
+;#line 32: entity/buildings/logovo_bear_polar/extenders/building.inc END
+
+
+;#line 33: 	(include "extenders/upgrades.inc")
+;#line 33: entity/buildings/logovo_bear_polar/extenders/upgrades.inc BEGIN
+{"Upgrades"}
+
+;#line 33: entity/buildings/logovo_bear_polar/extenders/upgrades.inc END
+
+
+
+;#line 35: 	(include "extenders/inventory.inc")
+;#line 35: entity/buildings/logovo_bear_polar/extenders/inventory.inc BEGIN
+{"m2inventory"
+}
+
+;#line 35: entity/buildings/logovo_bear_polar/extenders/inventory.inc END
+
+
+;#line 36: 	(include "extenders/guard_point.inc")
+;#line 36: entity/buildings/logovo_bear_polar/extenders/guard_point.inc BEGIN
+{"guard_point"
+	{ZoneRadius 15.0}
+	{GuardRadius 20.0}
+}
+;#line 36: entity/buildings/logovo_bear_polar/extenders/guard_point.inc END
+
+
+
+
+;#line 39: 	(include "/properties/buildings/sound/destroyable_logovo_bear.inc")
+;#line 39: properties/buildings/sound/destroyable_logovo_bear.inc BEGIN
+{"sound"
+	{"destroyable_building"
+		{state "building_one_past_ill" {desc {param}}}
+		{state "building_one_to_full" {desc {param}}}
+		{state "building_destroied" {desc {param {name "buildings/crash/stone_crash_3"}{posi}}}}
+		{state "building_is_building" {desc {param {name "buildings/construction/construction"}{looped}{posi}}}}
+		{state "building_building_is_selected" {desc {param}}}
+		{state "building_ready_is_selected" {desc {param {name "interface/building_select/logovo_bear_select"} }}}
+		{state "building_people_ambient" {desc {param}}}
+		{state "building_25_live" {desc {param {name "buildings/crash/fire_small/fire_big_1"}{looped}{posi} }}}
+		{state "building_50_live" {desc {param {name "buildings/crash/fire_small/fire_med_1"}{looped}{posi} }}}
+		{state "building_75_live" {desc {param {name "buildings/crash/fire_small/fire_small_1"}{looped}{posi} }}}
+	}
+}
+
+;#line 39: properties/buildings/sound/destroyable_logovo_bear.inc END
+
+
+;#line 40: 	(include "/properties/sound/stone_material_sound.inc")
+;#line 40: properties/sound/stone_material_sound.inc BEGIN
+{"snd_props"
+	{prop {tag "hitprop"}{val "stone"}}
+}
+
+;#line 40: properties/sound/stone_material_sound.inc END
+
+
+
+;#line 42: 	(include "extenders/safety_emitter.inc")
+;#line 42: entity/buildings/logovo_bear_polar/extenders/safety_emitter.inc BEGIN
+{"safety_emitter"
+	{power  1}
+	{radius 10}
+}
+;#line 42: entity/buildings/logovo_bear_polar/extenders/safety_emitter.inc END
+
+
+;#line 43: 	(include "extenders/prime_cost.inc")
+;#line 43: entity/buildings/logovo_bear_polar/extenders/prime_cost.inc BEGIN
+{"EntityPrimeCost"
+	{Cost 0.1}
+}
+;#line 43: entity/buildings/logovo_bear_polar/extenders/prime_cost.inc END
+
+
+	{"building" {version 28}}
+	{"placer"}
+	{"structure"
+		{place "dummy_static_1" "logovo_bear_polar_l0"}
+
+		{place "dummy02" "object01_l0_ground_logovo_bear_polar"}
+		{place "dummy03" "object02_l0_dust_logovo_bear_polar"}
+		{place "dummy04" "object03_l0_dust_logovo_bear_polar"}
+		{place "dummy05" "object04_l0_dust_logovo_bear_polar"}
+		{place "dummy06" "object05_l0_dust_logovo_bear_polar"}
+		{place "dummy07" "object06_l0_dust_logovo_bear_polar"}
+		{place "dummy08" "object07_l0_dust_logovo_bear_polar"}
+		{place "dummy09" "object08_l0_base_logovo_bear_polar"}
+		{place "dummy10" "object09_l0_base_logovo_bear_polar"}
+		{place "dummy11" "object10_l0_base_logovo_bear_polar"}
+		{place "dummy12" "object11_l0_dust_logovo_bear_polar"}
+		{place "dummy13" "object12_l0_dust_logovo_bear_polar"}
+		{place "dummy14" "object13_l0_dust_logovo_bear_polar"}
+		{place "dummy15" "object14_l0_base_logovo_bear_polar"}
+		{place "dummy16" "object15_l0_base_logovo_bear_polar"}
+		{place "dummy17" "object16_l0_base_logovo_bear_polar"}
+		{place "dummy18" "object17_l0_base_logovo_bear_polar"}
+		{place "dummy19" "object18_l0_base_logovo_bear_polar"}
+		{place "dummy20" "object19_l0_base_logovo_bear_polar"}
+		{place "dummy21" "object20_l0_base_logovo_bear_polar"}
+		{place "dummy22" "object21_l0_base_logovo_bear_polar"}
+		{place "dummy23" "object22_l0_base_logovo_bear_polar"}
+		{place "dummy24" "object24_l0_dust_logovo_bear_polar"}
+		{place "dummy25" "object25_l0_base_logovo_bear_polar"}
+		{place "dummy26" "object26_l0_base_logovo_bear_polar"}
+		{place "dummy27" "object27_l0_dust_logovo_bear_polar"}
+		{place "dummy28" "object28_l0_dust_logovo_bear_polar"}
+		{place "dummy29" "object29_l0_dust_logovo_bear_polar"}
+	}
+}
+			{"FXAttachment"
+	{defaults "dummy01" "log_bear_polar_fx"}
+	}
