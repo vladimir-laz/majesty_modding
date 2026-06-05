@@ -1633,7 +1633,7 @@
 											<s_tag/>
 											<b_wants_focus>false</b_wants_focus>
 											<s_value>0.2x</s_value>
-											<s_counter_values>0.2x,0.5x,1x,2x,5x,10x</s_counter_values>
+											<s_counter_values>0.2x,0.5x,1x,2x,5x,10x,15x,20x</s_counter_values>
 											<b_cycled>false</b_cycled>
 											<i_text_dy>2</i_text_dy>
 											<s_text_align>TAL_CENTER</s_text_align>
