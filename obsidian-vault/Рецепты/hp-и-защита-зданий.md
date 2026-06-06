@@ -49,6 +49,16 @@ HP и защита зданий — в [[rpg-params-xml|rpg_params.xml]], сек
   В сборках обновлено 12 зданий с реальными `{health N}` (guild_warrior/cleric/
   dwarf/elf/hunter/mage/rogue/fire_mage/goblin_*, tower_guard, unique_tower_guard).
 
+## ⚠️ ГРАБЛИ: дробные HP (`2000.0`) — regex `\d+` их пропускает!
+Часть зданий хранит HP как **дробь**: `<f_maxHealth>2000.0</f_maxHealth>`.
+Монстрские гильдии (`guild_werewolf`, `guild_minotaur`, `guild_ratman_paladin`,
+ВСЕ `mks_guild_*`) и `unique_tower_goblin` — именно такие. Если множить regex'ом
+`<f_maxHealth>(\d+)</f_maxHealth>` — они **молча не изменятся** (видно как «у
+гильдии оборотней HP не повышен»). Использовать `([\d.]+)` и сохранять формат
+(дробь→дробь). Идемпотентно безопаснее **пересчитывать от базы** (`build = base*f`),
+а не множить текущее значение. В сборках доведено: 10 монстрских/дробных гильдий
+×2 (+защита 50, где не было) и `unique_tower_goblin` ×3.
+
 ## Тонкости
 - Атрибуты `f_strength` и т.п. — только у героев; HP/защита есть у зданий.
 - `guild`/`tower` в `s_type` встречаются только у зданий → можно править по
